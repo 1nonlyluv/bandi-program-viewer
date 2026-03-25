@@ -1,6 +1,6 @@
 name: Deploy Bandi Program Webapp
 
-on:
+"on":
   push:
     branches:
       - main
