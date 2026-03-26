@@ -4,7 +4,7 @@
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-03-26T16:14:49+09:00",
+    "generatedAt": "2026-03-26T16:20:59+09:00",
     "defaultView": "now",
     "sourceLabel": "3월 4주차"
   },
@@ -1717,6 +1717,23 @@
           "entries": [
             {
               "id": "2026-03-26-1400-1",
+              "title": "재활",
+              "subtitle": "",
+              "categoryId": "rehab",
+              "groupIds": [
+                "somang"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "재활",
+                "somang",
+                "rehab"
+              ]
+            },
+            {
+              "id": "2026-03-26-1400-2",
               "title": "점선따라 그리기",
               "subtitle": "",
               "categoryId": "cognitive",
@@ -1735,7 +1752,7 @@
               ]
             },
             {
-              "id": "2026-03-26-1400-2",
+              "id": "2026-03-26-1400-3",
               "title": "요가교실",
               "subtitle": "",
               "categoryId": "physical",
@@ -1751,23 +1768,6 @@
                 "요가교실",
                 "mideum",
                 "physical"
-              ]
-            },
-            {
-              "id": "2026-03-26-1400-3",
-              "title": "재활",
-              "subtitle": "",
-              "categoryId": "rehab",
-              "groupIds": [
-                "somang"
-              ],
-              "staff": [],
-              "staffRole": "",
-              "location": "강당",
-              "tags": [
-                "재활",
-                "somang",
-                "rehab"
               ]
             }
           ]

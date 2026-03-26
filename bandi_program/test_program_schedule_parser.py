@@ -190,7 +190,7 @@ class ProgramScheduleParserHelpersTests(unittest.TestCase):
         block_1030 = normalized["days"][0]["blocks"][0]
         self.assertEqual([entry["title"] for entry in block_1030["entries"]], ["재활", "알록달록 색깔고리놀이", "다트게임"])
         block_1400 = normalized["days"][0]["blocks"][1]
-        self.assertEqual([entry["title"] for entry in block_1400["entries"]], ["점선따라 그리기", "요가교실", "재활"])
+        self.assertEqual([entry["title"] for entry in block_1400["entries"]], ["재활", "점선따라 그리기", "요가교실"])
         block_1500 = normalized["days"][0]["blocks"][2]
         self.assertEqual([entry["groupIds"] for entry in block_1500["entries"]], [["sarang"], ["mideum", "somang"]])
         self.assertEqual([entry["title"] for entry in block_1500["entries"]], ["농구", "점선따라 그리기"])

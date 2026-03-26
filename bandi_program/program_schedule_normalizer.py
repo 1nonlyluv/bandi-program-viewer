@@ -333,9 +333,9 @@ def _apply_2026_03_26_corrections(day: dict[str, Any]) -> None:
     block_1400 = blocks_by_start.get("14:00")
     if block_1400:
         block_1400["entries"] = [
-            _make_entry("2026-03-26-1400-1", "점선따라 그리기", "", "cognitive", ["sarang"], staff=["김은비"], staff_role="준비"),
-            _make_entry("2026-03-26-1400-2", "요가교실", "", "physical", ["mideum"], staff=["김은비"], staff_role="진행"),
-            _make_entry("2026-03-26-1400-3", "재활", "", "rehab", ["somang"]),
+            _make_entry("2026-03-26-1400-1", "재활", "", "rehab", ["somang"]),
+            _make_entry("2026-03-26-1400-2", "점선따라 그리기", "", "cognitive", ["sarang"], staff=["김은비"], staff_role="준비"),
+            _make_entry("2026-03-26-1400-3", "요가교실", "", "physical", ["mideum"], staff=["김은비"], staff_role="진행"),
         ]
 
     block_1500 = blocks_by_start.get("15:00")

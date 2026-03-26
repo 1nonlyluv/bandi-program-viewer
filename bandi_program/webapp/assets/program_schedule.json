@@ -5956,7 +5956,7 @@
             {
               "id": "2026-03-24-1240-1",
               "title": "자율시간",
-              "subtitle": "재활: 믿음반/강당 담당: 사랑반",
+              "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
               "categoryId": "routine",
               "groupIds": [
                 "all"
@@ -6920,6 +6920,23 @@
           "entries": [
             {
               "id": "2026-03-26-1400-1",
+              "title": "재활",
+              "subtitle": "",
+              "categoryId": "rehab",
+              "groupIds": [
+                "somang"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "재활",
+                "somang",
+                "rehab"
+              ]
+            },
+            {
+              "id": "2026-03-26-1400-2",
               "title": "점선따라 그리기",
               "subtitle": "",
               "categoryId": "cognitive",
@@ -6938,7 +6955,7 @@
               ]
             },
             {
-              "id": "2026-03-26-1400-2",
+              "id": "2026-03-26-1400-3",
               "title": "요가교실",
               "subtitle": "",
               "categoryId": "physical",
@@ -6954,23 +6971,6 @@
                 "요가교실",
                 "mideum",
                 "physical"
-              ]
-            },
-            {
-              "id": "2026-03-26-1400-3",
-              "title": "재활",
-              "subtitle": "",
-              "categoryId": "rehab",
-              "groupIds": [
-                "somang"
-              ],
-              "staff": [],
-              "staffRole": "",
-              "location": "강당",
-              "tags": [
-                "재활",
-                "somang",
-                "rehab"
               ]
             }
           ]
@@ -16647,7 +16647,7 @@
       "endMin": 810,
       "section": "오후",
       "title": "자율시간",
-      "subtitle": "재활: 믿음반/강당 담당: 사랑반",
+      "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
       "categoryId": "routine",
       "groupIds": [
         "all"
@@ -17636,6 +17636,32 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
+      "title": "재활",
+      "subtitle": "",
+      "categoryId": "rehab",
+      "groupIds": [
+        "somang"
+      ],
+      "staff": [],
+      "staffRole": "",
+      "location": "강당",
+      "tags": [
+        "재활",
+        "somang",
+        "rehab"
+      ]
+    },
+    {
+      "id": "2026-03-26-1400-2",
+      "date": "2026-03-26",
+      "weekday": "목",
+      "weekKey": "2026-03-23",
+      "weekLabel": "3월 4주차",
+      "start": "14:00",
+      "end": "15:00",
+      "startMin": 840,
+      "endMin": 900,
+      "section": "오후",
       "title": "점선따라 그리기",
       "subtitle": "",
       "categoryId": "cognitive",
@@ -17654,7 +17680,7 @@
       ]
     },
     {
-      "id": "2026-03-26-1400-2",
+      "id": "2026-03-26-1400-3",
       "date": "2026-03-26",
       "weekday": "목",
       "weekKey": "2026-03-23",
@@ -17679,32 +17705,6 @@
         "요가교실",
         "mideum",
         "physical"
-      ]
-    },
-    {
-      "id": "2026-03-26-1400-3",
-      "date": "2026-03-26",
-      "weekday": "목",
-      "weekKey": "2026-03-23",
-      "weekLabel": "3월 4주차",
-      "start": "14:00",
-      "end": "15:00",
-      "startMin": 840,
-      "endMin": 900,
-      "section": "오후",
-      "title": "재활",
-      "subtitle": "",
-      "categoryId": "rehab",
-      "groupIds": [
-        "somang"
-      ],
-      "staff": [],
-      "staffRole": "",
-      "location": "강당",
-      "tags": [
-        "재활",
-        "somang",
-        "rehab"
       ]
     },
     {
