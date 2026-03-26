@@ -402,6 +402,10 @@
   }
 
   function renderEntryIcon(entry) {
+    var title = normalizeDisplayText(entry && entry.title ? entry.title : "");
+    if (title === "건강체조1" || title === "건강체조2") {
+      return "";
+    }
     if (entry.categoryId === "custom") {
       return '<span class="pv-entry-token pv-entry-token-custom">맞</span>';
     }
