@@ -304,9 +304,26 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-09-1340-all",
+              "id": "2026-03-09-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
+              "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-09-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
@@ -317,8 +334,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "오후간식 및 (건강체조2) 담당-김은비",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -746,9 +764,26 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-10-1340-all",
+              "id": "2026-03-10-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
+              "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-10-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
@@ -759,8 +794,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "오후간식 및 (건강체조2) 담당-김은비",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -1171,9 +1207,26 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-11-1340-all",
+              "id": "2026-03-11-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
+              "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-11-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
@@ -1184,8 +1237,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "오후간식 및 (건강체조2) 담당-김은비",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -1558,9 +1612,26 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-12-1340-all",
+              "id": "2026-03-12-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
+              "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-12-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
@@ -1571,8 +1642,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "오후간식 및 (건강체조2) 담당-김은비",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -1996,9 +2068,26 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-13-1340-all",
+              "id": "2026-03-13-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
+              "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-13-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
@@ -2009,8 +2098,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "오후간식 및 (건강체조2) 담당-김은비",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -2383,9 +2473,26 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-14-1340-all",
+              "id": "2026-03-14-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
+              "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-14-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
@@ -2396,8 +2503,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "오후간식 및 (건강체조2) 담당-김은비",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]

@@ -305,10 +305,27 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-16-1340-snack-entry",
+              "id": "2026-03-16-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
               "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-16-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -318,9 +335,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "간식",
-                "건강체조",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -723,10 +740,27 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-17-1340-snack-entry",
+              "id": "2026-03-17-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
               "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-17-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -736,9 +770,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "간식",
-                "건강체조",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -1143,10 +1177,27 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-18-1340-snack-entry",
+              "id": "2026-03-18-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
               "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-18-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -1156,9 +1207,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "간식",
-                "건강체조",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -1529,10 +1580,27 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-19-1340-snack-entry",
+              "id": "2026-03-19-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
               "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-19-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -1542,9 +1610,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "간식",
-                "건강체조",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -1949,10 +2017,27 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-20-1340-snack-entry",
+              "id": "2026-03-20-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
               "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-20-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -1962,9 +2047,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "간식",
-                "건강체조",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
@@ -2335,10 +2420,27 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-21-1340-snack-entry",
+              "id": "2026-03-21-1340-1",
               "title": "오후 간식",
-              "subtitle": "건강체조2",
+              "subtitle": "",
               "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "오후 간식",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-03-21-1340-2",
+              "title": "건강체조2",
+              "subtitle": "",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -2348,9 +2450,9 @@
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "간식",
-                "건강체조",
-                "전체"
+                "건강체조2",
+                "all",
+                "physical"
               ]
             }
           ]
