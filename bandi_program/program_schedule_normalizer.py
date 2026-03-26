@@ -166,6 +166,30 @@ def _normalize_day_text(day: dict[str, Any]) -> None:
 def _normalize_fixed_blocks(day: dict[str, Any]) -> None:
     blocks_by_start = {block.get("start"): block for block in day.get("blocks", [])}
 
+    block_1130 = blocks_by_start.get("11:30")
+    if block_1130:
+        block_1130["start"] = "11:30"
+        block_1130["end"] = "12:30"
+        block_1130["startMin"] = 690
+        block_1130["endMin"] = 750
+        block_1130["id"] = f"{day['date']}-1130"
+
+    block_1230 = blocks_by_start.get("12:30")
+    if block_1230:
+        block_1230["start"] = "12:30"
+        block_1230["end"] = "13:30"
+        block_1230["startMin"] = 750
+        block_1230["endMin"] = 810
+        block_1230["id"] = f"{day['date']}-1230"
+
+    block_1240 = blocks_by_start.get("12:40")
+    if block_1240:
+        block_1240["start"] = "12:30"
+        block_1240["end"] = "13:30"
+        block_1240["startMin"] = 750
+        block_1240["endMin"] = 810
+        block_1240["id"] = f"{day['date']}-1230"
+
     block_0930 = blocks_by_start.get("09:30")
     if block_0930 and block_0930.get("entries"):
         entry = block_0930["entries"][0]
@@ -193,16 +217,14 @@ def _normalize_fixed_blocks(day: dict[str, Any]) -> None:
             if "담당:" in str(item.get("title", "")):
                 staff = [str(item["title"]).split("담당:", 1)[1].strip()]
                 break
+        block_1340["start"] = "13:40"
+        block_1340["end"] = "14:00"
+        block_1340["startMin"] = 820
+        block_1340["endMin"] = 840
+        block_1340["id"] = f"{day['date']}-1340"
         block_1340["entries"] = [
             _make_entry(
                 f"{day['date']}-1340-1",
-                "오후 간식",
-                "",
-                "routine",
-                ["all"],
-            ),
-            _make_entry(
-                f"{day['date']}-1340-2",
                 "건강체조2",
                 "",
                 "physical",
@@ -211,6 +233,29 @@ def _normalize_fixed_blocks(day: dict[str, Any]) -> None:
                 staff_role="담당" if staff else "",
             ),
         ]
+
+        snack_exists = any(block.get("start") == "13:30" for block in day.get("blocks", []))
+        if not snack_exists:
+            afternoon_snack_block = {
+                "id": f"{day['date']}-1330",
+                "start": "13:30",
+                "end": "13:40",
+                "startMin": 810,
+                "endMin": 820,
+                "section": block_1340.get("section", "오후"),
+                "entries": [
+                    _make_entry(
+                        f"{day['date']}-1330-1",
+                        "오후 간식",
+                        "",
+                        "routine",
+                        ["all"],
+                    )
+                ],
+            }
+            blocks = day.get("blocks", [])
+            insert_at = blocks.index(block_1340)
+            blocks.insert(insert_at, afternoon_snack_block)
 
 
 def _apply_2026_03_24_corrections(day: dict[str, Any]) -> None:

@@ -1,10 +1,10 @@
 {
-  "sourceFile": "주간프로그램 계획표_3월4주차.xlsx",
+  "sourceFile": "주간프로그램 계획표_3월4주차.xlsx",
   "sheetName": "3월 4주차",
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-03-26T14:38:27+09:00",
+    "generatedAt": "2026-03-26T16:14:49+09:00",
     "defaultView": "now",
     "sourceLabel": "3월 4주차"
   },
@@ -250,9 +250,9 @@
         {
           "id": "2026-03-23-1130",
           "start": "11:30",
-          "end": "12:40",
+          "end": "12:30",
           "startMin": 690,
-          "endMin": 760,
+          "endMin": 750,
           "section": "오후",
           "entries": [
             {
@@ -275,11 +275,11 @@
           ]
         },
         {
-          "id": "2026-03-23-1240",
-          "start": "12:40",
-          "end": "13:40",
-          "startMin": 760,
-          "endMin": 820,
+          "id": "2026-03-23-1230",
+          "start": "12:30",
+          "end": "13:30",
+          "startMin": 750,
+          "endMin": 810,
           "section": "오후",
           "entries": [
             {
@@ -302,15 +302,15 @@
           ]
         },
         {
-          "id": "2026-03-23-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
+          "id": "2026-03-23-1330",
+          "start": "13:30",
+          "end": "13:40",
+          "startMin": 810,
+          "endMin": 820,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-23-1340-1",
+              "id": "2026-03-23-1330-1",
               "title": "오후 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -325,9 +325,19 @@
                 "all",
                 "routine"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "2026-03-23-1340",
+          "start": "13:40",
+          "end": "14:00",
+          "startMin": 820,
+          "endMin": 840,
+          "section": "오후",
+          "entries": [
             {
-              "id": "2026-03-23-1340-2",
+              "id": "2026-03-23-1340-1",
               "title": "건강체조2",
               "subtitle": "",
               "categoryId": "physical",
@@ -712,9 +722,9 @@
         {
           "id": "2026-03-24-1130",
           "start": "11:30",
-          "end": "12:40",
+          "end": "12:30",
           "startMin": 690,
-          "endMin": 760,
+          "endMin": 750,
           "section": "오후",
           "entries": [
             {
@@ -737,17 +747,17 @@
           ]
         },
         {
-          "id": "2026-03-24-1240",
-          "start": "12:40",
-          "end": "13:40",
-          "startMin": 760,
-          "endMin": 820,
+          "id": "2026-03-24-1230",
+          "start": "12:30",
+          "end": "13:30",
+          "startMin": 750,
+          "endMin": 810,
           "section": "오후",
           "entries": [
             {
               "id": "2026-03-24-1240-1",
               "title": "자율시간",
-              "subtitle": "재활: 믿음반/강당 담당: 사랑반",
+              "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
               "categoryId": "routine",
               "groupIds": [
                 "all"
@@ -764,15 +774,15 @@
           ]
         },
         {
-          "id": "2026-03-24-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
+          "id": "2026-03-24-1330",
+          "start": "13:30",
+          "end": "13:40",
+          "startMin": 810,
+          "endMin": 820,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-24-1340-1",
+              "id": "2026-03-24-1330-1",
               "title": "오후 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -787,9 +797,19 @@
                 "all",
                 "routine"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "2026-03-24-1340",
+          "start": "13:40",
+          "end": "14:00",
+          "startMin": 820,
+          "endMin": 840,
+          "section": "오후",
+          "entries": [
             {
-              "id": "2026-03-24-1340-2",
+              "id": "2026-03-24-1340-1",
               "title": "건강체조2",
               "subtitle": "",
               "categoryId": "physical",
@@ -1159,9 +1179,9 @@
         {
           "id": "2026-03-25-1130",
           "start": "11:30",
-          "end": "12:40",
+          "end": "12:30",
           "startMin": 690,
-          "endMin": 760,
+          "endMin": 750,
           "section": "오후",
           "entries": [
             {
@@ -1184,11 +1204,11 @@
           ]
         },
         {
-          "id": "2026-03-25-1240",
-          "start": "12:40",
-          "end": "13:40",
-          "startMin": 760,
-          "endMin": 820,
+          "id": "2026-03-25-1230",
+          "start": "12:30",
+          "end": "13:30",
+          "startMin": 750,
+          "endMin": 810,
           "section": "오후",
           "entries": [
             {
@@ -1211,15 +1231,15 @@
           ]
         },
         {
-          "id": "2026-03-25-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
+          "id": "2026-03-25-1330",
+          "start": "13:30",
+          "end": "13:40",
+          "startMin": 810,
+          "endMin": 820,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-25-1340-1",
+              "id": "2026-03-25-1330-1",
               "title": "오후 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -1234,9 +1254,19 @@
                 "all",
                 "routine"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "2026-03-25-1340",
+          "start": "13:40",
+          "end": "14:00",
+          "startMin": 820,
+          "endMin": 840,
+          "section": "오후",
+          "entries": [
             {
-              "id": "2026-03-25-1340-2",
+              "id": "2026-03-25-1340-1",
               "title": "건강체조2",
               "subtitle": "",
               "categoryId": "physical",
@@ -1570,9 +1600,9 @@
         {
           "id": "2026-03-26-1130",
           "start": "11:30",
-          "end": "12:40",
+          "end": "12:30",
           "startMin": 690,
-          "endMin": 760,
+          "endMin": 750,
           "section": "오후",
           "entries": [
             {
@@ -1595,11 +1625,11 @@
           ]
         },
         {
-          "id": "2026-03-26-1240",
-          "start": "12:40",
-          "end": "13:40",
-          "startMin": 760,
-          "endMin": 820,
+          "id": "2026-03-26-1230",
+          "start": "12:30",
+          "end": "13:30",
+          "startMin": 750,
+          "endMin": 810,
           "section": "오후",
           "entries": [
             {
@@ -1622,15 +1652,15 @@
           ]
         },
         {
-          "id": "2026-03-26-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
+          "id": "2026-03-26-1330",
+          "start": "13:30",
+          "end": "13:40",
+          "startMin": 810,
+          "endMin": 820,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-26-1340-1",
+              "id": "2026-03-26-1330-1",
               "title": "오후 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -1645,9 +1675,19 @@
                 "all",
                 "routine"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "2026-03-26-1340",
+          "start": "13:40",
+          "end": "14:00",
+          "startMin": 820,
+          "endMin": 840,
+          "section": "오후",
+          "entries": [
             {
-              "id": "2026-03-26-1340-2",
+              "id": "2026-03-26-1340-1",
               "title": "건강체조2",
               "subtitle": "",
               "categoryId": "physical",
@@ -2017,9 +2057,9 @@
         {
           "id": "2026-03-27-1130",
           "start": "11:30",
-          "end": "12:40",
+          "end": "12:30",
           "startMin": 690,
-          "endMin": 760,
+          "endMin": 750,
           "section": "오후",
           "entries": [
             {
@@ -2042,11 +2082,11 @@
           ]
         },
         {
-          "id": "2026-03-27-1240",
-          "start": "12:40",
-          "end": "13:40",
-          "startMin": 760,
-          "endMin": 820,
+          "id": "2026-03-27-1230",
+          "start": "12:30",
+          "end": "13:30",
+          "startMin": 750,
+          "endMin": 810,
           "section": "오후",
           "entries": [
             {
@@ -2069,15 +2109,15 @@
           ]
         },
         {
-          "id": "2026-03-27-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
+          "id": "2026-03-27-1330",
+          "start": "13:30",
+          "end": "13:40",
+          "startMin": 810,
+          "endMin": 820,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-27-1340-1",
+              "id": "2026-03-27-1330-1",
               "title": "오후 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -2092,9 +2132,19 @@
                 "all",
                 "routine"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "2026-03-27-1340",
+          "start": "13:40",
+          "end": "14:00",
+          "startMin": 820,
+          "endMin": 840,
+          "section": "오후",
+          "entries": [
             {
-              "id": "2026-03-27-1340-2",
+              "id": "2026-03-27-1340-1",
               "title": "건강체조2",
               "subtitle": "",
               "categoryId": "physical",
@@ -2428,9 +2478,9 @@
         {
           "id": "2026-03-28-1130",
           "start": "11:30",
-          "end": "12:40",
+          "end": "12:30",
           "startMin": 690,
-          "endMin": 760,
+          "endMin": 750,
           "section": "오후",
           "entries": [
             {
@@ -2453,11 +2503,11 @@
           ]
         },
         {
-          "id": "2026-03-28-1240",
-          "start": "12:40",
-          "end": "13:40",
-          "startMin": 760,
-          "endMin": 820,
+          "id": "2026-03-28-1230",
+          "start": "12:30",
+          "end": "13:30",
+          "startMin": 750,
+          "endMin": 810,
           "section": "오후",
           "entries": [
             {
@@ -2480,15 +2530,15 @@
           ]
         },
         {
-          "id": "2026-03-28-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
+          "id": "2026-03-28-1330",
+          "start": "13:30",
+          "end": "13:40",
+          "startMin": 810,
+          "endMin": 820,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-03-28-1340-1",
+              "id": "2026-03-28-1330-1",
               "title": "오후 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -2503,9 +2553,19 @@
                 "all",
                 "routine"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "2026-03-28-1340",
+          "start": "13:40",
+          "end": "14:00",
+          "startMin": 820,
+          "endMin": 840,
+          "section": "오후",
+          "entries": [
             {
-              "id": "2026-03-28-1340-2",
+              "id": "2026-03-28-1340-1",
               "title": "건강체조2",
               "subtitle": "",
               "categoryId": "physical",
