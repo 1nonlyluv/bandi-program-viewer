@@ -185,10 +185,14 @@ def _normalize_fixed_blocks(day: dict[str, Any]) -> None:
 
     block_1340 = blocks_by_start.get("13:40")
     if block_1340 and block_1340.get("entries"):
-        entry = block_1340["entries"][0]
-        staff = list(entry.get("staff", []))
-        if not staff and "담당:" in str(entry.get("title", "")):
-            staff = [str(entry["title"]).split("담당:", 1)[1].strip()]
+        staff: list[str] = []
+        for item in block_1340["entries"]:
+            if item.get("staff"):
+                staff = list(item.get("staff", []))
+                break
+            if "담당:" in str(item.get("title", "")):
+                staff = [str(item["title"]).split("담당:", 1)[1].strip()]
+                break
         block_1340["entries"] = [
             _make_entry(
                 f"{day['date']}-1340-1",
