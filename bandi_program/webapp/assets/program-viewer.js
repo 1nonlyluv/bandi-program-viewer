@@ -393,10 +393,10 @@
     return value;
   }
 
-  function renderProgramCopyHtml(mainText, metaText) {
+  function renderProgramCopyHtml(mainText, metaText, metaBlock) {
     var html = '<span class="pv-now-program-copy-main">' + escapeHtml(mainText) + "</span>";
     if (metaText) {
-      html += '<span class="pv-now-program-meta">' + escapeHtml(metaText) + "</span>";
+      html += '<span class="pv-now-program-meta' + (metaBlock ? ' is-block' : '') + '">' + escapeHtml(metaText) + "</span>";
     }
     return '<span class="pv-now-program-copy">' + html + "</span>";
   }
@@ -437,12 +437,21 @@
     }
 
     if (entry.categoryId === "physical" || entry.categoryId === "cognitive") {
+      if (title === "오후 간식") {
+        metaText = subtitle;
+        if (staffSuffix) {
+          metaText = metaText
+            ? metaText + " " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "")
+            : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
+        }
+        return iconHtml + renderProgramCopyHtml(bodyText || title, metaText, true);
+      }
       bodyText = title;
       if (subtitle) {
         bodyText += " - " + subtitle;
       }
       metaText = staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
-      return iconHtml + renderProgramCopyHtml(bodyText, metaText);
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText, false);
     }
 
     bodyText = title;
@@ -452,7 +461,7 @@
     if (staffSuffix) {
       metaText = metaText ? metaText + " / " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "") : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
     }
-    return renderProgramCopyHtml(bodyText, metaText);
+    return renderProgramCopyHtml(bodyText, metaText, false);
   }
 
   function getEntryGroupLabel(entry, groupMap) {

@@ -744,6 +744,12 @@ body::before {
   vertical-align: baseline;
 }
 
+.pv-now-program-meta.is-block {
+  display: block;
+  margin-left: 0;
+  margin-top: 0.18em;
+}
+
 .pv-entry-token {
   flex: 0 0 auto;
   display: inline-flex;
