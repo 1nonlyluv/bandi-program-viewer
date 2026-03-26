@@ -10,7 +10,6 @@ from typing import Any
 from shuttle_schedule_parser import XlsxSheet, normalize_text, workbook_sheet_refs
 
 
-DAY_COLUMNS = ("C", "D", "E", "F", "G", "H")
 CATEGORY_MAP = {
     "신체": "physical",
     "인지": "cognitive",
@@ -41,6 +40,14 @@ def column_letter_to_number(value: str) -> int:
     for char in value:
         number = number * 26 + ord(char) - 64
     return number
+
+
+def num_to_col(number: int) -> str:
+    value = ""
+    while number:
+        number, rem = divmod(number - 1, 26)
+        value = chr(65 + rem) + value
+    return value
 
 
 def split_cell_ref(ref: str) -> tuple[str, int]:
@@ -81,15 +88,61 @@ def parse_day_header(value: str, year: int) -> dict[str, str]:
     }
 
 
+def detect_program_grid(sheet: XlsxSheet) -> tuple[int, tuple[str, ...], str, str]:
+    header_row = None
+    for row in range(1, min(sheet.max_row, 12) + 1):
+        for col_idx in range(1, min(sheet.max_col, column_letter_to_number("J")) + 1):
+            ref = f"{num_to_col(col_idx)}{row}"
+            if normalize_line(normalize_text(sheet.value(ref, merged=False))) == "요일":
+                header_row = row
+                break
+        if header_row is not None:
+            break
+    if header_row is None:
+        raise ValueError("Unable to detect weekday header row.")
+
+    day_columns: list[str] = []
+    for col_idx in range(1, sheet.max_col + 1):
+        ref = f"{num_to_col(col_idx)}{header_row}"
+        text = normalize_line(normalize_text(sheet.value(ref, merged=False)))
+        if re.search(r"\d{1,2}/\d{1,2}", text):
+            day_columns.append(num_to_col(col_idx))
+    if not day_columns:
+        next_row = header_row + 1
+        for col_idx in range(1, sheet.max_col + 1):
+            ref = f"{num_to_col(col_idx)}{next_row}"
+            text = normalize_line(normalize_text(sheet.value(ref, merged=False)))
+            if re.search(r"\d{1,2}/\d{1,2}", text):
+                day_columns.append(num_to_col(col_idx))
+        if day_columns:
+            header_row = next_row
+    if not day_columns:
+        raise ValueError("Unable to detect day header columns.")
+
+    first_day_col_num = column_letter_to_number(day_columns[0])
+    time_col = num_to_col(first_day_col_num - 1)
+    section_col = num_to_col(first_day_col_num - 2)
+    return header_row, tuple(day_columns), time_col, section_col
+
+
+def detect_week_label(sheet: XlsxSheet) -> str:
+    for row in range(1, min(sheet.max_row, 8) + 1):
+        for col_idx in range(1, min(sheet.max_col, column_letter_to_number("J")) + 1):
+            text = normalize_week_label(sheet.value(f"{num_to_col(col_idx)}{row}"))
+            if "주차" in text:
+                return text
+    return ""
+
+
 def to_weekday_label(date_text: str) -> str:
     dt = datetime.strptime(date_text, "%Y-%m-%d")
     return "월화수목금토일"[dt.weekday()]
 
 
-def parse_time_rows(sheet: XlsxSheet) -> list[int]:
+def parse_time_rows(sheet: XlsxSheet, time_col: str) -> list[int]:
     rows: list[int] = []
     for row in range(1, sheet.max_row + 1):
-        value = normalize_text(sheet.value(f"B{row}", merged=False))
+        value = normalize_text(sheet.value(f"{time_col}{row}", merged=False))
         if re.fullmatch(r"\d{1,2}:\d{2}~\d{1,2}:\d{2}", value):
             rows.append(row)
     return rows
@@ -107,13 +160,15 @@ def parse_clock(value: str) -> int:
     return int(hour_text) * 60 + int(minute_text)
 
 
-def is_common_block(sheet: XlsxSheet, row: int) -> bool:
-    start_ref = f"C{row}"
-    return all(sheet.merged_parent.get(f"{col}{row}") == start_ref for col in DAY_COLUMNS[1:])
+def is_common_block(sheet: XlsxSheet, row: int, day_columns: tuple[str, ...]) -> bool:
+    if not day_columns:
+        return False
+    parent_refs = [sheet.merged_parent.get(f"{col}{row}", f"{col}{row}") for col in day_columns]
+    return len(set(parent_refs)) == 1 and parent_refs[0] == f"{day_columns[0]}{row}"
 
 
-def section_for_row(sheet: XlsxSheet, row: int) -> str:
-    return normalize_line(normalize_text(sheet.value(f"A{row}"))) or "공통"
+def section_for_row(sheet: XlsxSheet, row: int, section_col: str) -> str:
+    return normalize_line(normalize_text(sheet.value(f"{section_col}{row}"))) or "공통"
 
 
 def group_ids_from_text(text: str) -> list[str]:
@@ -165,7 +220,7 @@ def parse_staff_line(line: str) -> tuple[str | None, list[str]]:
         staff = [collapse_spaces(item) for item in names.split(",") if collapse_spaces(item)]
         return collapse_spaces(role), staff
     if clean.endswith("강사"):
-        return "강사", [clean[: -len("강사")]]
+        return "강사", [collapse_spaces(clean[: -len("강사")])]
     return None, []
 
 
@@ -200,7 +255,9 @@ def parse_program_cell(text: str) -> dict[str, Any]:
         title = normalize_line(text)
     elif content_lines[0].startswith("맞춤형-"):
         subtitle = content_lines[0]
-        title = strip_known_tokens(content_lines[1] if len(content_lines) > 1 else content_lines[0].split("-", 1)[-1])
+        custom_lines = [strip_known_tokens(line) for line in content_lines[1:]]
+        custom_lines = [line for line in custom_lines if line]
+        title = " ".join(custom_lines) if custom_lines else content_lines[0].split("-", 1)[-1]
     elif content_lines[0].startswith("("):
         category_hint_line = content_lines[0]
         title = strip_known_tokens(content_lines[1] if len(content_lines) > 1 else "")
@@ -244,16 +301,53 @@ def parse_common_entry(text: str) -> dict[str, Any]:
     }
 
 
-def parse_entries_for_column(sheet: XlsxSheet, col: str, start_row: int, end_row: int) -> list[dict[str, Any]]:
-    entries: list[dict[str, Any]] = []
-    for row in range(start_row, end_row + 1):
-        raw = normalize_text(sheet.cell(f"{col}{row}")["value"])
+def merged_row_bounds(sheet: XlsxSheet, ref: str) -> tuple[int, int]:
+    _, base_row = split_cell_ref(ref)
+    min_row = base_row
+    max_row = base_row
+    for cell_ref, parent_ref in sheet.merged_parent.items():
+        if parent_ref != ref:
+            continue
+        _, row = split_cell_ref(cell_ref)
+        min_row = min(min_row, row)
+        max_row = max(max_row, row)
+    return min_row, max_row
+
+
+def assign_block_row(start_row: int, end_row: int, time_rows: list[int]) -> int:
+    overlapping = [row for row in time_rows if start_row <= row <= end_row]
+    if overlapping:
+        return overlapping[0]
+    previous = [row for row in time_rows if row <= start_row]
+    return previous[-1] if previous else time_rows[0]
+
+
+def collect_entries_by_block(
+    sheet: XlsxSheet,
+    col: str,
+    time_rows: list[int],
+    parser,
+) -> dict[int, list[dict[str, Any]]]:
+    grouped: dict[int, list[tuple[int, dict[str, Any]]]] = {}
+    seen_refs: set[str] = set()
+    for row in range(time_rows[0], sheet.max_row + 1):
+        ref = f"{col}{row}"
+        source_ref = sheet.merged_parent.get(ref, ref)
+        source_col, source_row = split_cell_ref(source_ref)
+        if source_col != col or source_ref in seen_refs:
+            continue
+        seen_refs.add(source_ref)
+        raw = normalize_text(sheet.value(ref))
         if not raw:
             continue
-        entry = parse_program_cell(raw)
-        entry["id"] = f"{col}{row}"
-        entries.append(entry)
-    return entries
+        block_row = assign_block_row(*merged_row_bounds(sheet, source_ref), time_rows)
+        parsed = parser(raw)
+        parsed["id"] = source_ref
+        grouped.setdefault(block_row, []).append((source_row, parsed))
+    return {
+        block_row: [parsed for _, parsed in sorted(entries, key=lambda item: item[0])]
+        for block_row, entries in grouped.items()
+    }
 
 
 def build_flat_entries(days: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -287,50 +381,55 @@ def build_flat_entries(days: list[dict[str, Any]]) -> list[dict[str, Any]]:
 def parse_program_sheet(path: str | Path, *, sheet_name: str | None = None, sheet_path: str | None = None) -> dict[str, Any]:
     workbook = XlsxSheet(Path(path), sheet_name=sheet_name, sheet_path=sheet_path)
     year = derive_year(path)
-    week_label = normalize_week_label(workbook.value("F3"))
-    day_headers = [parse_day_header(normalize_text(workbook.value(f"{col}5", merged=False)), year) for col in DAY_COLUMNS]
+    header_row, day_columns, time_col, section_col = detect_program_grid(workbook)
+    week_label = detect_week_label(workbook)
+    day_headers = [parse_day_header(normalize_text(workbook.value(f"{col}{header_row}", merged=False)), year) for col in day_columns]
     for header in day_headers:
         header["weekday"] = to_weekday_label(header["date"])
 
-    time_rows = parse_time_rows(workbook)
+    time_rows = parse_time_rows(workbook, time_col)
     windows = []
     for index, row in enumerate(time_rows):
         next_row = time_rows[index + 1] if index + 1 < len(time_rows) else row + 1
         windows.append((row, next_row - 1))
 
+    common_entries_by_block = collect_entries_by_block(workbook, day_columns[0], time_rows, parse_common_entry)
+    entries_by_day_and_block = {
+        col: collect_entries_by_block(workbook, col, time_rows, parse_program_cell)
+        for col in day_columns
+    }
+
     days = []
-    for col, header in zip(DAY_COLUMNS, day_headers):
+    for col, header in zip(day_columns, day_headers):
         blocks = []
         for start_row, end_row in windows:
-            start_text, end_text, start_min, end_min = parse_clock_range(normalize_text(workbook.value(f"B{start_row}", merged=False)))
+            start_text, end_text, start_min, end_min = parse_clock_range(normalize_text(workbook.value(f"{time_col}{start_row}", merged=False)))
             block = {
                 "id": f"{header['date']}-{start_text.replace(':', '')}",
                 "start": start_text,
                 "end": end_text,
                 "startMin": start_min,
                 "endMin": end_min,
-                "section": section_for_row(workbook, start_row),
+                "section": section_for_row(workbook, start_row, section_col),
                 "entries": [],
             }
-            if is_common_block(workbook, start_row):
-                raw = normalize_text(workbook.cell(f"C{start_row}")["value"])
-                if raw:
-                    parsed = parse_common_entry(raw)
+            if is_common_block(workbook, start_row, day_columns):
+                for parsed in common_entries_by_block.get(start_row, []):
                     block["entries"].append(
                         {
-                            "id": f"{header['date']}-{start_text.replace(':', '')}-all",
+                            "id": f"{header['date']}-{start_text.replace(':', '')}-{len(block['entries']) + 1}",
                             "title": parsed["title"],
                             "subtitle": parsed["subtitle"],
                             "categoryId": parsed["categoryId"],
-                            "groupIds": ["all"],
+                            "groupIds": parsed["groupIds"],
                             "staff": parsed["staff"],
                             "staffRole": parsed["staffRole"],
                             "location": "강당",
-                            "tags": [parsed["title"], "전체"],
+                            "tags": list(dict.fromkeys([parsed["title"]] + parsed["groupIds"] + [parsed["categoryId"]])),
                         }
                     )
             else:
-                for idx, parsed in enumerate(parse_entries_for_column(workbook, col, start_row, end_row), start=1):
+                for idx, parsed in enumerate(entries_by_day_and_block.get(col, {}).get(start_row, []), start=1):
                     block["entries"].append(
                         {
                             "id": f"{header['date']}-{start_text.replace(':', '')}-{idx}",

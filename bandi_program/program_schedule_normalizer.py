@@ -210,11 +210,58 @@ def _apply_2026_03_24_corrections(day: dict[str, Any]) -> None:
         block_1700["entries"][0]["subtitle"] = ""
 
 
+def _apply_2026_03_26_corrections(day: dict[str, Any]) -> None:
+    if day.get("date") != "2026-03-26":
+        return
+
+    blocks_by_start = {block.get("start"): block for block in day.get("blocks", [])}
+
+    block_1030 = blocks_by_start.get("10:30")
+    if block_1030:
+        block_1030["entries"] = [
+            _make_entry("2026-03-26-1030-1", "재활", "", "rehab", ["sarang"]),
+            _make_entry(
+                "2026-03-26-1030-2",
+                "알록달록 색깔고리놀이",
+                "맞춤형-인지담",
+                "custom",
+                ["mideum"],
+                staff=["김소정"],
+                staff_role="강사",
+            ),
+            _make_entry("2026-03-26-1030-3", "다트게임", "", "physical", ["somang"]),
+        ]
+
+    block_1400 = blocks_by_start.get("14:00")
+    if block_1400:
+        block_1400["entries"] = [
+            _make_entry("2026-03-26-1400-1", "점선따라 그리기", "", "cognitive", ["sarang"], staff=["김은비"], staff_role="준비"),
+            _make_entry("2026-03-26-1400-2", "요가교실", "", "physical", ["mideum"], staff=["김은비"], staff_role="진행"),
+            _make_entry("2026-03-26-1400-3", "재활", "", "rehab", ["somang"]),
+        ]
+
+    block_1500 = blocks_by_start.get("15:00")
+    if block_1500:
+        block_1500["entries"] = [
+            _make_entry("2026-03-26-1500-1", "농구", "", "physical", ["sarang"]),
+            _make_entry(
+                "2026-03-26-1500-2",
+                "점선따라 그리기",
+                "",
+                "cognitive",
+                ["mideum", "somang"],
+                staff=["김은비"],
+                staff_role="준비",
+            ),
+        ]
+
+
 def normalize_payload(payload: dict[str, Any]) -> dict[str, Any]:
     normalized = copy.deepcopy(payload)
     for day in normalized.get("days", []):
         _normalize_morning_block(day)
         _normalize_day_text(day)
         _apply_2026_03_24_corrections(day)
+        _apply_2026_03_26_corrections(day)
         _normalize_day_text(day)
     return normalized

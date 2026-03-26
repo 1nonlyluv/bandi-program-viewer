@@ -1,7 +1,8 @@
 import unittest
+from pathlib import Path
 
 from program_schedule_normalizer import normalize_payload
-from program_schedule_parser import derive_year, parse_common_entry, parse_day_header, parse_program_cell
+from program_schedule_parser import derive_year, parse_common_entry, parse_day_header, parse_program_cell, parse_program_sheet
 
 
 class ProgramScheduleParserHelpersTests(unittest.TestCase):
@@ -128,6 +129,71 @@ class ProgramScheduleParserHelpersTests(unittest.TestCase):
         self.assertEqual([entry["title"] for entry in block_1030["entries"]], ["재활", "꽃 타령", "농구"])
         block_1500 = normalized["days"][0]["blocks"][3]
         self.assertEqual([entry["groupIds"] for entry in block_1500["entries"]], [["sarang"], ["mideum", "somang"]])
+
+    def test_normalize_payload_applies_2026_03_26_program_corrections(self) -> None:
+        payload = {
+            "days": [
+                {
+                    "date": "2026-03-26",
+                    "weekday": "목",
+                    "blocks": [
+                        {
+                            "id": "2026-03-26-1030",
+                            "start": "10:30",
+                            "end": "11:30",
+                            "startMin": 630,
+                            "endMin": 690,
+                            "section": "오전",
+                            "entries": [],
+                        },
+                        {
+                            "id": "2026-03-26-1400",
+                            "start": "14:00",
+                            "end": "15:00",
+                            "startMin": 840,
+                            "endMin": 900,
+                            "section": "오후",
+                            "entries": [],
+                        },
+                        {
+                            "id": "2026-03-26-1500",
+                            "start": "15:00",
+                            "end": "16:00",
+                            "startMin": 900,
+                            "endMin": 960,
+                            "section": "오후",
+                            "entries": [],
+                        },
+                    ],
+                }
+            ]
+        }
+
+        normalized = normalize_payload(payload)
+        block_1030 = normalized["days"][0]["blocks"][0]
+        self.assertEqual([entry["title"] for entry in block_1030["entries"]], ["재활", "알록달록 색깔고리놀이", "다트게임"])
+        block_1400 = normalized["days"][0]["blocks"][1]
+        self.assertEqual([entry["title"] for entry in block_1400["entries"]], ["점선따라 그리기", "요가교실", "재활"])
+        block_1500 = normalized["days"][0]["blocks"][2]
+        self.assertEqual([entry["groupIds"] for entry in block_1500["entries"]], [["sarang"], ["mideum", "somang"]])
+        self.assertEqual([entry["title"] for entry in block_1500["entries"]], ["농구", "점선따라 그리기"])
+
+    def test_parse_program_sheet_reads_march_week4_xlsx(self) -> None:
+        workbook = Path("주간프로그램 계획표_3월4주차.xlsx")
+        parsed = parse_program_sheet(workbook)
+        day_0326 = next(day for day in parsed["days"] if day["date"] == "2026-03-26")
+        block_1030 = next(block for block in day_0326["blocks"] if block["start"] == "10:30")
+        self.assertEqual([entry["title"] for entry in block_1030["entries"]], ["재활", "알록달록 색깔고리놀이", "다트게임"])
+        block_1500 = next(block for block in day_0326["blocks"] if block["start"] == "15:00")
+        self.assertEqual([entry["groupIds"] for entry in block_1500["entries"]], [["sarang"], ["mideum", "somang"]])
+        self.assertEqual([entry["title"] for entry in block_1500["entries"]], ["농구", "점선따라 그리기"])
+
+        day_0323 = next(day for day in parsed["days"] if day["date"] == "2026-03-23")
+        block_1400 = next(block for block in day_0323["blocks"] if block["start"] == "14:00")
+        self.assertEqual(
+            [entry["title"] for entry in block_1400["entries"]],
+            ["재활", "예배", "다른 그림찾기", "고리던지기"],
+        )
 
 
 if __name__ == "__main__":
