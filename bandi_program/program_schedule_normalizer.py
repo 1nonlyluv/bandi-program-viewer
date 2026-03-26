@@ -189,8 +189,8 @@ def _normalize_fixed_blocks(day: dict[str, Any]) -> None:
         staff = list(entry.get("staff", []))
         if not staff and "담당:" in str(entry.get("title", "")):
             staff = [str(entry["title"]).split("담당:", 1)[1].strip()]
-        entry["title"] = "오후 간식 및 건강체조2"
-        entry["subtitle"] = ""
+        entry["title"] = "오후 간식"
+        entry["subtitle"] = "건강체조2"
         entry["staff"] = staff
         entry["staffRole"] = "담당" if staff else ""
 
