@@ -601,6 +601,7 @@ body::before {
   --pv-now-panel-height: 220px;
   --pv-now-panel-gap: 16px;
   --pv-now-rail-padding: 56px;
+  --pv-now-expanded-snap-offset: 18px;
   border-radius: 34px;
   padding: 18px 14px 14px;
   display: grid;
@@ -636,6 +637,7 @@ body::before {
 .pv-now-stage.is-expanded .pv-now-viewport {
   height: min(72vh, calc((var(--pv-now-panel-height) * 4) + (var(--pv-now-panel-gap) * 4)));
   mask-image: none;
+  scroll-padding-top: var(--pv-now-expanded-snap-offset);
 }
 
 .pv-now-track {
@@ -646,8 +648,8 @@ body::before {
 }
 
 .pv-now-stage.is-expanded .pv-now-track {
-  padding-top: 0;
-  padding-bottom: 28px;
+  padding-top: var(--pv-now-expanded-snap-offset);
+  padding-bottom: calc(28px + var(--pv-now-expanded-snap-offset));
 }
 
 .pv-now-panel {
@@ -675,6 +677,7 @@ body::before {
   opacity: 1;
   transform: none;
   filter: none;
+  scroll-snap-align: start;
 }
 
 .pv-now-panel-time {
