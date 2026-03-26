@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -25,6 +25,7 @@ GROUP_MAP = {
     "소망반": "somang",
     "전체": "all",
 }
+WEEKDAY_ORDER = "월화수목금토일"
 
 
 def collapse_spaces(value: str) -> str:
@@ -136,7 +137,44 @@ def detect_week_label(sheet: XlsxSheet) -> str:
 
 def to_weekday_label(date_text: str) -> str:
     dt = datetime.strptime(date_text, "%Y-%m-%d")
-    return "월화수목금토일"[dt.weekday()]
+    return WEEKDAY_ORDER[dt.weekday()]
+
+
+def detect_weekday_hints(sheet: XlsxSheet, header_row: int, day_columns: tuple[str, ...]) -> list[str]:
+    if header_row <= 1:
+        return []
+    hints: list[str] = []
+    for col in day_columns:
+        text = normalize_line(normalize_text(sheet.value(f"{col}{header_row - 1}", merged=False)))
+        hints.append(text if text in WEEKDAY_ORDER else "")
+    return hints
+
+
+def align_day_headers_with_weekday_hints(
+    day_headers: list[dict[str, str]],
+    weekday_hints: list[str],
+) -> list[dict[str, str]]:
+    if not day_headers or len(day_headers) != len(weekday_hints):
+        return day_headers
+    if not weekday_hints or any(not hint for hint in weekday_hints):
+        return day_headers
+
+    weekday_indexes = [WEEKDAY_ORDER.index(hint) for hint in weekday_hints]
+    if any(curr != prev + 1 for prev, curr in zip(weekday_indexes, weekday_indexes[1:])):
+        return day_headers
+
+    first_date = datetime.strptime(day_headers[0]["date"], "%Y-%m-%d")
+    if to_weekday_label(day_headers[0]["date"]) != weekday_hints[0]:
+        return day_headers
+
+    aligned: list[dict[str, str]] = []
+    changed = False
+    for index, header in enumerate(day_headers):
+        corrected_date = (first_date + timedelta(days=index)).strftime("%Y-%m-%d")
+        if header["date"] != corrected_date or to_weekday_label(header["date"]) != weekday_hints[index]:
+            changed = True
+        aligned.append({**header, "date": corrected_date, "weekday": weekday_hints[index]})
+    return aligned if changed else day_headers
 
 
 def parse_time_rows(sheet: XlsxSheet, time_col: str) -> list[int]:
@@ -384,6 +422,8 @@ def parse_program_sheet(path: str | Path, *, sheet_name: str | None = None, shee
     header_row, day_columns, time_col, section_col = detect_program_grid(workbook)
     week_label = detect_week_label(workbook)
     day_headers = [parse_day_header(normalize_text(workbook.value(f"{col}{header_row}", merged=False)), year) for col in day_columns]
+    weekday_hints = detect_weekday_hints(workbook, header_row, day_columns)
+    day_headers = align_day_headers_with_weekday_hints(day_headers, weekday_hints)
     for header in day_headers:
         header["weekday"] = to_weekday_label(header["date"])
 

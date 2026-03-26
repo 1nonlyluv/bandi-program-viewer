@@ -6,9 +6,7 @@ name: Deploy Bandi Program Webapp
       - main
     paths:
       - "bandi_program/webapp/**"
-      - "bandi_program/data/generated/program_schedule_week2.json"
-      - "bandi_program/data/generated/program_schedule_week3.json"
-      - "bandi_program/data/generated/program_schedule_week4.json"
+      - "bandi_program/data/generated/program_schedule_week*.json"
       - "bandi_program/build_program_schedule_bundle.py"
       - "bandi_program/write_webapp_version.py"
       - ".github/workflows/deploy-bandi-program-webapp.yml"
@@ -42,9 +40,7 @@ jobs:
         working-directory: bandi_program
         run: |
           python3 build_program_schedule_bundle.py \
-            data/generated/program_schedule_week2.json \
-            data/generated/program_schedule_week3.json \
-            data/generated/program_schedule_week4.json \
+            data/generated/program_schedule_week*.json \
             --output webapp/assets/program_schedule.json
 
       - name: Write webapp version

@@ -2,7 +2,14 @@ import unittest
 from pathlib import Path
 
 from program_schedule_normalizer import normalize_payload
-from program_schedule_parser import derive_year, parse_common_entry, parse_day_header, parse_program_cell, parse_program_sheet
+from program_schedule_parser import (
+    align_day_headers_with_weekday_hints,
+    derive_year,
+    parse_common_entry,
+    parse_day_header,
+    parse_program_cell,
+    parse_program_sheet,
+)
 
 
 class ProgramScheduleParserHelpersTests(unittest.TestCase):
@@ -13,6 +20,16 @@ class ProgramScheduleParserHelpersTests(unittest.TestCase):
 
     def test_derive_year_from_filename(self) -> None:
         self.assertEqual(derive_year("주간프로그램 계획표(2026-1).xlsx"), 2026)
+
+    def test_align_day_headers_with_weekday_hints_corrects_sequential_dates(self) -> None:
+        headers = [
+            {"date": "2026-03-30", "venueManager": "김은비", "weekday": "", "label": "3/30 강당:김은비"},
+            {"date": "2026-03-30", "venueManager": "강선진", "weekday": "", "label": "3/30 강당:강선진"},
+            {"date": "2026-04-01", "venueManager": "변해미", "weekday": "", "label": "4/1 강당:변해미"},
+        ]
+        aligned = align_day_headers_with_weekday_hints(headers, ["월", "화", "수"])
+        self.assertEqual([header["date"] for header in aligned], ["2026-03-30", "2026-03-31", "2026-04-01"])
+        self.assertEqual([header["weekday"] for header in aligned], ["월", "화", "수"])
 
     def test_parse_standard_program_cell(self) -> None:
         parsed = parse_program_cell("종이접기(인지)\n나는낭만고양이\n(믿음반)\n준비:강선진")
@@ -194,6 +211,18 @@ class ProgramScheduleParserHelpersTests(unittest.TestCase):
             [entry["title"] for entry in block_1400["entries"]],
             ["재활", "예배", "다른 그림찾기", "고리던지기"],
         )
+
+    def test_parse_program_sheet_reads_march_week5_xlsx(self) -> None:
+        workbook = Path("주간프로그램 계획표_3월5주차.xlsx")
+        parsed = parse_program_sheet(workbook)
+        self.assertEqual(
+            [day["date"] for day in parsed["days"]],
+            ["2026-03-30", "2026-03-31", "2026-04-01", "2026-04-02", "2026-04-03", "2026-04-04"],
+        )
+
+        day_0331 = next(day for day in parsed["days"] if day["date"] == "2026-03-31")
+        block_1400 = next(block for block in day_0331["blocks"] if block["start"] == "14:00")
+        self.assertEqual([entry["title"] for entry in block_1400["entries"]], ["재활", "방향과 순서"])
 
 
 if __name__ == "__main__":
