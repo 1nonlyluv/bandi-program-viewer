@@ -19,11 +19,13 @@
   }
 
   function getDataUrl() {
-    return "./assets/program_schedule.json";
+    var params = new URLSearchParams(window.location.search);
+    var version = params.get("v");
+    return "./assets/program_schedule.json" + (version ? "?v=" + encodeURIComponent(version) : "");
   }
 
   function fetchJson(url) {
-    return fetch(url).then(function (response) {
+    return fetch(url, { cache: "no-store" }).then(function (response) {
       if (!response.ok) {
         throw new Error("Failed to load " + url);
       }
