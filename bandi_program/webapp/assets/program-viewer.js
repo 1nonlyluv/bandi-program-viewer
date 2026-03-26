@@ -317,6 +317,7 @@
       .replace(/등원서비스/g, "등원 서비스")
       .replace(/송영준비/g, "송영 준비")
       .replace(/송영서비스/g, "송영 서비스")
+      .replace(/(담당|준비|진행)-\s*/g, "$1: ")
       .replace(/점심식사/g, "점심 식사")
       .replace(/저녁식사/g, "저녁 식사")
       .replace(/오전간식/g, "오전 간식")
@@ -368,7 +369,34 @@
     if (entry.staffRole === "담당") {
       return " (담당: " + names + ")";
     }
+    if (entry.staffRole === "진행") {
+      return " (진행: " + names + ")";
+    }
     return " (" + names + ")";
+  }
+
+  function stripEmbeddedStaffMarker(text, entry) {
+    var value = normalizeDisplayText(text || "");
+    var names = entry && entry.staff && entry.staff.length ? entry.staff.join(", ") : "";
+    if (!value || !names) {
+      return value;
+    }
+    var escapedNames = names.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (entry.staffRole === "강사") {
+      return value.replace(new RegExp("\\s*" + escapedNames + "\\s*강사\\s*$"), "").trim();
+    }
+    if (entry.staffRole === "담당" || entry.staffRole === "준비" || entry.staffRole === "진행") {
+      return value.replace(new RegExp("\\s*" + entry.staffRole + "[:：]\\s*" + escapedNames + "\\s*$"), "").trim();
+    }
+    return value;
+  }
+
+  function renderProgramCopyHtml(mainText, metaText) {
+    var html = '<span class="pv-now-program-copy-main">' + escapeHtml(mainText) + "</span>";
+    if (metaText) {
+      html += '<span class="pv-now-program-meta">' + escapeHtml(metaText) + "</span>";
+    }
+    return '<span class="pv-now-program-copy">' + html + "</span>";
   }
 
   function renderEntryIcon(entry) {
@@ -390,19 +418,20 @@
   }
 
   function formatEntryContentHtml(entry) {
-    var title = normalizeDisplayText(entry.title || "");
+    var title = stripEmbeddedStaffMarker(entry.title || "", entry);
     var subtitle = normalizeDisplayText(entry.subtitle || "");
     var staffSuffix = formatEntryStaffSuffix(entry);
     var iconHtml = renderEntryIcon(entry);
     var bodyText = "";
+    var metaText = "";
 
     if (entry.categoryId === "custom") {
       bodyText = formatCustomTrack(subtitle);
       if (title) {
         bodyText += (bodyText ? " - " : "") + title;
       }
-      bodyText += staffSuffix;
-      return iconHtml + '<span class="pv-now-program-copy">' + escapeHtml(bodyText) + "</span>";
+      metaText = staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText);
     }
 
     if (entry.categoryId === "physical" || entry.categoryId === "cognitive") {
@@ -410,16 +439,18 @@
       if (subtitle) {
         bodyText += " - " + subtitle;
       }
-      bodyText += staffSuffix;
-      return iconHtml + '<span class="pv-now-program-copy">' + escapeHtml(bodyText) + "</span>";
+      metaText = staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText);
     }
 
     bodyText = title;
     if (subtitle) {
-      bodyText += " (" + subtitle + ")";
+      metaText = subtitle;
     }
-    bodyText += staffSuffix;
-    return '<span class="pv-now-program-copy">' + escapeHtml(bodyText) + "</span>";
+    if (staffSuffix) {
+      metaText = metaText ? metaText + " / " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "") : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
+    }
+    return renderProgramCopyHtml(bodyText, metaText);
   }
 
   function getEntryGroupLabel(entry, groupMap) {
@@ -444,16 +475,7 @@
         contentHtml: '<span class="pv-now-program-copy">표시할 프로그램이 없습니다.</span>'
       }];
     }
-    return entries.slice().sort(function (a, b) {
-      var aGroup = a && a.groupIds && a.groupIds[0] ? a.groupIds[0] : "all";
-      var bGroup = b && b.groupIds && b.groupIds[0] ? b.groupIds[0] : "all";
-      var aOrder = aGroup === "all" ? -1 : (groupOrder[aGroup] != null ? groupOrder[aGroup] : 999);
-      var bOrder = bGroup === "all" ? -1 : (groupOrder[bGroup] != null ? groupOrder[bGroup] : 999);
-      if (aOrder !== bOrder) {
-        return aOrder - bOrder;
-      }
-      return String(a.title || "").localeCompare(String(b.title || ""), "ko");
-    }).map(function (entry, index) {
+    return entries.map(function (entry, index) {
       return {
         key: entry.id || ((block && block.id ? block.id : "block") + "-" + index),
         label: getEntryGroupLabel(entry, groupMap),
