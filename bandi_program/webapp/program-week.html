@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>반디 프로그램 뷰어 주간</title>
+  <script>
+    (function () {
+      function appendScript(src) {
+        return new Promise(function (resolve, reject) {
+          var script = document.createElement("script");
+          script.src = src;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.body.appendChild(script);
+        });
+      }
+
+      function loadAssets(version) {
+        var suffix = version ? "?v=" + encodeURIComponent(version) : "";
+        var stylesheet = document.createElement("link");
+        stylesheet.rel = "stylesheet";
+        stylesheet.href = "./assets/program-viewer.css" + suffix;
+        document.head.appendChild(stylesheet);
+        appendScript("./assets/selectors.js" + suffix).then(function () {
+          return appendScript("./assets/program-viewer.js" + suffix);
+        });
+      }
+
+      fetch("./assets/version.json", { cache: "no-store" })
+        .then(function (response) { return response.ok ? response.json() : null; })
+        .then(function (payload) { loadAssets(payload && payload.version ? String(payload.version) : ""); })
+        .catch(function () { loadAssets(""); });
+    })();
+  </script>
+</head>
+<body data-page="week">
+  <main class="pv-shell" id="app"></main>
+</body>
+</html>

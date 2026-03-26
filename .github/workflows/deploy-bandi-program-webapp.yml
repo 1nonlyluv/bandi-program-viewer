@@ -10,6 +10,7 @@ name: Deploy Bandi Program Webapp
       - "bandi_program/data/generated/program_schedule_week3.json"
       - "bandi_program/data/generated/program_schedule_week4.json"
       - "bandi_program/build_program_schedule_bundle.py"
+      - "bandi_program/write_webapp_version.py"
       - ".github/workflows/deploy-bandi-program-webapp.yml"
   workflow_dispatch:
 
@@ -45,6 +46,13 @@ jobs:
             data/generated/program_schedule_week3.json \
             data/generated/program_schedule_week4.json \
             --output webapp/assets/program_schedule.json
+
+      - name: Write webapp version
+        working-directory: bandi_program
+        run: |
+          python3 write_webapp_version.py \
+            --output webapp/assets/version.json \
+            --version "${GITHUB_SHA::12}-${GITHUB_RUN_NUMBER}"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
