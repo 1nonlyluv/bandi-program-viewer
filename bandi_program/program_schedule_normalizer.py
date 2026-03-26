@@ -163,6 +163,38 @@ def _normalize_day_text(day: dict[str, Any]) -> None:
             entry.update(_normalize_entry(entry))
 
 
+def _normalize_fixed_blocks(day: dict[str, Any]) -> None:
+    blocks_by_start = {block.get("start"): block for block in day.get("blocks", [])}
+
+    block_0930 = blocks_by_start.get("09:30")
+    if block_0930 and block_0930.get("entries"):
+        entry = block_0930["entries"][0]
+        entry["title"] = "명상의 시간/티타임"
+        entry["subtitle"] = ""
+
+    block_1010 = blocks_by_start.get("10:10")
+    if block_1010 and block_1010.get("entries"):
+        entry = block_1010["entries"][0]
+        staff = list(entry.get("staff", []))
+        if not staff and "담당:" in str(entry.get("title", "")):
+            staff = [str(entry["title"]).split("담당:", 1)[1].strip()]
+        entry["title"] = "건강체조1"
+        entry["subtitle"] = ""
+        entry["staff"] = staff
+        entry["staffRole"] = "담당" if staff else ""
+
+    block_1340 = blocks_by_start.get("13:40")
+    if block_1340 and block_1340.get("entries"):
+        entry = block_1340["entries"][0]
+        staff = list(entry.get("staff", []))
+        if not staff and "담당:" in str(entry.get("title", "")):
+            staff = [str(entry["title"]).split("담당:", 1)[1].strip()]
+        entry["title"] = "오후 간식 및 건강체조2"
+        entry["subtitle"] = ""
+        entry["staff"] = staff
+        entry["staffRole"] = "담당" if staff else ""
+
+
 def _apply_2026_03_24_corrections(day: dict[str, Any]) -> None:
     if day.get("date") != "2026-03-24":
         return
@@ -264,6 +296,7 @@ def normalize_payload(payload: dict[str, Any]) -> dict[str, Any]:
     for day in normalized.get("days", []):
         _normalize_morning_block(day)
         _normalize_day_text(day)
+        _normalize_fixed_blocks(day)
         _apply_2026_03_24_corrections(day)
         _apply_2026_03_26_corrections(day)
         _normalize_day_text(day)

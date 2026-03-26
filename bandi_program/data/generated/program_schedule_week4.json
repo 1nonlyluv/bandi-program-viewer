@@ -109,8 +109,8 @@
           "entries": [
             {
               "id": "2026-03-23-0930-1",
-              "title": "명상의 시간",
-              "subtitle": "티타임",
+              "title": "명상의 시간/티타임",
+              "subtitle": "",
               "categoryId": "routine",
               "groupIds": [
                 "all"
@@ -163,14 +163,16 @@
           "entries": [
             {
               "id": "2026-03-23-1010-1",
-              "title": "(건강체조1) 담당: 변해미",
+              "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "변해미"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "(건강체조1) 담당-변해미",
@@ -309,14 +311,16 @@
           "entries": [
             {
               "id": "2026-03-23-1340-1",
-              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
+              "title": "오후 간식 및 건강체조2",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "강선진"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "오후간식 및 (건강체조2) 담당-강선진",
@@ -552,8 +556,8 @@
           "entries": [
             {
               "id": "2026-03-24-0930-1",
-              "title": "명상의 시간",
-              "subtitle": "티타임",
+              "title": "명상의 시간/티타임",
+              "subtitle": "",
               "categoryId": "routine",
               "groupIds": [
                 "all"
@@ -606,14 +610,16 @@
           "entries": [
             {
               "id": "2026-03-24-1010-1",
-              "title": "(건강체조1) 담당: 변해미",
+              "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "변해미"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "(건강체조1) 담당-변해미",
@@ -750,14 +756,16 @@
           "entries": [
             {
               "id": "2026-03-24-1340-1",
-              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
+              "title": "오후 간식 및 건강체조2",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "강선진"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "오후간식 및 (건강체조2) 담당-강선진",
@@ -976,8 +984,8 @@
           "entries": [
             {
               "id": "2026-03-25-0930-1",
-              "title": "명상의 시간",
-              "subtitle": "티타임",
+              "title": "명상의 시간/티타임",
+              "subtitle": "",
               "categoryId": "routine",
               "groupIds": [
                 "all"
@@ -1030,14 +1038,16 @@
           "entries": [
             {
               "id": "2026-03-25-1010-1",
-              "title": "(건강체조1) 담당: 변해미",
+              "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "변해미"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "(건강체조1) 담당-변해미",
@@ -1176,14 +1186,16 @@
           "entries": [
             {
               "id": "2026-03-25-1340-1",
-              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
+              "title": "오후 간식 및 건강체조2",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "강선진"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "오후간식 및 (건강체조2) 담당-강선진",
@@ -1368,8 +1380,8 @@
           "entries": [
             {
               "id": "2026-03-26-0930-1",
-              "title": "명상의 시간",
-              "subtitle": "티타임",
+              "title": "명상의 시간/티타임",
+              "subtitle": "",
               "categoryId": "routine",
               "groupIds": [
                 "all"
@@ -1422,14 +1434,16 @@
           "entries": [
             {
               "id": "2026-03-26-1010-1",
-              "title": "(건강체조1) 담당: 변해미",
+              "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "변해미"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "(건강체조1) 담당-변해미",
@@ -1566,14 +1580,16 @@
           "entries": [
             {
               "id": "2026-03-26-1340-1",
-              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
+              "title": "오후 간식 및 건강체조2",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "강선진"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "오후간식 및 (건강체조2) 담당-강선진",
@@ -1794,8 +1810,8 @@
           "entries": [
             {
               "id": "2026-03-27-0930-1",
-              "title": "명상의 시간",
-              "subtitle": "티타임",
+              "title": "명상의 시간/티타임",
+              "subtitle": "",
               "categoryId": "routine",
               "groupIds": [
                 "all"
@@ -1848,14 +1864,16 @@
           "entries": [
             {
               "id": "2026-03-27-1010-1",
-              "title": "(건강체조1) 담당: 변해미",
+              "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "변해미"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "(건강체조1) 담당-변해미",
@@ -1992,14 +2010,16 @@
           "entries": [
             {
               "id": "2026-03-27-1340-1",
-              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
+              "title": "오후 간식 및 건강체조2",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "강선진"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "오후간식 및 (건강체조2) 담당-강선진",
@@ -2220,8 +2240,8 @@
           "entries": [
             {
               "id": "2026-03-28-0930-1",
-              "title": "명상의 시간",
-              "subtitle": "티타임",
+              "title": "명상의 시간/티타임",
+              "subtitle": "",
               "categoryId": "routine",
               "groupIds": [
                 "all"
@@ -2274,14 +2294,16 @@
           "entries": [
             {
               "id": "2026-03-28-1010-1",
-              "title": "(건강체조1) 담당: 변해미",
+              "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "변해미"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "(건강체조1) 담당-변해미",
@@ -2382,14 +2404,16 @@
           "entries": [
             {
               "id": "2026-03-28-1340-1",
-              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
+              "title": "오후 간식 및 건강체조2",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "강선진"
+              ],
+              "staffRole": "담당",
               "location": "강당",
               "tags": [
                 "오후간식 및 (건강체조2) 담당-강선진",
