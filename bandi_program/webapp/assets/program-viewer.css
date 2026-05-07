@@ -839,6 +839,7 @@ a.pv-day-card {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .pv-now-home {
@@ -867,6 +868,155 @@ a.pv-day-card {
 .pv-now-home-text {
   white-space: nowrap;
   letter-spacing: -0.02em;
+}
+
+.pv-now-calendar-anchor {
+  position: relative;
+}
+
+.pv-now-icon-button {
+  width: 54px;
+  height: 54px;
+  padding: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(46, 50, 57, 0.1);
+  background: rgba(255, 255, 255, 0.78);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pv-accent-strong);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.28);
+}
+
+.pv-now-icon-button svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.pv-now-calendar-popover {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: min(88vw, 340px);
+  padding: 14px;
+  border-radius: 22px;
+  border: 1px solid rgba(46, 50, 57, 0.12);
+  background: rgba(255, 251, 246, 0.98);
+  box-shadow: 0 22px 36px rgba(94, 75, 54, 0.18);
+  z-index: 20;
+}
+
+.pv-now-calendar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.pv-now-calendar-selects {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 auto;
+}
+
+.pv-now-calendar-select,
+.pv-now-calendar-close {
+  min-height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(46, 50, 57, 0.12);
+  background: rgba(255,255,255,0.92);
+  color: var(--pv-ink);
+  font: inherit;
+  font-weight: 700;
+}
+
+.pv-now-calendar-select {
+  min-width: 0;
+  padding: 0 12px;
+}
+
+.pv-now-calendar-close {
+  padding: 0 12px;
+  flex: 0 0 auto;
+}
+
+.pv-now-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.pv-calendar-popup-weekday {
+  min-height: 26px;
+  display: grid;
+  place-items: center;
+  font-size: 0.73rem;
+  font-weight: 760;
+  color: #6f747d;
+}
+
+.pv-calendar-popup-weekday.is-sunday {
+  color: #b75a64;
+}
+
+.pv-calendar-popup-day {
+  min-height: 66px;
+  padding: 7px 6px;
+  border-radius: 14px;
+  border: 1px solid rgba(49, 53, 60, 0.08);
+  background: #fbf7f0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+  color: inherit;
+}
+
+.pv-calendar-popup-day.empty-slot {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.pv-calendar-popup-day.is-selected {
+  border-color: rgba(143,115,92,0.38);
+  box-shadow: 0 0 0 2px rgba(143,115,92,0.08);
+}
+
+.pv-calendar-popup-day.is-today {
+  border-color: rgba(191, 108, 67, 0.24);
+}
+
+.pv-calendar-popup-day.is-sunday .pv-calendar-popup-number,
+.pv-calendar-popup-day.is-holiday .pv-calendar-popup-number {
+  color: #b14d56;
+}
+
+.pv-calendar-popup-number {
+  font-family: var(--pv-font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4a4f58;
+}
+
+.pv-calendar-popup-note {
+  margin-top: auto;
+  font-size: 0.66rem;
+  line-height: 1.35;
+  color: #7a7f87;
+  word-break: keep-all;
+}
+
+.pv-calendar-popup-day.is-holiday .pv-calendar-popup-note {
+  color: #9d6067;
+}
+
+.pv-calendar-popup-note.is-empty {
+  opacity: 0;
 }
 
 .pv-now-link {
@@ -915,9 +1065,20 @@ a.pv-day-card {
 
 .pv-now-selected-date {
   margin: 10px 0 0;
-  color: var(--pv-ink-soft);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: baseline;
   font-size: 0.96rem;
   font-weight: 700;
+}
+
+.pv-now-date-main {
+  color: var(--pv-ink-soft);
+}
+
+.pv-now-date-note {
+  color: #b14d56;
 }
 
 .pv-now-stage {
@@ -1195,6 +1356,26 @@ a.pv-day-card {
   .pv-now-home {
     min-height: 50px;
     padding-right: 16px;
+  }
+
+  .pv-now-icon-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pv-now-calendar-popover {
+    right: -4px;
+    width: min(92vw, 332px);
+    padding: 12px;
+  }
+
+  .pv-now-calendar-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pv-now-calendar-close {
+    width: 100%;
   }
 
   .pv-now-link {

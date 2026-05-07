@@ -108,6 +108,14 @@
     });
   }
 
+  function renderCalendarGlyph() {
+    return [
+      '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">',
+      '  <path d="M7 2.75a.75.75 0 0 1 .75.75v1h8.5v-1a.75.75 0 0 1 1.5 0v1H19A2.75 2.75 0 0 1 21.75 7v11A2.75 2.75 0 0 1 19 20.75H5A2.75 2.75 0 0 1 2.25 18V7A2.75 2.75 0 0 1 5 4.25h1.25v-1A.75.75 0 0 1 7 2.75Zm12.75 7H3.75V18c0 .69.56 1.25 1.25 1.25h14c.69 0 1.25-.56 1.25-1.25V9.75Zm-14.75 3a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Zm5 0a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Zm5 0a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Zm-10 4a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Zm5 0a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Zm5 0a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75ZM5 5.75C4.31 5.75 3.75 6.31 3.75 7v1.25h16.5V7c0-.69-.56-1.25-1.25-1.25H5Z"/>',
+      "</svg>"
+    ].join("");
+  }
+
   function toggleListValue(list, value) {
     var next = (list || []).slice();
     var index = next.indexOf(value);
@@ -196,7 +204,6 @@
       navLink("day", page, paramsObj, "오늘"),
       navLink("week", page, paramsObj, "주간"),
       navLink("browse", page, paramsObj, "검색"),
-      navLink("calendar", page, paramsObj, "달력"),
       "  </nav>",
       "</header>"
     ].join("");
@@ -408,11 +415,25 @@
     };
   }
 
-  function formatNowDateLabel(day) {
+  function getNowDateLabelParts(day) {
     if (!day) {
-      return "날짜 데이터가 없습니다.";
+      return {
+        main: "날짜 데이터가 없습니다.",
+        note: ""
+      };
     }
-    return formatDateLabel(day.date, day.weekday) + " (" + getWeekOfMonthLabel(day.date) + ")";
+    return {
+      main: formatDateLabel(day.date, day.weekday) + " (" + getWeekOfMonthLabel(day.date) + ")",
+      note: getCalendarSpecialInfo(day.date).note || ""
+    };
+  }
+
+  function renderNowDateLabel(day) {
+    var parts = getNowDateLabelParts(day);
+    return [
+      '<span class="pv-now-date-main">' + escapeHtml(parts.main) + "</span>",
+      parts.note ? '<span class="pv-now-date-note">' + escapeHtml(parts.note) + "</span>" : ""
+    ].join("");
   }
 
   function formatEntryStaffSuffix(entry) {
@@ -689,6 +710,180 @@
     });
   }
 
+  function buildCalendarMonthYearOptions(months) {
+    var years = [];
+    var byYear = {};
+    (months || []).forEach(function (month) {
+      var parts = String(month.key || "").split("-");
+      var year = Number(parts[0]);
+      var monthNumber = Number(parts[1]);
+      if (!year || !monthNumber) {
+        return;
+      }
+      if (years.indexOf(year) === -1) {
+        years.push(year);
+      }
+      if (!byYear[year]) {
+        byYear[year] = [];
+      }
+      byYear[year].push(monthNumber);
+    });
+    years.sort(function (a, b) { return a - b; });
+    Object.keys(byYear).forEach(function (year) {
+      byYear[year].sort(function (a, b) { return a - b; });
+    });
+    return {
+      years: years,
+      monthsByYear: byYear
+    };
+  }
+
+  function buildMonthKey(year, monthNumber) {
+    return String(year) + "-" + String(monthNumber).padStart(2, "0");
+  }
+
+  function renderNowCalendarGrid(state) {
+    if (!state.calendarGrid) {
+      return;
+    }
+    var visibleDays = buildCalendarMonthDays(state.calendarMonthKey, state.calendarDayMap);
+    var weekdayHeader = WEEKDAY_NAMES.map(function (weekday, index) {
+      return '<div class="pv-calendar-popup-weekday' + (index === 0 ? " is-sunday" : "") + '">' + escapeHtml(weekday) + "</div>";
+    }).join("");
+    var firstWeekday = visibleDays.length ? visibleDays[0].weekdayIndex : 0;
+    var leadingSlots = Array.from({ length: firstWeekday }, function () {
+      return '<div class="pv-calendar-popup-day empty-slot" aria-hidden="true"></div>';
+    }).join("");
+    var dayCards = visibleDays.map(function (calendarDay) {
+      var special = getCalendarSpecialInfo(calendarDay.date);
+      var noteText = special.note || "\u00A0";
+      var cardCls = "pv-calendar-popup-day";
+      if (calendarDay.weekdayIndex === 0) {
+        cardCls += " is-sunday";
+      }
+      if (special.isHoliday) {
+        cardCls += " is-holiday";
+      }
+      if (state.calendarSelectedDate === calendarDay.date) {
+        cardCls += " is-selected";
+      }
+      if (state.todayDate === calendarDay.date) {
+        cardCls += " is-today";
+      }
+      return [
+        '<button type="button" class="' + cardCls + '" data-date="' + escapeHtml(calendarDay.date) + '">',
+        '  <span class="pv-calendar-popup-number">' + escapeHtml(String(calendarDay.number)) + "</span>",
+        '  <span class="pv-calendar-popup-note' + (noteText.trim() ? "" : " is-empty") + '">' + escapeHtml(noteText) + "</span>",
+        "</button>"
+      ].join("");
+    }).join("");
+    state.calendarGrid.innerHTML = weekdayHeader + leadingSlots + dayCards;
+  }
+
+  function syncNowCalendarSelects(state) {
+    if (!state.calendarYearSelect || !state.calendarMonthSelect) {
+      return;
+    }
+    var parts = String(state.calendarMonthKey || "").split("-");
+    var activeYear = Number(parts[0]);
+    var activeMonth = Number(parts[1]);
+    state.calendarYearSelect.innerHTML = state.calendarOptions.years.map(function (year) {
+      return '<option value="' + escapeHtml(String(year)) + '"' + (year === activeYear ? " selected" : "") + ">" + escapeHtml(String(year)) + "</option>";
+    }).join("");
+    var monthList = state.calendarOptions.monthsByYear[activeYear] || [];
+    state.calendarMonthSelect.innerHTML = monthList.map(function (monthNumber) {
+      return '<option value="' + escapeHtml(String(monthNumber)) + '"' + (monthNumber === activeMonth ? " selected" : "") + ">" + escapeHtml(String(monthNumber)) + "월</option>";
+    }).join("");
+  }
+
+  function openNowCalendarPopover(state) {
+    if (!state.calendarPopover || !state.calendarButton) {
+      return;
+    }
+    state.calendarPopover.hidden = false;
+    state.calendarButton.setAttribute("aria-expanded", "true");
+    renderNowCalendarGrid(state);
+  }
+
+  function closeNowCalendarPopover(state) {
+    if (!state.calendarPopover || !state.calendarButton) {
+      return;
+    }
+    state.calendarPopover.hidden = true;
+    state.calendarButton.setAttribute("aria-expanded", "false");
+  }
+
+  function bindNowCalendarPopover(state) {
+    if (!state.calendarButton || !state.calendarPopover) {
+      return;
+    }
+
+    var onDocumentClick = function (event) {
+      if (state.calendarPopover.hidden) {
+        return;
+      }
+      if (state.calendarPopover.contains(event.target) || state.calendarButton.contains(event.target)) {
+        return;
+      }
+      closeNowCalendarPopover(state);
+    };
+
+    var onDocumentKeydown = function (event) {
+      if (event.key === "Escape") {
+        closeNowCalendarPopover(state);
+      }
+    };
+
+    state.calendarButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (state.calendarPopover.hidden) {
+        openNowCalendarPopover(state);
+      } else {
+        closeNowCalendarPopover(state);
+      }
+    });
+
+    state.calendarCloseButton.addEventListener("click", function () {
+      closeNowCalendarPopover(state);
+    });
+
+    state.calendarYearSelect.addEventListener("change", function (event) {
+      var nextYear = Number(event.target.value);
+      var currentMonth = Number(state.calendarMonthSelect.value);
+      var months = state.calendarOptions.monthsByYear[nextYear] || [];
+      if (months.indexOf(currentMonth) === -1) {
+        currentMonth = months[0] || currentMonth;
+      }
+      state.calendarMonthKey = buildMonthKey(nextYear, currentMonth);
+      syncNowCalendarSelects(state);
+      renderNowCalendarGrid(state);
+    });
+
+    state.calendarMonthSelect.addEventListener("change", function (event) {
+      var year = Number(state.calendarYearSelect.value);
+      var monthNumber = Number(event.target.value);
+      state.calendarMonthKey = buildMonthKey(year, monthNumber);
+      renderNowCalendarGrid(state);
+    });
+
+    state.calendarGrid.addEventListener("click", function (event) {
+      var card = event.target.closest("[data-date]");
+      if (!card) {
+        return;
+      }
+      state.calendarSelectedDate = card.getAttribute("data-date") || "";
+      window.location.href = pageHref("now", Object.assign({}, state.paramsObj, { date: state.calendarSelectedDate }));
+    });
+
+    document.addEventListener("click", onDocumentClick);
+    document.addEventListener("keydown", onDocumentKeydown);
+
+    state.cleanupFns.push(function () {
+      document.removeEventListener("click", onDocumentClick);
+      document.removeEventListener("keydown", onDocumentKeydown);
+    });
+  }
+
   function scheduleNowTick(state) {
     var now = new Date();
     var waitMs = (60 - now.getSeconds()) * 1000 - now.getMilliseconds() + 40;
@@ -741,6 +936,9 @@
     var panelHeight = Math.max(168, 80 + maxLineCount * 58);
     var panelGap = 16;
     var railPadding = 56;
+    var calendarMonths = deriveMonths(days);
+    var calendarMonthKey = dateToMonthKey(selectedDay ? selectedDay.date : (nowState.day ? nowState.day.date : "")) || (calendarMonths[0] ? calendarMonths[0].key : "");
+    var calendarOptions = buildCalendarMonthYearOptions(calendarMonths);
 
     root.innerHTML = [
       '<section class="pv-now-shell">',
@@ -750,13 +948,25 @@
       '        <img src="./반디로고.png" alt="반디 로고" />',
       '        <span class="pv-now-home-text">반디 프로그램</span>',
       "      </a>",
-      '      <a class="pv-now-link" href="' + pageHref("calendar", Object.assign({}, paramsObj, { date: selectedDay ? selectedDay.date : "" })) + '">달력</a>',
+      '      <div class="pv-now-calendar-anchor">',
+      '        <button type="button" class="pv-now-icon-button" id="pv-now-calendar-button" aria-label="달력 열기" aria-expanded="false" aria-controls="pv-now-calendar-popover">' + renderCalendarGlyph() + "</button>",
+      '        <div class="pv-now-calendar-popover" id="pv-now-calendar-popover" hidden>',
+      '          <div class="pv-now-calendar-head">',
+      '            <div class="pv-now-calendar-selects">',
+      '              <select class="pv-now-calendar-select" id="pv-now-calendar-year"></select>',
+      '              <select class="pv-now-calendar-select" id="pv-now-calendar-month"></select>',
+      "            </div>",
+      '            <button type="button" class="pv-now-calendar-close" id="pv-now-calendar-close">닫기</button>',
+      "          </div>",
+      '          <div class="pv-now-calendar-grid" id="pv-now-calendar-grid"></div>',
+      "        </div>",
+      "      </div>",
       "    </div>",
       "  </div>",
       '  <section class="pv-now-stage">',
       '    <div class="pv-now-stage-head">',
       '      <div class="pv-now-kicker-row"><p class="pv-now-kicker">now</p><p class="pv-now-clock" id="pv-now-clock">' + escapeHtml(formatAtLabel(nowState.at)) + '</p></div>',
-      '      <p class="pv-now-selected-date">' + escapeHtml(formatNowDateLabel(selectedDay)) + "</p>",
+      '      <p class="pv-now-selected-date">' + renderNowDateLabel(selectedDay) + "</p>",
       "    </div>",
       '    <section class="pv-now-card">',
       '      <div class="pv-now-viewport" id="pv-now-viewport">',
@@ -791,8 +1001,20 @@
       blockTrack: root.querySelector("#pv-now-track"),
       blockViewport: root.querySelector("#pv-now-viewport"),
       expandButton: root.querySelector("#pv-now-expand"),
+      calendarButton: root.querySelector("#pv-now-calendar-button"),
+      calendarPopover: root.querySelector("#pv-now-calendar-popover"),
+      calendarGrid: root.querySelector("#pv-now-calendar-grid"),
+      calendarCloseButton: root.querySelector("#pv-now-calendar-close"),
+      calendarYearSelect: root.querySelector("#pv-now-calendar-year"),
+      calendarMonthSelect: root.querySelector("#pv-now-calendar-month"),
+      calendarMonthKey: calendarMonthKey,
+      calendarSelectedDate: selectedDay ? selectedDay.date : "",
+      calendarDayMap: buildDayMap(days),
+      calendarOptions: calendarOptions,
+      todayDate: nowState.at ? nowState.at.date : "",
       isExpanded: false,
-      clockTimer: null
+      clockTimer: null,
+      cleanupFns: []
     };
 
     if (viewState.stage) {
@@ -809,12 +1031,17 @@
     bindNowBlockNavigation(viewState);
     bindNowExpandToggle(viewState);
     bindNowHome(viewState);
+    syncNowCalendarSelects(viewState);
+    bindNowCalendarPopover(viewState);
     scheduleNowTick(viewState);
 
     root.__pvCleanup = function () {
       if (viewState.clockTimer) {
         window.clearTimeout(viewState.clockTimer);
       }
+      viewState.cleanupFns.forEach(function (cleanup) {
+        cleanup();
+      });
     };
   }
 
@@ -857,8 +1084,7 @@
         '  <p class="pv-subtitle">강당 담당: ' + escapeHtml(day.venueManager || "-") + "</p>",
         '  <div class="pv-actions">',
         '    <a class="pv-action-link" href="' + pageHref("now", Object.assign({}, paramsObj, { date: day.date })) + '">Now로 돌아가기</a>',
-        '    <a class="pv-action-link" href="' + pageHref("calendar", Object.assign({}, paramsObj, { date: day.date })) + '">달력에서 보기</a>',
-        "  </div>",
+      "  </div>",
         "</section>",
         renderGroupChipRow("day", paramsObj, data.taxonomies.groups, "반 필터"),
         renderCategoryChipRow("day", paramsObj, data.taxonomies.categories, "분류 필터"),
@@ -1351,7 +1577,7 @@
           return;
         }
         if (page === "calendar") {
-          renderCalendarPage(data, paramsObj, root);
+          renderNowPage(data, paramsObj, root);
           return;
         }
         renderError(root, "알 수 없는 페이지입니다.");
