@@ -871,7 +871,7 @@ a.pv-day-card {
 }
 
 .pv-now-calendar-anchor {
-  position: relative;
+  position: static;
 }
 
 .pv-now-icon-button {
@@ -895,16 +895,19 @@ a.pv-day-card {
 }
 
 .pv-now-calendar-popover {
-  position: absolute;
-  top: calc(100% + 12px);
-  right: 0;
-  width: min(88vw, 340px);
-  padding: 14px;
-  border-radius: 22px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(78vw, 292px);
+  max-height: min(64vh, 420px);
+  padding: 12px;
+  border-radius: 20px;
   border: 1px solid rgba(46, 50, 57, 0.12);
   background: rgba(255, 251, 246, 0.98);
   box-shadow: 0 22px 36px rgba(94, 75, 54, 0.18);
-  z-index: 20;
+  z-index: 40;
+  overflow: auto;
 }
 
 .pv-now-calendar-head {
@@ -912,7 +915,7 @@ a.pv-day-card {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .pv-now-calendar-selects {
@@ -924,12 +927,13 @@ a.pv-day-card {
 
 .pv-now-calendar-select,
 .pv-now-calendar-close {
-  min-height: 34px;
+  min-height: 32px;
   border-radius: 999px;
   border: 1px solid rgba(46, 50, 57, 0.12);
   background: rgba(255,255,255,0.92);
   color: var(--pv-ink);
   font: inherit;
+  font-size: 0.82rem;
   font-weight: 700;
 }
 
@@ -946,14 +950,14 @@ a.pv-day-card {
 .pv-now-calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 6px;
+  gap: 5px;
 }
 
 .pv-calendar-popup-weekday {
-  min-height: 26px;
+  min-height: 22px;
   display: grid;
   place-items: center;
-  font-size: 0.73rem;
+  font-size: 0.66rem;
   font-weight: 760;
   color: #6f747d;
 }
@@ -963,14 +967,14 @@ a.pv-day-card {
 }
 
 .pv-calendar-popup-day {
-  min-height: 66px;
-  padding: 7px 6px;
-  border-radius: 14px;
+  min-height: 52px;
+  padding: 6px 4px 5px;
+  border-radius: 12px;
   border: 1px solid rgba(49, 53, 60, 0.08);
   background: #fbf7f0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   text-align: center;
   color: inherit;
 }
@@ -998,15 +1002,15 @@ a.pv-day-card {
 
 .pv-calendar-popup-number {
   font-family: var(--pv-font-display);
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: #4a4f58;
 }
 
 .pv-calendar-popup-note {
   margin-top: auto;
-  font-size: 0.66rem;
-  line-height: 1.35;
+  font-size: 0.58rem;
+  line-height: 1.2;
   color: #7a7f87;
   word-break: keep-all;
 }
@@ -1364,18 +1368,18 @@ a.pv-day-card {
   }
 
   .pv-now-calendar-popover {
-    right: -4px;
-    width: min(92vw, 332px);
-    padding: 12px;
+    width: min(74vw, 272px);
+    max-height: min(56vh, 360px);
+    padding: 10px;
   }
 
   .pv-now-calendar-head {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
   }
 
   .pv-now-calendar-close {
-    width: 100%;
+    width: auto;
   }
 
   .pv-now-link {
