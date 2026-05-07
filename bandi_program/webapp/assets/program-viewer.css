@@ -896,9 +896,8 @@ a.pv-day-card {
 
 .pv-now-calendar-popover {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 74px;
+  left: 16px;
   width: min(78vw, 292px);
   max-height: min(64vh, 420px);
   padding: 12px;

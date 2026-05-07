@@ -16,7 +16,12 @@
     "2026-03-20": { seasonalNames: ["춘분"] },
     "2026-04-04": { seasonalNames: ["한식"] },
     "2026-04-05": { seasonalNames: ["청명", "식목일"] },
-    "2026-04-20": { seasonalNames: ["곡우"] }
+    "2026-04-20": { seasonalNames: ["곡우"] },
+    "2026-05-01": { holidayName: "노동절" },
+    "2026-05-05": { holidayName: "어린이날", seasonalNames: ["입하"] },
+    "2026-05-21": { seasonalNames: ["소만"] },
+    "2026-05-24": { holidayName: "부처님오신날" },
+    "2026-05-25": { holidayName: "대체공휴일" }
   };
 
   function escapeHtml(value) {
@@ -802,6 +807,7 @@
     }
     state.calendarPopover.hidden = false;
     state.calendarButton.setAttribute("aria-expanded", "true");
+    positionNowCalendarPopover(state);
     renderNowCalendarGrid(state);
   }
 
@@ -811,6 +817,35 @@
     }
     state.calendarPopover.hidden = true;
     state.calendarButton.setAttribute("aria-expanded", "false");
+    state.calendarPopover.style.removeProperty("top");
+    state.calendarPopover.style.removeProperty("left");
+  }
+
+  function positionNowCalendarPopover(state) {
+    if (!state.calendarPopover || !state.calendarButton) {
+      return;
+    }
+    var buttonRect = state.calendarButton.getBoundingClientRect();
+    var popover = state.calendarPopover;
+    var viewportWidth = window.innerWidth;
+    var viewportHeight = window.innerHeight;
+    var gap = 10;
+    var popoverWidth = Math.min(292, Math.max(248, viewportWidth - 24));
+
+    popover.style.width = Math.min(popoverWidth, viewportWidth - 20) + "px";
+    popover.style.maxHeight = Math.min(Math.round(viewportHeight * 0.56), 360) + "px";
+
+    var left = buttonRect.left + (buttonRect.width / 2) - (popover.offsetWidth / 2);
+    left = Math.max(10, Math.min(left, viewportWidth - popover.offsetWidth - 10));
+
+    var top = buttonRect.bottom + gap;
+    var maxTop = viewportHeight - popover.offsetHeight - 12;
+    if (top > maxTop) {
+      top = Math.max(12, buttonRect.top - popover.offsetHeight - gap);
+    }
+
+    popover.style.left = Math.round(left) + "px";
+    popover.style.top = Math.round(top) + "px";
   }
 
   function bindNowCalendarPopover(state) {
@@ -856,6 +891,7 @@
       }
       state.calendarMonthKey = buildMonthKey(nextYear, currentMonth);
       syncNowCalendarSelects(state);
+      positionNowCalendarPopover(state);
       renderNowCalendarGrid(state);
     });
 
@@ -863,8 +899,17 @@
       var year = Number(state.calendarYearSelect.value);
       var monthNumber = Number(event.target.value);
       state.calendarMonthKey = buildMonthKey(year, monthNumber);
+      positionNowCalendarPopover(state);
       renderNowCalendarGrid(state);
     });
+
+    var onWindowResize = function () {
+      if (!state.calendarPopover.hidden) {
+        positionNowCalendarPopover(state);
+      }
+    };
+
+    window.addEventListener("resize", onWindowResize);
 
     state.calendarGrid.addEventListener("click", function (event) {
       var card = event.target.closest("[data-date]");
@@ -881,6 +926,7 @@
     state.cleanupFns.push(function () {
       document.removeEventListener("click", onDocumentClick);
       document.removeEventListener("keydown", onDocumentKeydown);
+      window.removeEventListener("resize", onWindowResize);
     });
   }
 
