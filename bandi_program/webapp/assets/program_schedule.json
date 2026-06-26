@@ -47919,19 +47919,17 @@
             },
             {
               "id": "2026-06-26-1030-2",
-              "title": "워크메이트",
+              "title": "발로하는 오자미",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "sarang"
               ],
-              "staff": [
-                "강선진"
-              ],
-              "staffRole": "진행",
+              "staff": [],
+              "staffRole": "",
               "location": "강당",
               "tags": [
-                "워크메이트",
+                "발로하는 오자미",
                 "sarang",
                 "physical"
               ]
@@ -100474,19 +100472,17 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "워크메이트",
+      "title": "발로하는 오자미",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
         "sarang"
       ],
-      "staff": [
-        "강선진"
-      ],
-      "staffRole": "진행",
+      "staff": [],
+      "staffRole": "",
       "location": "강당",
       "tags": [
-        "워크메이트",
+        "발로하는 오자미",
         "sarang",
         "physical"
       ]
