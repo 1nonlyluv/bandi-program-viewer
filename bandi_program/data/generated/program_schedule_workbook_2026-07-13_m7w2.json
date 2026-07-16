@@ -4,7 +4,7 @@
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-07-15T15:07:44+09:00",
+    "generatedAt": "2026-07-16T09:44:15+09:00",
     "defaultView": "now",
     "sourceLabel": "7월 2주차"
   },
@@ -829,8 +829,8 @@
           "entries": [
             {
               "id": "2026-07-14-1500-1",
-              "title": "여름철",
-              "subtitle": "위생안전관리교육",
+              "title": "소방안전훈련",
+              "subtitle": "",
               "categoryId": "social",
               "groupIds": [
                 "somang",
@@ -840,7 +840,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "여름철",
+                "소방안전훈련",
                 "somang",
                 "sarang",
                 "social"
@@ -3253,8 +3253,8 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "여름철",
-      "subtitle": "위생안전관리교육",
+      "title": "소방안전훈련",
+      "subtitle": "",
       "categoryId": "social",
       "groupIds": [
         "somang",
@@ -3264,7 +3264,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "여름철",
+        "소방안전훈련",
         "somang",
         "sarang",
         "social"

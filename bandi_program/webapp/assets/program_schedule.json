@@ -54221,8 +54221,8 @@
           "entries": [
             {
               "id": "2026-07-14-1500-1",
-              "title": "여름철",
-              "subtitle": "위생안전관리교육",
+              "title": "소방안전훈련",
+              "subtitle": "",
               "categoryId": "social",
               "groupIds": [
                 "somang",
@@ -54232,7 +54232,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "여름철",
+                "소방안전훈련",
                 "somang",
                 "sarang",
                 "social"
@@ -114347,8 +114347,8 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "여름철",
-      "subtitle": "위생안전관리교육",
+      "title": "소방안전훈련",
+      "subtitle": "",
       "categoryId": "social",
       "groupIds": [
         "somang",
@@ -114358,7 +114358,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "여름철",
+        "소방안전훈련",
         "somang",
         "sarang",
         "social"
