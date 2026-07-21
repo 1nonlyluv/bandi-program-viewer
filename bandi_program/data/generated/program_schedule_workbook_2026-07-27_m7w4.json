@@ -1,12 +1,12 @@
 {
   "sourceFile": "주간프로그램 계획표(2026).xlsx",
-  "sheetName": "5월 1주차 ",
+  "sheetName": "7월 4주차 ",
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
     "generatedAt": "2026-07-21T14:09:50+09:00",
     "defaultView": "now",
-    "sourceLabel": "5월 1주차"
+    "sourceLabel": "7월 4주차"
   },
   "taxonomies": {
     "groups": [
@@ -68,20 +68,20 @@
   },
   "days": [
     {
-      "date": "2026-05-04",
+      "date": "2026-07-27",
       "weekday": "월",
-      "venueManager": "김은비",
+      "venueManager": "강선진",
       "blocks": [
         {
-          "id": "2026-05-04-0830",
-          "start": "08:30",
+          "id": "2026-07-27-0800",
+          "start": "08:00",
           "end": "09:30",
-          "startMin": 510,
+          "startMin": 480,
           "endMin": 570,
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-04-0830-1",
+              "id": "2026-07-27-0800-1",
               "title": "오전 등원 서비스/건강관리",
               "subtitle": "혈압, 체온 체크",
               "categoryId": "service",
@@ -100,7 +100,7 @@
           ]
         },
         {
-          "id": "2026-05-04-0930",
+          "id": "2026-07-27-0930",
           "start": "09:30",
           "end": "10:00",
           "startMin": 570,
@@ -108,7 +108,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-04-0930-1",
+              "id": "2026-07-27-0930-1",
               "title": "명상의 시간/티타임",
               "subtitle": "",
               "categoryId": "routine",
@@ -127,7 +127,7 @@
           ]
         },
         {
-          "id": "2026-05-04-1000",
+          "id": "2026-07-27-1000",
           "start": "10:00",
           "end": "10:10",
           "startMin": 600,
@@ -135,7 +135,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-04-1000-1",
+              "id": "2026-07-27-1000-1",
               "title": "오전 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -154,7 +154,7 @@
           ]
         },
         {
-          "id": "2026-05-04-1010",
+          "id": "2026-07-27-1010",
           "start": "10:10",
           "end": "10:30",
           "startMin": 610,
@@ -162,7 +162,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-04-1010-1",
+              "id": "2026-07-27-1010-1",
               "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
@@ -170,12 +170,12 @@
                 "all"
               ],
               "staff": [
-                "변해미"
+                "정성진"
               ],
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "(건강체조1) 담당-변해미",
+                "(건강체조1) 담당-정성진",
                 "all",
                 "physical"
               ]
@@ -183,7 +183,7 @@
           ]
         },
         {
-          "id": "2026-05-04-1030",
+          "id": "2026-07-27-1030",
           "start": "10:30",
           "end": "11:30",
           "startMin": 630,
@@ -191,7 +191,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-04-1030-1",
+              "id": "2026-07-27-1030-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -208,28 +208,28 @@
               ]
             },
             {
-              "id": "2026-05-04-1030-2",
-              "title": "미술활동",
-              "subtitle": "제철참외",
+              "id": "2026-07-27-1030-2",
+              "title": "종이접기",
+              "subtitle": "바다고래 종이접기",
               "categoryId": "cognitive",
               "groupIds": [
                 "mideum"
               ],
               "staff": [
-                "변해미"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "미술활동",
+                "종이접기",
                 "mideum",
                 "cognitive"
               ]
             },
             {
-              "id": "2026-05-04-1030-3",
-              "title": "우산 속 골인",
-              "subtitle": "맞춤형-활기담",
+              "id": "2026-07-27-1030-3",
+              "title": "활기담 다함께 통통통",
+              "subtitle": "맞춤형-활기담 다함께 통통통",
               "categoryId": "custom",
               "groupIds": [
                 "somang"
@@ -240,7 +240,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "우산 속 골인",
+                "활기담 다함께 통통통",
                 "somang",
                 "custom"
               ]
@@ -248,7 +248,7 @@
           ]
         },
         {
-          "id": "2026-05-04-1130",
+          "id": "2026-07-27-1130",
           "start": "11:30",
           "end": "12:30",
           "startMin": 690,
@@ -256,7 +256,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-04-1130-1",
+              "id": "2026-07-27-1130-1",
               "title": "점심 식사 준비",
               "subtitle": "식사 준비/투약 및 개인 위생, 체온 체크",
               "categoryId": "meal",
@@ -275,7 +275,7 @@
           ]
         },
         {
-          "id": "2026-05-04-1230",
+          "id": "2026-07-27-1230",
           "start": "12:30",
           "end": "13:30",
           "startMin": 750,
@@ -283,7 +283,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-04-1230-1",
+              "id": "2026-07-27-1230-1",
               "title": "자율시간",
               "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
               "categoryId": "routine",
@@ -302,18 +302,18 @@
           ]
         },
         {
-          "id": "2026-05-04-1330",
+          "id": "2026-07-27-1330",
           "start": "13:30",
-          "end": "13:40",
+          "end": "14:00",
           "startMin": 810,
-          "endMin": 820,
+          "endMin": 840,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-04-1330-1",
-              "title": "오후 간식",
+              "id": "2026-07-27-1330-1",
+              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
               "subtitle": "",
-              "categoryId": "routine",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -321,36 +321,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "오후 간식",
-                "all",
-                "routine"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-05-04-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
-          "section": "오후",
-          "entries": [
-            {
-              "id": "2026-05-04-1340-1",
-              "title": "건강체조2",
-              "subtitle": "",
-              "categoryId": "physical",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [
-                "강선진"
-              ],
-              "staffRole": "담당",
-              "location": "강당",
-              "tags": [
-                "건강체조2",
+                "오후간식 및 (건강체조2) 담당-강선진",
                 "all",
                 "physical"
               ]
@@ -358,7 +329,7 @@
           ]
         },
         {
-          "id": "2026-05-04-1400",
+          "id": "2026-07-27-1400",
           "start": "14:00",
           "end": "15:00",
           "startMin": 840,
@@ -366,7 +337,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-04-1400-1",
+              "id": "2026-07-27-1400-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -383,27 +354,44 @@
               ]
             },
             {
-              "id": "2026-05-04-1400-2",
-              "title": "제목 없음",
+              "id": "2026-07-27-1400-2",
+              "title": "실버특강",
+              "subtitle": "",
+              "categoryId": "routine",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "실버특강",
+                "all",
+                "routine"
+              ]
+            },
+            {
+              "id": "2026-07-27-1400-3",
+              "title": "숨은 그림 찾기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
                 "sarang"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "숨은 그림 찾기",
                 "sarang",
                 "cognitive"
               ]
             },
             {
-              "id": "2026-05-04-1400-3",
-              "title": "고리던지기",
+              "id": "2026-07-27-1400-4",
+              "title": "제목 없음",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -413,7 +401,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "고리던지기",
+                "제목 없음",
                 "mideum",
                 "physical"
               ]
@@ -421,7 +409,7 @@
           ]
         },
         {
-          "id": "2026-05-04-1500",
+          "id": "2026-07-27-1500",
           "start": "15:00",
           "end": "16:00",
           "startMin": 900,
@@ -429,8 +417,8 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-04-1500-1",
-              "title": "투호",
+              "id": "2026-07-27-1500-1",
+              "title": "제목 없음",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -440,36 +428,36 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "투호",
+                "제목 없음",
                 "sarang",
                 "physical"
               ]
             },
             {
-              "id": "2026-05-04-1500-2",
+              "id": "2026-07-27-1500-2",
               "title": "제목 없음",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
-                "mideum",
-                "somang"
+                "somang",
+                "mideum"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
                 "제목 없음",
-                "mideum",
                 "somang",
+                "mideum",
                 "cognitive"
               ]
             }
           ]
         },
         {
-          "id": "2026-05-04-1600",
+          "id": "2026-07-27-1600",
           "start": "16:00",
           "end": "17:00",
           "startMin": 960,
@@ -477,7 +465,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-04-1600-1",
+              "id": "2026-07-27-1600-1",
               "title": "저녁 식사",
               "subtitle": "",
               "categoryId": "meal",
@@ -496,7 +484,7 @@
           ]
         },
         {
-          "id": "2026-05-04-1700",
+          "id": "2026-07-27-1700",
           "start": "17:00",
           "end": "18:00",
           "startMin": 1020,
@@ -504,7 +492,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-04-1700-1",
+              "id": "2026-07-27-1700-1",
               "title": "오후 송영 준비 및 송영 서비스",
               "subtitle": "",
               "categoryId": "service",
@@ -525,20 +513,20 @@
       ]
     },
     {
-      "date": "2026-05-05",
+      "date": "2026-07-28",
       "weekday": "화",
-      "venueManager": "변해미",
+      "venueManager": "정성진",
       "blocks": [
         {
-          "id": "2026-05-05-0830",
-          "start": "08:30",
+          "id": "2026-07-28-0800",
+          "start": "08:00",
           "end": "09:30",
-          "startMin": 510,
+          "startMin": 480,
           "endMin": 570,
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-05-0830-1",
+              "id": "2026-07-28-0800-1",
               "title": "오전 등원 서비스/건강관리",
               "subtitle": "혈압, 체온 체크",
               "categoryId": "service",
@@ -557,7 +545,7 @@
           ]
         },
         {
-          "id": "2026-05-05-0930",
+          "id": "2026-07-28-0930",
           "start": "09:30",
           "end": "10:00",
           "startMin": 570,
@@ -565,7 +553,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-05-0930-1",
+              "id": "2026-07-28-0930-1",
               "title": "명상의 시간/티타임",
               "subtitle": "",
               "categoryId": "routine",
@@ -584,7 +572,7 @@
           ]
         },
         {
-          "id": "2026-05-05-1000",
+          "id": "2026-07-28-1000",
           "start": "10:00",
           "end": "10:10",
           "startMin": 600,
@@ -592,7 +580,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-05-1000-1",
+              "id": "2026-07-28-1000-1",
               "title": "오전 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -611,7 +599,7 @@
           ]
         },
         {
-          "id": "2026-05-05-1010",
+          "id": "2026-07-28-1010",
           "start": "10:10",
           "end": "10:30",
           "startMin": 610,
@@ -619,7 +607,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-05-1010-1",
+              "id": "2026-07-28-1010-1",
               "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
@@ -627,12 +615,12 @@
                 "all"
               ],
               "staff": [
-                "변해미"
+                "정성진"
               ],
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "(건강체조1) 담당-변해미",
+                "(건강체조1) 담당-정성진",
                 "all",
                 "physical"
               ]
@@ -640,7 +628,7 @@
           ]
         },
         {
-          "id": "2026-05-05-1030",
+          "id": "2026-07-28-1030",
           "start": "10:30",
           "end": "11:30",
           "startMin": 630,
@@ -648,7 +636,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-05-1030-1",
+              "id": "2026-07-28-1030-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -665,28 +653,45 @@
               ]
             },
             {
-              "id": "2026-05-05-1030-2",
-              "title": "윷놀이",
+              "id": "2026-07-28-1030-2",
+              "title": "제목 없음",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
-                "mideum",
                 "somang"
               ],
               "staff": [],
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "윷놀이",
-                "mideum",
+                "제목 없음",
                 "somang",
                 "physical"
+              ]
+            },
+            {
+              "id": "2026-07-28-1030-3",
+              "title": "소리담 뱃노래",
+              "subtitle": "맞춤형- 소리담 뱃노래",
+              "categoryId": "custom",
+              "groupIds": [
+                "mideum"
+              ],
+              "staff": [
+                "김소정"
+              ],
+              "staffRole": "강사",
+              "location": "강당",
+              "tags": [
+                "소리담 뱃노래",
+                "mideum",
+                "custom"
               ]
             }
           ]
         },
         {
-          "id": "2026-05-05-1130",
+          "id": "2026-07-28-1130",
           "start": "11:30",
           "end": "12:30",
           "startMin": 690,
@@ -694,7 +699,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-05-1130-1",
+              "id": "2026-07-28-1130-1",
               "title": "점심 식사 준비",
               "subtitle": "식사 준비/투약 및 개인 위생, 체온 체크",
               "categoryId": "meal",
@@ -713,7 +718,7 @@
           ]
         },
         {
-          "id": "2026-05-05-1230",
+          "id": "2026-07-28-1230",
           "start": "12:30",
           "end": "13:30",
           "startMin": 750,
@@ -721,7 +726,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-05-1230-1",
+              "id": "2026-07-28-1230-1",
               "title": "자율시간",
               "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
               "categoryId": "routine",
@@ -740,18 +745,18 @@
           ]
         },
         {
-          "id": "2026-05-05-1330",
+          "id": "2026-07-28-1330",
           "start": "13:30",
-          "end": "13:40",
+          "end": "14:00",
           "startMin": 810,
-          "endMin": 820,
+          "endMin": 840,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-05-1330-1",
-              "title": "오후 간식",
+              "id": "2026-07-28-1330-1",
+              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
               "subtitle": "",
-              "categoryId": "routine",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -759,36 +764,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "오후 간식",
-                "all",
-                "routine"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-05-05-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
-          "section": "오후",
-          "entries": [
-            {
-              "id": "2026-05-05-1340-1",
-              "title": "건강체조2",
-              "subtitle": "",
-              "categoryId": "physical",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [
-                "강선진"
-              ],
-              "staffRole": "담당",
-              "location": "강당",
-              "tags": [
-                "건강체조2",
+                "오후간식 및 (건강체조2) 담당-강선진",
                 "all",
                 "physical"
               ]
@@ -796,7 +772,7 @@
           ]
         },
         {
-          "id": "2026-05-05-1400",
+          "id": "2026-07-28-1400",
           "start": "14:00",
           "end": "15:00",
           "startMin": 840,
@@ -804,7 +780,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-05-1400-1",
+              "id": "2026-07-28-1400-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -821,22 +797,87 @@
               ]
             },
             {
-              "id": "2026-05-05-1400-2",
-              "title": "종이접기",
-              "subtitle": "5월에 쓰는",
+              "id": "2026-07-28-1400-2",
+              "title": "제목 없음",
+              "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
-                "sarang",
-                "mideum"
+                "sarang"
               ],
               "staff": [
-                "김은비"
+                "정성진"
+              ],
+              "staffRole": "준비",
+              "location": "강당",
+              "tags": [
+                "제목 없음",
+                "sarang",
+                "cognitive"
+              ]
+            },
+            {
+              "id": "2026-07-28-1400-3",
+              "title": "제목 없음",
+              "subtitle": "",
+              "categoryId": "physical",
+              "groupIds": [
+                "mideum"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "제목 없음",
+                "mideum",
+                "physical"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2026-07-28-1500",
+          "start": "15:00",
+          "end": "16:00",
+          "startMin": 900,
+          "endMin": 960,
+          "section": "오후",
+          "entries": [
+            {
+              "id": "2026-07-28-1500-1",
+              "title": "종이접기",
+              "subtitle": "바다고래 종이접기",
+              "categoryId": "cognitive",
+              "groupIds": [
+                "sarang"
+              ],
+              "staff": [
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
                 "종이접기",
                 "sarang",
+                "cognitive"
+              ]
+            },
+            {
+              "id": "2026-07-28-1500-2",
+              "title": "제목 없음",
+              "subtitle": "",
+              "categoryId": "cognitive",
+              "groupIds": [
+                "somang",
+                "mideum"
+              ],
+              "staff": [
+                "정성진"
+              ],
+              "staffRole": "준비",
+              "location": "강당",
+              "tags": [
+                "제목 없음",
+                "somang",
                 "mideum",
                 "cognitive"
               ]
@@ -844,36 +885,7 @@
           ]
         },
         {
-          "id": "2026-05-05-1500",
-          "start": "15:00",
-          "end": "16:00",
-          "startMin": 900,
-          "endMin": 960,
-          "section": "오후",
-          "entries": [
-            {
-              "id": "2026-05-05-1500-1",
-              "title": "시장구경",
-              "subtitle": "",
-              "categoryId": "cognitive",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [
-                "김은비"
-              ],
-              "staffRole": "준비",
-              "location": "강당",
-              "tags": [
-                "시장구경",
-                "all",
-                "cognitive"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-05-05-1600",
+          "id": "2026-07-28-1600",
           "start": "16:00",
           "end": "17:00",
           "startMin": 960,
@@ -881,7 +893,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-05-1600-1",
+              "id": "2026-07-28-1600-1",
               "title": "저녁 식사",
               "subtitle": "",
               "categoryId": "meal",
@@ -900,7 +912,7 @@
           ]
         },
         {
-          "id": "2026-05-05-1700",
+          "id": "2026-07-28-1700",
           "start": "17:00",
           "end": "18:00",
           "startMin": 1020,
@@ -908,7 +920,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-05-1700-1",
+              "id": "2026-07-28-1700-1",
               "title": "오후 송영 준비 및 송영 서비스",
               "subtitle": "",
               "categoryId": "service",
@@ -929,20 +941,20 @@
       ]
     },
     {
-      "date": "2026-05-06",
+      "date": "2026-07-29",
       "weekday": "수",
       "venueManager": "김은비",
       "blocks": [
         {
-          "id": "2026-05-06-0830",
-          "start": "08:30",
+          "id": "2026-07-29-0800",
+          "start": "08:00",
           "end": "09:30",
-          "startMin": 510,
+          "startMin": 480,
           "endMin": 570,
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-06-0830-1",
+              "id": "2026-07-29-0800-1",
               "title": "오전 등원 서비스/건강관리",
               "subtitle": "혈압, 체온 체크",
               "categoryId": "service",
@@ -961,7 +973,7 @@
           ]
         },
         {
-          "id": "2026-05-06-0930",
+          "id": "2026-07-29-0930",
           "start": "09:30",
           "end": "10:00",
           "startMin": 570,
@@ -969,7 +981,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-06-0930-1",
+              "id": "2026-07-29-0930-1",
               "title": "명상의 시간/티타임",
               "subtitle": "",
               "categoryId": "routine",
@@ -988,7 +1000,7 @@
           ]
         },
         {
-          "id": "2026-05-06-1000",
+          "id": "2026-07-29-1000",
           "start": "10:00",
           "end": "10:10",
           "startMin": 600,
@@ -996,7 +1008,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-06-1000-1",
+              "id": "2026-07-29-1000-1",
               "title": "오전 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -1015,7 +1027,7 @@
           ]
         },
         {
-          "id": "2026-05-06-1010",
+          "id": "2026-07-29-1010",
           "start": "10:10",
           "end": "10:30",
           "startMin": 610,
@@ -1023,7 +1035,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-06-1010-1",
+              "id": "2026-07-29-1010-1",
               "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
@@ -1031,12 +1043,12 @@
                 "all"
               ],
               "staff": [
-                "변해미"
+                "정성진"
               ],
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "(건강체조1) 담당-변해미",
+                "(건강체조1) 담당-정성진",
                 "all",
                 "physical"
               ]
@@ -1044,7 +1056,7 @@
           ]
         },
         {
-          "id": "2026-05-06-1030",
+          "id": "2026-07-29-1030",
           "start": "10:30",
           "end": "11:30",
           "startMin": 630,
@@ -1052,7 +1064,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-06-1030-1",
+              "id": "2026-07-29-1030-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -1069,9 +1081,9 @@
               ]
             },
             {
-              "id": "2026-05-06-1030-2",
-              "title": "행복이 피어나는 튤립",
-              "subtitle": "맞춤형-오감담",
+              "id": "2026-07-29-1030-2",
+              "title": "오감담 유리병 속 여름 바다",
+              "subtitle": "맞춤형-오감담 유리병 속 여름 바다",
               "categoryId": "custom",
               "groupIds": [
                 "somang"
@@ -1082,34 +1094,34 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "행복이 피어나는 튤립",
+                "오감담 유리병 속 여름 바다",
                 "somang",
                 "custom"
               ]
             },
             {
-              "id": "2026-05-06-1030-3",
-              "title": "워크메이트",
+              "id": "2026-07-29-1030-3",
+              "title": "제목 없음",
               "subtitle": "",
-              "categoryId": "physical",
+              "categoryId": "cognitive",
               "groupIds": [
                 "mideum"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
-              "staffRole": "진행",
+              "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "워크메이트",
+                "제목 없음",
                 "mideum",
-                "physical"
+                "cognitive"
               ]
             }
           ]
         },
         {
-          "id": "2026-05-06-1130",
+          "id": "2026-07-29-1130",
           "start": "11:30",
           "end": "12:30",
           "startMin": 690,
@@ -1117,7 +1129,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-06-1130-1",
+              "id": "2026-07-29-1130-1",
               "title": "점심 식사 준비",
               "subtitle": "식사 준비/투약 및 개인 위생, 체온 체크",
               "categoryId": "meal",
@@ -1136,7 +1148,7 @@
           ]
         },
         {
-          "id": "2026-05-06-1230",
+          "id": "2026-07-29-1230",
           "start": "12:30",
           "end": "13:30",
           "startMin": 750,
@@ -1144,7 +1156,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-06-1230-1",
+              "id": "2026-07-29-1230-1",
               "title": "자율시간",
               "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
               "categoryId": "routine",
@@ -1163,18 +1175,18 @@
           ]
         },
         {
-          "id": "2026-05-06-1330",
+          "id": "2026-07-29-1330",
           "start": "13:30",
-          "end": "13:40",
+          "end": "14:00",
           "startMin": 810,
-          "endMin": 820,
+          "endMin": 840,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-06-1330-1",
-              "title": "오후 간식",
+              "id": "2026-07-29-1330-1",
+              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
               "subtitle": "",
-              "categoryId": "routine",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -1182,36 +1194,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "오후 간식",
-                "all",
-                "routine"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-05-06-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
-          "section": "오후",
-          "entries": [
-            {
-              "id": "2026-05-06-1340-1",
-              "title": "건강체조2",
-              "subtitle": "",
-              "categoryId": "physical",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [
-                "강선진"
-              ],
-              "staffRole": "담당",
-              "location": "강당",
-              "tags": [
-                "건강체조2",
+                "오후간식 및 (건강체조2) 담당-강선진",
                 "all",
                 "physical"
               ]
@@ -1219,7 +1202,7 @@
           ]
         },
         {
-          "id": "2026-05-06-1400",
+          "id": "2026-07-29-1400",
           "start": "14:00",
           "end": "15:00",
           "startMin": 840,
@@ -1227,7 +1210,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-06-1400-1",
+              "id": "2026-07-29-1400-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -1244,8 +1227,8 @@
               ]
             },
             {
-              "id": "2026-05-06-1400-2",
-              "title": "실버체조",
+              "id": "2026-07-29-1400-2",
+              "title": "실버체조 (사랑반,믿음반) 준비:용인시체육회",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1255,10 +1238,10 @@
               "staff": [
                 "용인시체육회"
               ],
-              "staffRole": "진행",
+              "staffRole": "실버체조 (사랑반,믿음반) 준비",
               "location": "강당",
               "tags": [
-                "실버체조",
+                "실버체조 (사랑반,믿음반) 준비:용인시체육회",
                 "sarang",
                 "mideum",
                 "physical"
@@ -1267,7 +1250,7 @@
           ]
         },
         {
-          "id": "2026-05-06-1500",
+          "id": "2026-07-29-1500",
           "start": "15:00",
           "end": "16:00",
           "startMin": 900,
@@ -1275,20 +1258,20 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-06-1500-1",
-              "title": "규칙찾아",
-              "subtitle": "빈칸채우기",
+              "id": "2026-07-29-1500-1",
+              "title": "나만의 팥빙수 만들기",
+              "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
                 "all"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "규칙찾아",
+                "나만의 팥빙수 만들기",
                 "all",
                 "cognitive"
               ]
@@ -1296,7 +1279,7 @@
           ]
         },
         {
-          "id": "2026-05-06-1600",
+          "id": "2026-07-29-1600",
           "start": "16:00",
           "end": "17:00",
           "startMin": 960,
@@ -1304,7 +1287,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-06-1600-1",
+              "id": "2026-07-29-1600-1",
               "title": "저녁 식사",
               "subtitle": "",
               "categoryId": "meal",
@@ -1323,7 +1306,7 @@
           ]
         },
         {
-          "id": "2026-05-06-1700",
+          "id": "2026-07-29-1700",
           "start": "17:00",
           "end": "18:00",
           "startMin": 1020,
@@ -1331,7 +1314,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-06-1700-1",
+              "id": "2026-07-29-1700-1",
               "title": "오후 송영 준비 및 송영 서비스",
               "subtitle": "",
               "categoryId": "service",
@@ -1352,20 +1335,20 @@
       ]
     },
     {
-      "date": "2026-05-07",
+      "date": "2026-07-30",
       "weekday": "목",
-      "venueManager": "변해미",
+      "venueManager": "정성진",
       "blocks": [
         {
-          "id": "2026-05-07-0830",
-          "start": "08:30",
+          "id": "2026-07-30-0800",
+          "start": "08:00",
           "end": "09:30",
-          "startMin": 510,
+          "startMin": 480,
           "endMin": 570,
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-07-0830-1",
+              "id": "2026-07-30-0800-1",
               "title": "오전 등원 서비스/건강관리",
               "subtitle": "혈압, 체온 체크",
               "categoryId": "service",
@@ -1384,7 +1367,7 @@
           ]
         },
         {
-          "id": "2026-05-07-0930",
+          "id": "2026-07-30-0930",
           "start": "09:30",
           "end": "10:00",
           "startMin": 570,
@@ -1392,7 +1375,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-07-0930-1",
+              "id": "2026-07-30-0930-1",
               "title": "명상의 시간/티타임",
               "subtitle": "",
               "categoryId": "routine",
@@ -1411,7 +1394,7 @@
           ]
         },
         {
-          "id": "2026-05-07-1000",
+          "id": "2026-07-30-1000",
           "start": "10:00",
           "end": "10:10",
           "startMin": 600,
@@ -1419,7 +1402,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-07-1000-1",
+              "id": "2026-07-30-1000-1",
               "title": "오전 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -1438,7 +1421,7 @@
           ]
         },
         {
-          "id": "2026-05-07-1010",
+          "id": "2026-07-30-1010",
           "start": "10:10",
           "end": "10:30",
           "startMin": 610,
@@ -1446,7 +1429,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-07-1010-1",
+              "id": "2026-07-30-1010-1",
               "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
@@ -1454,12 +1437,12 @@
                 "all"
               ],
               "staff": [
-                "변해미"
+                "정성진"
               ],
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "(건강체조1) 담당-변해미",
+                "(건강체조1) 담당-정성진",
                 "all",
                 "physical"
               ]
@@ -1467,7 +1450,7 @@
           ]
         },
         {
-          "id": "2026-05-07-1030",
+          "id": "2026-07-30-1030",
           "start": "10:30",
           "end": "11:30",
           "startMin": 630,
@@ -1475,7 +1458,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-07-1030-1",
+              "id": "2026-07-30-1030-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -1492,26 +1475,9 @@
               ]
             },
             {
-              "id": "2026-05-07-1030-2",
-              "title": "*생신잔치*",
-              "subtitle": "강진구,김영옥,김영춘.",
-              "categoryId": "routine",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [],
-              "staffRole": "",
-              "location": "강당",
-              "tags": [
-                "*생신잔치*",
-                "all",
-                "routine"
-              ]
-            },
-            {
-              "id": "2026-05-07-1030-3",
-              "title": "알록달록 과일 꼬치 놀이",
-              "subtitle": "맞춤형-인지담",
+              "id": "2026-07-30-1030-2",
+              "title": "인지담 개구리의 곤충사냥",
+              "subtitle": "맞춤형-인지담 개구리의 곤충사냥",
               "categoryId": "custom",
               "groupIds": [
                 "mideum"
@@ -1522,14 +1488,14 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "알록달록 과일 꼬치 놀이",
+                "인지담 개구리의 곤충사냥",
                 "mideum",
                 "custom"
               ]
             },
             {
-              "id": "2026-05-07-1030-4",
-              "title": "세가족콩놀이",
+              "id": "2026-07-30-1030-3",
+              "title": "투호",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1539,7 +1505,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "세가족콩놀이",
+                "투호",
                 "somang",
                 "physical"
               ]
@@ -1547,7 +1513,7 @@
           ]
         },
         {
-          "id": "2026-05-07-1130",
+          "id": "2026-07-30-1130",
           "start": "11:30",
           "end": "12:30",
           "startMin": 690,
@@ -1555,7 +1521,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-07-1130-1",
+              "id": "2026-07-30-1130-1",
               "title": "점심 식사 준비",
               "subtitle": "식사 준비/투약 및 개인 위생, 체온 체크",
               "categoryId": "meal",
@@ -1574,7 +1540,7 @@
           ]
         },
         {
-          "id": "2026-05-07-1230",
+          "id": "2026-07-30-1230",
           "start": "12:30",
           "end": "13:30",
           "startMin": 750,
@@ -1582,7 +1548,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-07-1230-1",
+              "id": "2026-07-30-1230-1",
               "title": "자율시간",
               "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
               "categoryId": "routine",
@@ -1601,18 +1567,18 @@
           ]
         },
         {
-          "id": "2026-05-07-1330",
+          "id": "2026-07-30-1330",
           "start": "13:30",
-          "end": "13:40",
+          "end": "14:00",
           "startMin": 810,
-          "endMin": 820,
+          "endMin": 840,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-07-1330-1",
-              "title": "오후 간식",
+              "id": "2026-07-30-1330-1",
+              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
               "subtitle": "",
-              "categoryId": "routine",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -1620,36 +1586,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "오후 간식",
-                "all",
-                "routine"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-05-07-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
-          "section": "오후",
-          "entries": [
-            {
-              "id": "2026-05-07-1340-1",
-              "title": "건강체조2",
-              "subtitle": "",
-              "categoryId": "physical",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [
-                "강선진"
-              ],
-              "staffRole": "담당",
-              "location": "강당",
-              "tags": [
-                "건강체조2",
+                "오후간식 및 (건강체조2) 담당-강선진",
                 "all",
                 "physical"
               ]
@@ -1657,7 +1594,7 @@
           ]
         },
         {
-          "id": "2026-05-07-1400",
+          "id": "2026-07-30-1400",
           "start": "14:00",
           "end": "15:00",
           "startMin": 840,
@@ -1665,7 +1602,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-07-1400-1",
+              "id": "2026-07-30-1400-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -1682,44 +1619,27 @@
               ]
             },
             {
-              "id": "2026-05-07-1400-2",
-              "title": "봉성체",
-              "subtitle": "",
-              "categoryId": "routine",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [],
-              "staffRole": "",
-              "location": "강당",
-              "tags": [
-                "봉성체",
-                "all",
-                "routine"
-              ]
-            },
-            {
-              "id": "2026-05-07-1400-3",
-              "title": "직업 알아보기",
+              "id": "2026-07-30-1400-2",
+              "title": "나한테 주는 입체 트로피",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
                 "sarang"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "직업 알아보기",
+                "나한테 주는 입체 트로피",
                 "sarang",
                 "cognitive"
               ]
             },
             {
-              "id": "2026-05-07-1400-4",
-              "title": "다트게임",
+              "id": "2026-07-30-1400-3",
+              "title": "너프건 쏘기",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1729,7 +1649,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "다트게임",
+                "너프건 쏘기",
                 "mideum",
                 "physical"
               ]
@@ -1737,7 +1657,7 @@
           ]
         },
         {
-          "id": "2026-05-07-1500",
+          "id": "2026-07-30-1500",
           "start": "15:00",
           "end": "16:00",
           "startMin": 900,
@@ -1745,8 +1665,8 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-07-1500-1",
-              "title": "협력컵쌓기",
+              "id": "2026-07-30-1500-1",
+              "title": "제목 없음",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1756,36 +1676,36 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "협력컵쌓기",
+                "제목 없음",
                 "sarang",
                 "physical"
               ]
             },
             {
-              "id": "2026-05-07-1500-2",
-              "title": "직업 알아보기",
+              "id": "2026-07-30-1500-2",
+              "title": "나한테 주는 입체 트토피",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
-                "mideum",
-                "somang"
+                "somang",
+                "mideum"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "직업 알아보기",
-                "mideum",
+                "나한테 주는 입체 트토피",
                 "somang",
+                "mideum",
                 "cognitive"
               ]
             }
           ]
         },
         {
-          "id": "2026-05-07-1600",
+          "id": "2026-07-30-1600",
           "start": "16:00",
           "end": "17:00",
           "startMin": 960,
@@ -1793,7 +1713,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-07-1600-1",
+              "id": "2026-07-30-1600-1",
               "title": "저녁 식사",
               "subtitle": "",
               "categoryId": "meal",
@@ -1812,7 +1732,7 @@
           ]
         },
         {
-          "id": "2026-05-07-1700",
+          "id": "2026-07-30-1700",
           "start": "17:00",
           "end": "18:00",
           "startMin": 1020,
@@ -1820,7 +1740,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-07-1700-1",
+              "id": "2026-07-30-1700-1",
               "title": "오후 송영 준비 및 송영 서비스",
               "subtitle": "",
               "categoryId": "service",
@@ -1841,20 +1761,20 @@
       ]
     },
     {
-      "date": "2026-05-08",
+      "date": "2026-07-31",
       "weekday": "금",
-      "venueManager": "강선진",
+      "venueManager": "김은비",
       "blocks": [
         {
-          "id": "2026-05-08-0830",
-          "start": "08:30",
+          "id": "2026-07-31-0800",
+          "start": "08:00",
           "end": "09:30",
-          "startMin": 510,
+          "startMin": 480,
           "endMin": 570,
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-08-0830-1",
+              "id": "2026-07-31-0800-1",
               "title": "오전 등원 서비스/건강관리",
               "subtitle": "혈압, 체온 체크",
               "categoryId": "service",
@@ -1873,7 +1793,7 @@
           ]
         },
         {
-          "id": "2026-05-08-0930",
+          "id": "2026-07-31-0930",
           "start": "09:30",
           "end": "10:00",
           "startMin": 570,
@@ -1881,7 +1801,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-08-0930-1",
+              "id": "2026-07-31-0930-1",
               "title": "명상의 시간/티타임",
               "subtitle": "",
               "categoryId": "routine",
@@ -1900,7 +1820,7 @@
           ]
         },
         {
-          "id": "2026-05-08-1000",
+          "id": "2026-07-31-1000",
           "start": "10:00",
           "end": "10:10",
           "startMin": 600,
@@ -1908,7 +1828,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-08-1000-1",
+              "id": "2026-07-31-1000-1",
               "title": "오전 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -1927,7 +1847,7 @@
           ]
         },
         {
-          "id": "2026-05-08-1010",
+          "id": "2026-07-31-1010",
           "start": "10:10",
           "end": "10:30",
           "startMin": 610,
@@ -1935,7 +1855,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-08-1010-1",
+              "id": "2026-07-31-1010-1",
               "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
@@ -1943,12 +1863,12 @@
                 "all"
               ],
               "staff": [
-                "변해미"
+                "정성진"
               ],
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "(건강체조1) 담당-변해미",
+                "(건강체조1) 담당-정성진",
                 "all",
                 "physical"
               ]
@@ -1956,7 +1876,7 @@
           ]
         },
         {
-          "id": "2026-05-08-1030",
+          "id": "2026-07-31-1030",
           "start": "10:30",
           "end": "11:30",
           "startMin": 630,
@@ -1964,7 +1884,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-08-1030-1",
+              "id": "2026-07-31-1030-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -1981,47 +1901,45 @@
               ]
             },
             {
-              "id": "2026-05-08-1030-2",
-              "title": "사랑합니다,감사합니다",
-              "subtitle": "♥어버이날 행사♥",
-              "categoryId": "routine",
+              "id": "2026-07-31-1030-2",
+              "title": "미술활동",
+              "subtitle": "알록달록 고슴도치",
+              "categoryId": "cognitive",
               "groupIds": [
-                "all"
+                "mideum"
+              ],
+              "staff": [
+                "정성진"
+              ],
+              "staffRole": "준비",
+              "location": "강당",
+              "tags": [
+                "미술활동",
+                "mideum",
+                "cognitive"
+              ]
+            },
+            {
+              "id": "2026-07-31-1030-3",
+              "title": "제목 없음",
+              "subtitle": "",
+              "categoryId": "physical",
+              "groupIds": [
+                "somang"
               ],
               "staff": [],
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "사랑합니다,감사합니다",
-                "all",
-                "routine"
-              ]
-            },
-            {
-              "id": "2026-05-08-1030-3",
-              "title": "어버이날",
-              "subtitle": "기념하기",
-              "categoryId": "cognitive",
-              "groupIds": [
-                "mideum",
-                "somang"
-              ],
-              "staff": [
-                "김은비"
-              ],
-              "staffRole": "준비",
-              "location": "강당",
-              "tags": [
-                "어버이날",
-                "mideum",
+                "제목 없음",
                 "somang",
-                "cognitive"
+                "physical"
               ]
             }
           ]
         },
         {
-          "id": "2026-05-08-1130",
+          "id": "2026-07-31-1130",
           "start": "11:30",
           "end": "12:30",
           "startMin": 690,
@@ -2029,7 +1947,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-08-1130-1",
+              "id": "2026-07-31-1130-1",
               "title": "점심 식사 준비",
               "subtitle": "식사 준비/투약 및 개인 위생, 체온 체크",
               "categoryId": "meal",
@@ -2048,7 +1966,7 @@
           ]
         },
         {
-          "id": "2026-05-08-1230",
+          "id": "2026-07-31-1230",
           "start": "12:30",
           "end": "13:30",
           "startMin": 750,
@@ -2056,7 +1974,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-08-1230-1",
+              "id": "2026-07-31-1230-1",
               "title": "자율시간",
               "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
               "categoryId": "routine",
@@ -2075,18 +1993,18 @@
           ]
         },
         {
-          "id": "2026-05-08-1330",
+          "id": "2026-07-31-1330",
           "start": "13:30",
-          "end": "13:40",
+          "end": "14:00",
           "startMin": 810,
-          "endMin": 820,
+          "endMin": 840,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-08-1330-1",
-              "title": "오후 간식",
+              "id": "2026-07-31-1330-1",
+              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
               "subtitle": "",
-              "categoryId": "routine",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -2094,36 +2012,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "오후 간식",
-                "all",
-                "routine"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-05-08-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
-          "section": "오후",
-          "entries": [
-            {
-              "id": "2026-05-08-1340-1",
-              "title": "건강체조2",
-              "subtitle": "",
-              "categoryId": "physical",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [
-                "강선진"
-              ],
-              "staffRole": "담당",
-              "location": "강당",
-              "tags": [
-                "건강체조2",
+                "오후간식 및 (건강체조2) 담당-강선진",
                 "all",
                 "physical"
               ]
@@ -2131,7 +2020,7 @@
           ]
         },
         {
-          "id": "2026-05-08-1400",
+          "id": "2026-07-31-1400",
           "start": "14:00",
           "end": "15:00",
           "startMin": 840,
@@ -2139,7 +2028,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-08-1400-1",
+              "id": "2026-07-31-1400-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -2156,27 +2045,27 @@
               ]
             },
             {
-              "id": "2026-05-08-1400-2",
-              "title": "숫자공부",
+              "id": "2026-07-31-1400-2",
+              "title": "8월 달력 만들기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
                 "sarang"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "숫자공부",
+                "8월 달력 만들기",
                 "sarang",
                 "cognitive"
               ]
             },
             {
-              "id": "2026-05-08-1400-3",
-              "title": "너프건쏘기",
+              "id": "2026-07-31-1400-3",
+              "title": "접시 제기",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2186,7 +2075,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "너프건쏘기",
+                "접시 제기",
                 "mideum",
                 "physical"
               ]
@@ -2194,7 +2083,7 @@
           ]
         },
         {
-          "id": "2026-05-08-1500",
+          "id": "2026-07-31-1500",
           "start": "15:00",
           "end": "16:00",
           "startMin": 900,
@@ -2202,8 +2091,8 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-08-1500-1",
-              "title": "농구",
+              "id": "2026-07-31-1500-1",
+              "title": "제목 없음",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2213,36 +2102,36 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "농구",
+                "제목 없음",
                 "sarang",
                 "physical"
               ]
             },
             {
-              "id": "2026-05-08-1500-2",
-              "title": "숫자공부",
+              "id": "2026-07-31-1500-2",
+              "title": "8월 달력 만들기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
-                "mideum",
-                "somang"
+                "somang",
+                "mideum"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "숫자공부",
-                "mideum",
+                "8월 달력 만들기",
                 "somang",
+                "mideum",
                 "cognitive"
               ]
             }
           ]
         },
         {
-          "id": "2026-05-08-1600",
+          "id": "2026-07-31-1600",
           "start": "16:00",
           "end": "17:00",
           "startMin": 960,
@@ -2250,7 +2139,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-08-1600-1",
+              "id": "2026-07-31-1600-1",
               "title": "저녁 식사",
               "subtitle": "",
               "categoryId": "meal",
@@ -2269,7 +2158,7 @@
           ]
         },
         {
-          "id": "2026-05-08-1700",
+          "id": "2026-07-31-1700",
           "start": "17:00",
           "end": "18:00",
           "startMin": 1020,
@@ -2277,7 +2166,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-08-1700-1",
+              "id": "2026-07-31-1700-1",
               "title": "오후 송영 준비 및 송영 서비스",
               "subtitle": "",
               "categoryId": "service",
@@ -2298,20 +2187,20 @@
       ]
     },
     {
-      "date": "2026-05-09",
+      "date": "2026-08-01",
       "weekday": "토",
       "venueManager": "강선진",
       "blocks": [
         {
-          "id": "2026-05-09-0830",
-          "start": "08:30",
+          "id": "2026-08-01-0800",
+          "start": "08:00",
           "end": "09:30",
-          "startMin": 510,
+          "startMin": 480,
           "endMin": 570,
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-09-0830-1",
+              "id": "2026-08-01-0800-1",
               "title": "오전 등원 서비스/건강관리",
               "subtitle": "혈압, 체온 체크",
               "categoryId": "service",
@@ -2330,7 +2219,7 @@
           ]
         },
         {
-          "id": "2026-05-09-0930",
+          "id": "2026-08-01-0930",
           "start": "09:30",
           "end": "10:00",
           "startMin": 570,
@@ -2338,7 +2227,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-09-0930-1",
+              "id": "2026-08-01-0930-1",
               "title": "명상의 시간/티타임",
               "subtitle": "",
               "categoryId": "routine",
@@ -2357,7 +2246,7 @@
           ]
         },
         {
-          "id": "2026-05-09-1000",
+          "id": "2026-08-01-1000",
           "start": "10:00",
           "end": "10:10",
           "startMin": 600,
@@ -2365,7 +2254,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-09-1000-1",
+              "id": "2026-08-01-1000-1",
               "title": "오전 간식",
               "subtitle": "",
               "categoryId": "routine",
@@ -2384,7 +2273,7 @@
           ]
         },
         {
-          "id": "2026-05-09-1010",
+          "id": "2026-08-01-1010",
           "start": "10:10",
           "end": "10:30",
           "startMin": 610,
@@ -2392,7 +2281,7 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-09-1010-1",
+              "id": "2026-08-01-1010-1",
               "title": "건강체조1",
               "subtitle": "",
               "categoryId": "physical",
@@ -2400,12 +2289,12 @@
                 "all"
               ],
               "staff": [
-                "변해미"
+                "정성진"
               ],
               "staffRole": "담당",
               "location": "강당",
               "tags": [
-                "(건강체조1) 담당-변해미",
+                "(건강체조1) 담당-정성진",
                 "all",
                 "physical"
               ]
@@ -2413,7 +2302,7 @@
           ]
         },
         {
-          "id": "2026-05-09-1030",
+          "id": "2026-08-01-1030",
           "start": "10:30",
           "end": "11:30",
           "startMin": 630,
@@ -2421,28 +2310,43 @@
           "section": "오전",
           "entries": [
             {
-              "id": "2026-05-09-1030-1",
-              "title": "울릉도트위스트",
-              "subtitle": "맞춤형-소리담",
-              "categoryId": "custom",
+              "id": "2026-08-01-1030-1",
+              "title": "재활",
+              "subtitle": "",
+              "categoryId": "rehab",
               "groupIds": [
                 "all"
               ],
-              "staff": [
-                "김소정"
-              ],
-              "staffRole": "강사",
+              "staff": [],
+              "staffRole": "",
               "location": "강당",
               "tags": [
-                "울릉도트위스트",
+                "재활",
                 "all",
-                "custom"
+                "rehab"
+              ]
+            },
+            {
+              "id": "2026-08-01-1030-2",
+              "title": "제목 없음",
+              "subtitle": "",
+              "categoryId": "physical",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "제목 없음",
+                "all",
+                "physical"
               ]
             }
           ]
         },
         {
-          "id": "2026-05-09-1130",
+          "id": "2026-08-01-1130",
           "start": "11:30",
           "end": "12:30",
           "startMin": 690,
@@ -2450,7 +2354,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-09-1130-1",
+              "id": "2026-08-01-1130-1",
               "title": "점심 식사 준비",
               "subtitle": "식사 준비/투약 및 개인 위생, 체온 체크",
               "categoryId": "meal",
@@ -2469,7 +2373,7 @@
           ]
         },
         {
-          "id": "2026-05-09-1230",
+          "id": "2026-08-01-1230",
           "start": "12:30",
           "end": "13:30",
           "startMin": 750,
@@ -2477,7 +2381,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-09-1230-1",
+              "id": "2026-08-01-1230-1",
               "title": "자율시간",
               "subtitle": "재활: 믿음반 / 강당 담당:사랑반",
               "categoryId": "routine",
@@ -2496,18 +2400,18 @@
           ]
         },
         {
-          "id": "2026-05-09-1330",
+          "id": "2026-08-01-1330",
           "start": "13:30",
-          "end": "13:40",
+          "end": "14:00",
           "startMin": 810,
-          "endMin": 820,
+          "endMin": 840,
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-09-1330-1",
-              "title": "오후 간식",
+              "id": "2026-08-01-1330-1",
+              "title": "오후 간식 및 (건강체조2) 담당: 강선진",
               "subtitle": "",
-              "categoryId": "routine",
+              "categoryId": "physical",
               "groupIds": [
                 "all"
               ],
@@ -2515,36 +2419,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "오후 간식",
-                "all",
-                "routine"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2026-05-09-1340",
-          "start": "13:40",
-          "end": "14:00",
-          "startMin": 820,
-          "endMin": 840,
-          "section": "오후",
-          "entries": [
-            {
-              "id": "2026-05-09-1340-1",
-              "title": "건강체조2",
-              "subtitle": "",
-              "categoryId": "physical",
-              "groupIds": [
-                "all"
-              ],
-              "staff": [
-                "강선진"
-              ],
-              "staffRole": "담당",
-              "location": "강당",
-              "tags": [
-                "건강체조2",
+                "오후간식 및 (건강체조2) 담당-강선진",
                 "all",
                 "physical"
               ]
@@ -2552,7 +2427,7 @@
           ]
         },
         {
-          "id": "2026-05-09-1400",
+          "id": "2026-08-01-1400",
           "start": "14:00",
           "end": "15:00",
           "startMin": 840,
@@ -2560,7 +2435,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-09-1400-1",
+              "id": "2026-08-01-1400-1",
               "title": "재활",
               "subtitle": "",
               "categoryId": "rehab",
@@ -2575,11 +2450,28 @@
                 "all",
                 "rehab"
               ]
+            },
+            {
+              "id": "2026-08-01-1400-2",
+              "title": "제목 없음",
+              "subtitle": "",
+              "categoryId": "physical",
+              "groupIds": [
+                "all"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "제목 없음",
+                "all",
+                "physical"
+              ]
             }
           ]
         },
         {
-          "id": "2026-05-09-1500",
+          "id": "2026-08-01-1500",
           "start": "15:00",
           "end": "16:00",
           "startMin": 900,
@@ -2587,20 +2479,20 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-09-1500-1",
-              "title": "에드가 드가",
-              "subtitle": "'발레수업'",
+              "id": "2026-08-01-1500-1",
+              "title": "제목 없음",
+              "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
                 "all"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "에드가 드가",
+                "제목 없음",
                 "all",
                 "cognitive"
               ]
@@ -2608,7 +2500,7 @@
           ]
         },
         {
-          "id": "2026-05-09-1600",
+          "id": "2026-08-01-1600",
           "start": "16:00",
           "end": "17:00",
           "startMin": 960,
@@ -2616,7 +2508,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-09-1600-1",
+              "id": "2026-08-01-1600-1",
               "title": "저녁 식사",
               "subtitle": "",
               "categoryId": "meal",
@@ -2635,7 +2527,7 @@
           ]
         },
         {
-          "id": "2026-05-09-1700",
+          "id": "2026-08-01-1700",
           "start": "17:00",
           "end": "18:00",
           "startMin": 1020,
@@ -2643,7 +2535,7 @@
           "section": "오후",
           "entries": [
             {
-              "id": "2026-05-09-1700-1",
+              "id": "2026-08-01-1700-1",
               "title": "오후 송영 준비 및 송영 서비스",
               "subtitle": "",
               "categoryId": "service",
@@ -2666,12 +2558,12 @@
   ],
   "flatEntries": [
     {
-      "id": "2026-05-04-0830-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-0800-1",
+      "date": "2026-07-27",
       "weekday": "월",
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:30",
-      "startMin": 510,
+      "startMin": 480,
       "endMin": 570,
       "section": "오전",
       "title": "오전 등영서비스/건강관리",
@@ -2690,8 +2582,8 @@
       ]
     },
     {
-      "id": "2026-05-04-0930-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-0930-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "09:30",
       "end": "10:00",
@@ -2714,8 +2606,8 @@
       ]
     },
     {
-      "id": "2026-05-04-1000-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1000-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "10:00",
       "end": "10:10",
@@ -2738,15 +2630,15 @@
       ]
     },
     {
-      "id": "2026-05-04-1010-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1010-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "10:10",
       "end": "10:30",
       "startMin": 610,
       "endMin": 630,
       "section": "오전",
-      "title": "(건강체조1) 담당-변해미",
+      "title": "(건강체조1) 담당-정성진",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2756,14 +2648,14 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "(건강체조1) 담당-변해미",
+        "(건강체조1) 담당-정성진",
         "all",
         "physical"
       ]
     },
     {
-      "id": "2026-05-04-1030-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1030-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "10:30",
       "end": "11:30",
@@ -2786,42 +2678,42 @@
       ]
     },
     {
-      "id": "2026-05-04-1030-2",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1030-2",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "미술활동",
-      "subtitle": "제철참외",
+      "title": "종이접기",
+      "subtitle": "바다고래 종이접기",
       "categoryId": "cognitive",
       "groupIds": [
         "mideum"
       ],
       "staff": [
-        "변해미"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "미술활동",
+        "종이접기",
         "mideum",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-04-1030-3",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1030-3",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "우산 속 골인",
-      "subtitle": "맞춤형-활기담",
+      "title": "활기담 다함께 통통통",
+      "subtitle": "맞춤형-활기담 다함께 통통통",
       "categoryId": "custom",
       "groupIds": [
         "somang"
@@ -2832,14 +2724,14 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "우산 속 골인",
+        "활기담 다함께 통통통",
         "somang",
         "custom"
       ]
     },
     {
-      "id": "2026-05-04-1130-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1130-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "11:30",
       "end": "12:30",
@@ -2862,8 +2754,8 @@
       ]
     },
     {
-      "id": "2026-05-04-1230-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1230-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "12:30",
       "end": "13:30",
@@ -2886,12 +2778,12 @@
       ]
     },
     {
-      "id": "2026-05-04-1340-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1330-1",
+      "date": "2026-07-27",
       "weekday": "월",
-      "start": "13:40",
+      "start": "13:30",
       "end": "14:00",
-      "startMin": 820,
+      "startMin": 810,
       "endMin": 840,
       "section": "오후",
       "title": "오후간식 및 (건강체조2) 담당-강선진",
@@ -2910,8 +2802,8 @@
       ]
     },
     {
-      "id": "2026-05-04-1400-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1400-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "14:00",
       "end": "15:00",
@@ -2934,8 +2826,58 @@
       ]
     },
     {
-      "id": "2026-05-04-1400-2",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1400-2",
+      "date": "2026-07-27",
+      "weekday": "월",
+      "start": "14:00",
+      "end": "15:00",
+      "startMin": 840,
+      "endMin": 900,
+      "section": "오후",
+      "title": "실버특강",
+      "subtitle": "",
+      "categoryId": "routine",
+      "groupIds": [
+        "all"
+      ],
+      "staff": [],
+      "staffRole": "",
+      "location": "강당",
+      "tags": [
+        "실버특강",
+        "all",
+        "routine"
+      ]
+    },
+    {
+      "id": "2026-07-27-1400-3",
+      "date": "2026-07-27",
+      "weekday": "월",
+      "start": "14:00",
+      "end": "15:00",
+      "startMin": 840,
+      "endMin": 900,
+      "section": "오후",
+      "title": "숨은 그림 찾기",
+      "subtitle": "",
+      "categoryId": "cognitive",
+      "groupIds": [
+        "sarang"
+      ],
+      "staff": [
+        "정성진"
+      ],
+      "staffRole": "준비",
+      "location": "강당",
+      "tags": [
+        "숨은 그림 찾기",
+        "sarang",
+        "cognitive"
+      ]
+    },
+    {
+      "id": "2026-07-27-1400-4",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "14:00",
       "end": "15:00",
@@ -2943,32 +2885,6 @@
       "endMin": 900,
       "section": "오후",
       "title": "제목 없음",
-      "subtitle": "",
-      "categoryId": "cognitive",
-      "groupIds": [
-        "sarang"
-      ],
-      "staff": [
-        "김은비"
-      ],
-      "staffRole": "준비",
-      "location": "강당",
-      "tags": [
-        "제목 없음",
-        "sarang",
-        "cognitive"
-      ]
-    },
-    {
-      "id": "2026-05-04-1400-3",
-      "date": "2026-05-04",
-      "weekday": "월",
-      "start": "14:00",
-      "end": "15:00",
-      "startMin": 840,
-      "endMin": 900,
-      "section": "오후",
-      "title": "고리던지기",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2978,21 +2894,21 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "고리던지기",
+        "제목 없음",
         "mideum",
         "physical"
       ]
     },
     {
-      "id": "2026-05-04-1500-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1500-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "15:00",
       "end": "16:00",
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "투호",
+      "title": "제목 없음",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3002,14 +2918,14 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "투호",
+        "제목 없음",
         "sarang",
         "physical"
       ]
     },
     {
-      "id": "2026-05-04-1500-2",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1500-2",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "15:00",
       "end": "16:00",
@@ -3020,24 +2936,24 @@
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
-        "mideum",
-        "somang"
+        "somang",
+        "mideum"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
         "제목 없음",
-        "mideum",
         "somang",
+        "mideum",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-04-1600-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1600-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "16:00",
       "end": "17:00",
@@ -3060,8 +2976,8 @@
       ]
     },
     {
-      "id": "2026-05-04-1700-1",
-      "date": "2026-05-04",
+      "id": "2026-07-27-1700-1",
+      "date": "2026-07-27",
       "weekday": "월",
       "start": "17:00",
       "end": "18:00",
@@ -3084,12 +3000,12 @@
       ]
     },
     {
-      "id": "2026-05-05-0830-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-0800-1",
+      "date": "2026-07-28",
       "weekday": "화",
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:30",
-      "startMin": 510,
+      "startMin": 480,
       "endMin": 570,
       "section": "오전",
       "title": "오전 등영서비스/건강관리",
@@ -3108,8 +3024,8 @@
       ]
     },
     {
-      "id": "2026-05-05-0930-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-0930-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "09:30",
       "end": "10:00",
@@ -3132,8 +3048,8 @@
       ]
     },
     {
-      "id": "2026-05-05-1000-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1000-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "10:00",
       "end": "10:10",
@@ -3156,15 +3072,15 @@
       ]
     },
     {
-      "id": "2026-05-05-1010-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1010-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "10:10",
       "end": "10:30",
       "startMin": 610,
       "endMin": 630,
       "section": "오전",
-      "title": "(건강체조1) 담당-변해미",
+      "title": "(건강체조1) 담당-정성진",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3174,14 +3090,14 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "(건강체조1) 담당-변해미",
+        "(건강체조1) 담당-정성진",
         "all",
         "physical"
       ]
     },
     {
-      "id": "2026-05-05-1030-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1030-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "10:30",
       "end": "11:30",
@@ -3204,34 +3120,58 @@
       ]
     },
     {
-      "id": "2026-05-05-1030-2",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1030-2",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "윷놀이",
+      "title": "제목 없음",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
-        "mideum",
         "somang"
       ],
       "staff": [],
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "윷놀이",
-        "mideum",
+        "제목 없음",
         "somang",
         "physical"
       ]
     },
     {
-      "id": "2026-05-05-1130-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1030-3",
+      "date": "2026-07-28",
+      "weekday": "화",
+      "start": "10:30",
+      "end": "11:30",
+      "startMin": 630,
+      "endMin": 690,
+      "section": "오전",
+      "title": "소리담 뱃노래",
+      "subtitle": "맞춤형- 소리담 뱃노래",
+      "categoryId": "custom",
+      "groupIds": [
+        "mideum"
+      ],
+      "staff": [
+        "김소정"
+      ],
+      "staffRole": "강사",
+      "location": "강당",
+      "tags": [
+        "소리담 뱃노래",
+        "mideum",
+        "custom"
+      ]
+    },
+    {
+      "id": "2026-07-28-1130-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "11:30",
       "end": "12:30",
@@ -3254,8 +3194,8 @@
       ]
     },
     {
-      "id": "2026-05-05-1230-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1230-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "12:30",
       "end": "13:30",
@@ -3278,12 +3218,12 @@
       ]
     },
     {
-      "id": "2026-05-05-1340-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1330-1",
+      "date": "2026-07-28",
       "weekday": "화",
-      "start": "13:40",
+      "start": "13:30",
       "end": "14:00",
-      "startMin": 820,
+      "startMin": 810,
       "endMin": 840,
       "section": "오후",
       "title": "오후간식 및 (건강체조2) 담당-강선진",
@@ -3302,8 +3242,8 @@
       ]
     },
     {
-      "id": "2026-05-05-1400-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1400-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "14:00",
       "end": "15:00",
@@ -3326,62 +3266,112 @@
       ]
     },
     {
-      "id": "2026-05-05-1400-2",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1400-2",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "14:00",
       "end": "15:00",
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "종이접기",
-      "subtitle": "5월에 쓰는",
+      "title": "제목 없음",
+      "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
-        "sarang",
-        "mideum"
+        "sarang"
       ],
       "staff": [
-        "김은비"
+        "정성진"
+      ],
+      "staffRole": "준비",
+      "location": "강당",
+      "tags": [
+        "제목 없음",
+        "sarang",
+        "cognitive"
+      ]
+    },
+    {
+      "id": "2026-07-28-1400-3",
+      "date": "2026-07-28",
+      "weekday": "화",
+      "start": "14:00",
+      "end": "15:00",
+      "startMin": 840,
+      "endMin": 900,
+      "section": "오후",
+      "title": "제목 없음",
+      "subtitle": "",
+      "categoryId": "physical",
+      "groupIds": [
+        "mideum"
+      ],
+      "staff": [],
+      "staffRole": "",
+      "location": "강당",
+      "tags": [
+        "제목 없음",
+        "mideum",
+        "physical"
+      ]
+    },
+    {
+      "id": "2026-07-28-1500-1",
+      "date": "2026-07-28",
+      "weekday": "화",
+      "start": "15:00",
+      "end": "16:00",
+      "startMin": 900,
+      "endMin": 960,
+      "section": "오후",
+      "title": "종이접기",
+      "subtitle": "바다고래 종이접기",
+      "categoryId": "cognitive",
+      "groupIds": [
+        "sarang"
+      ],
+      "staff": [
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
         "종이접기",
         "sarang",
-        "mideum",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-05-1500-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1500-2",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "15:00",
       "end": "16:00",
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "시장구경",
+      "title": "제목 없음",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
-        "all"
+        "somang",
+        "mideum"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "시장구경",
-        "all",
+        "제목 없음",
+        "somang",
+        "mideum",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-05-1600-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1600-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "16:00",
       "end": "17:00",
@@ -3404,8 +3394,8 @@
       ]
     },
     {
-      "id": "2026-05-05-1700-1",
-      "date": "2026-05-05",
+      "id": "2026-07-28-1700-1",
+      "date": "2026-07-28",
       "weekday": "화",
       "start": "17:00",
       "end": "18:00",
@@ -3428,12 +3418,12 @@
       ]
     },
     {
-      "id": "2026-05-06-0830-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-0800-1",
+      "date": "2026-07-29",
       "weekday": "수",
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:30",
-      "startMin": 510,
+      "startMin": 480,
       "endMin": 570,
       "section": "오전",
       "title": "오전 등영서비스/건강관리",
@@ -3452,8 +3442,8 @@
       ]
     },
     {
-      "id": "2026-05-06-0930-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-0930-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "09:30",
       "end": "10:00",
@@ -3476,8 +3466,8 @@
       ]
     },
     {
-      "id": "2026-05-06-1000-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1000-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "10:00",
       "end": "10:10",
@@ -3500,15 +3490,15 @@
       ]
     },
     {
-      "id": "2026-05-06-1010-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1010-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "10:10",
       "end": "10:30",
       "startMin": 610,
       "endMin": 630,
       "section": "오전",
-      "title": "(건강체조1) 담당-변해미",
+      "title": "(건강체조1) 담당-정성진",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3518,14 +3508,14 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "(건강체조1) 담당-변해미",
+        "(건강체조1) 담당-정성진",
         "all",
         "physical"
       ]
     },
     {
-      "id": "2026-05-06-1030-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1030-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "10:30",
       "end": "11:30",
@@ -3548,16 +3538,16 @@
       ]
     },
     {
-      "id": "2026-05-06-1030-2",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1030-2",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "행복이 피어나는 튤립",
-      "subtitle": "맞춤형-오감담",
+      "title": "오감담 유리병 속 여름 바다",
+      "subtitle": "맞춤형-오감담 유리병 속 여름 바다",
       "categoryId": "custom",
       "groupIds": [
         "somang"
@@ -3568,40 +3558,40 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "행복이 피어나는 튤립",
+        "오감담 유리병 속 여름 바다",
         "somang",
         "custom"
       ]
     },
     {
-      "id": "2026-05-06-1030-3",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1030-3",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "워크메이트",
+      "title": "제목 없음",
       "subtitle": "",
-      "categoryId": "physical",
+      "categoryId": "cognitive",
       "groupIds": [
         "mideum"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
-      "staffRole": "진행",
+      "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "워크메이트",
+        "제목 없음",
         "mideum",
-        "physical"
+        "cognitive"
       ]
     },
     {
-      "id": "2026-05-06-1130-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1130-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "11:30",
       "end": "12:30",
@@ -3624,8 +3614,8 @@
       ]
     },
     {
-      "id": "2026-05-06-1230-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1230-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "12:30",
       "end": "13:30",
@@ -3648,12 +3638,12 @@
       ]
     },
     {
-      "id": "2026-05-06-1340-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1330-1",
+      "date": "2026-07-29",
       "weekday": "수",
-      "start": "13:40",
+      "start": "13:30",
       "end": "14:00",
-      "startMin": 820,
+      "startMin": 810,
       "endMin": 840,
       "section": "오후",
       "title": "오후간식 및 (건강체조2) 담당-강선진",
@@ -3672,8 +3662,8 @@
       ]
     },
     {
-      "id": "2026-05-06-1400-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1400-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "14:00",
       "end": "15:00",
@@ -3696,15 +3686,15 @@
       ]
     },
     {
-      "id": "2026-05-06-1400-2",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1400-2",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "14:00",
       "end": "15:00",
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "실버체조",
+      "title": "실버체조 (사랑반,믿음반) 준비:용인시체육회",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3714,44 +3704,44 @@
       "staff": [
         "용인시체육회"
       ],
-      "staffRole": "진행",
+      "staffRole": "실버체조 (사랑반,믿음반) 준비",
       "location": "강당",
       "tags": [
-        "실버체조",
+        "실버체조 (사랑반,믿음반) 준비:용인시체육회",
         "sarang",
         "mideum",
         "physical"
       ]
     },
     {
-      "id": "2026-05-06-1500-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1500-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "15:00",
       "end": "16:00",
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "규칙찾아",
-      "subtitle": "빈칸채우기",
+      "title": "나만의 팥빙수 만들기",
+      "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
         "all"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "규칙찾아",
+        "나만의 팥빙수 만들기",
         "all",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-06-1600-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1600-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "16:00",
       "end": "17:00",
@@ -3774,8 +3764,8 @@
       ]
     },
     {
-      "id": "2026-05-06-1700-1",
-      "date": "2026-05-06",
+      "id": "2026-07-29-1700-1",
+      "date": "2026-07-29",
       "weekday": "수",
       "start": "17:00",
       "end": "18:00",
@@ -3798,12 +3788,12 @@
       ]
     },
     {
-      "id": "2026-05-07-0830-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-0800-1",
+      "date": "2026-07-30",
       "weekday": "목",
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:30",
-      "startMin": 510,
+      "startMin": 480,
       "endMin": 570,
       "section": "오전",
       "title": "오전 등영서비스/건강관리",
@@ -3822,8 +3812,8 @@
       ]
     },
     {
-      "id": "2026-05-07-0930-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-0930-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "09:30",
       "end": "10:00",
@@ -3846,8 +3836,8 @@
       ]
     },
     {
-      "id": "2026-05-07-1000-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1000-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "10:00",
       "end": "10:10",
@@ -3870,15 +3860,15 @@
       ]
     },
     {
-      "id": "2026-05-07-1010-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1010-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "10:10",
       "end": "10:30",
       "startMin": 610,
       "endMin": 630,
       "section": "오전",
-      "title": "(건강체조1) 담당-변해미",
+      "title": "(건강체조1) 담당-정성진",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3888,14 +3878,14 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "(건강체조1) 담당-변해미",
+        "(건강체조1) 담당-정성진",
         "all",
         "physical"
       ]
     },
     {
-      "id": "2026-05-07-1030-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1030-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "10:30",
       "end": "11:30",
@@ -3918,40 +3908,16 @@
       ]
     },
     {
-      "id": "2026-05-07-1030-2",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1030-2",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "*생신잔치*",
-      "subtitle": "강진구,김영옥,김영춘.",
-      "categoryId": "routine",
-      "groupIds": [
-        "all"
-      ],
-      "staff": [],
-      "staffRole": "",
-      "location": "강당",
-      "tags": [
-        "*생신잔치*",
-        "all",
-        "routine"
-      ]
-    },
-    {
-      "id": "2026-05-07-1030-3",
-      "date": "2026-05-07",
-      "weekday": "목",
-      "start": "10:30",
-      "end": "11:30",
-      "startMin": 630,
-      "endMin": 690,
-      "section": "오전",
-      "title": "알록달록 과일 꼬치 놀이",
-      "subtitle": "맞춤형-인지담",
+      "title": "인지담 개구리의 곤충사냥",
+      "subtitle": "맞춤형-인지담 개구리의 곤충사냥",
       "categoryId": "custom",
       "groupIds": [
         "mideum"
@@ -3962,21 +3928,21 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "알록달록 과일 꼬치 놀이",
+        "인지담 개구리의 곤충사냥",
         "mideum",
         "custom"
       ]
     },
     {
-      "id": "2026-05-07-1030-4",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1030-3",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "세가족콩놀이",
+      "title": "투호",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3986,14 +3952,14 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "세가족콩놀이",
+        "투호",
         "somang",
         "physical"
       ]
     },
     {
-      "id": "2026-05-07-1130-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1130-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "11:30",
       "end": "12:30",
@@ -4016,8 +3982,8 @@
       ]
     },
     {
-      "id": "2026-05-07-1230-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1230-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "12:30",
       "end": "13:30",
@@ -4040,12 +4006,12 @@
       ]
     },
     {
-      "id": "2026-05-07-1340-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1330-1",
+      "date": "2026-07-30",
       "weekday": "목",
-      "start": "13:40",
+      "start": "13:30",
       "end": "14:00",
-      "startMin": 820,
+      "startMin": 810,
       "endMin": 840,
       "section": "오후",
       "title": "오후간식 및 (건강체조2) 담당-강선진",
@@ -4064,8 +4030,8 @@
       ]
     },
     {
-      "id": "2026-05-07-1400-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1400-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "14:00",
       "end": "15:00",
@@ -4088,65 +4054,41 @@
       ]
     },
     {
-      "id": "2026-05-07-1400-2",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1400-2",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "14:00",
       "end": "15:00",
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "봉성체",
-      "subtitle": "",
-      "categoryId": "routine",
-      "groupIds": [
-        "all"
-      ],
-      "staff": [],
-      "staffRole": "",
-      "location": "강당",
-      "tags": [
-        "봉성체",
-        "all",
-        "routine"
-      ]
-    },
-    {
-      "id": "2026-05-07-1400-3",
-      "date": "2026-05-07",
-      "weekday": "목",
-      "start": "14:00",
-      "end": "15:00",
-      "startMin": 840,
-      "endMin": 900,
-      "section": "오후",
-      "title": "직업 알아보기",
+      "title": "나한테 주는 입체 트로피",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
         "sarang"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "직업 알아보기",
+        "나한테 주는 입체 트로피",
         "sarang",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-07-1400-4",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1400-3",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "14:00",
       "end": "15:00",
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "다트게임",
+      "title": "너프건 쏘기",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4156,21 +4098,21 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "다트게임",
+        "너프건 쏘기",
         "mideum",
         "physical"
       ]
     },
     {
-      "id": "2026-05-07-1500-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1500-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "15:00",
       "end": "16:00",
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "협력컵쌓기",
+      "title": "제목 없음",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4180,42 +4122,42 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "협력컵쌓기",
+        "제목 없음",
         "sarang",
         "physical"
       ]
     },
     {
-      "id": "2026-05-07-1500-2",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1500-2",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "15:00",
       "end": "16:00",
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "직업 알아보기",
+      "title": "나한테 주는 입체 트토피",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
-        "mideum",
-        "somang"
+        "somang",
+        "mideum"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "직업 알아보기",
-        "mideum",
+        "나한테 주는 입체 트토피",
         "somang",
+        "mideum",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-07-1600-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1600-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "16:00",
       "end": "17:00",
@@ -4238,8 +4180,8 @@
       ]
     },
     {
-      "id": "2026-05-07-1700-1",
-      "date": "2026-05-07",
+      "id": "2026-07-30-1700-1",
+      "date": "2026-07-30",
       "weekday": "목",
       "start": "17:00",
       "end": "18:00",
@@ -4262,12 +4204,12 @@
       ]
     },
     {
-      "id": "2026-05-08-0830-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-0800-1",
+      "date": "2026-07-31",
       "weekday": "금",
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:30",
-      "startMin": 510,
+      "startMin": 480,
       "endMin": 570,
       "section": "오전",
       "title": "오전 등영서비스/건강관리",
@@ -4286,8 +4228,8 @@
       ]
     },
     {
-      "id": "2026-05-08-0930-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-0930-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "09:30",
       "end": "10:00",
@@ -4310,8 +4252,8 @@
       ]
     },
     {
-      "id": "2026-05-08-1000-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1000-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "10:00",
       "end": "10:10",
@@ -4334,15 +4276,15 @@
       ]
     },
     {
-      "id": "2026-05-08-1010-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1010-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "10:10",
       "end": "10:30",
       "startMin": 610,
       "endMin": 630,
       "section": "오전",
-      "title": "(건강체조1) 담당-변해미",
+      "title": "(건강체조1) 담당-정성진",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4352,14 +4294,14 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "(건강체조1) 담당-변해미",
+        "(건강체조1) 담당-정성진",
         "all",
         "physical"
       ]
     },
     {
-      "id": "2026-05-08-1030-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1030-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "10:30",
       "end": "11:30",
@@ -4382,60 +4324,58 @@
       ]
     },
     {
-      "id": "2026-05-08-1030-2",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1030-2",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "사랑합니다,감사합니다",
-      "subtitle": "♥어버이날 행사♥",
-      "categoryId": "routine",
+      "title": "미술활동",
+      "subtitle": "알록달록 고슴도치",
+      "categoryId": "cognitive",
       "groupIds": [
-        "all"
+        "mideum"
+      ],
+      "staff": [
+        "정성진"
+      ],
+      "staffRole": "준비",
+      "location": "강당",
+      "tags": [
+        "미술활동",
+        "mideum",
+        "cognitive"
+      ]
+    },
+    {
+      "id": "2026-07-31-1030-3",
+      "date": "2026-07-31",
+      "weekday": "금",
+      "start": "10:30",
+      "end": "11:30",
+      "startMin": 630,
+      "endMin": 690,
+      "section": "오전",
+      "title": "제목 없음",
+      "subtitle": "",
+      "categoryId": "physical",
+      "groupIds": [
+        "somang"
       ],
       "staff": [],
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "사랑합니다,감사합니다",
-        "all",
-        "routine"
-      ]
-    },
-    {
-      "id": "2026-05-08-1030-3",
-      "date": "2026-05-08",
-      "weekday": "금",
-      "start": "10:30",
-      "end": "11:30",
-      "startMin": 630,
-      "endMin": 690,
-      "section": "오전",
-      "title": "어버이날",
-      "subtitle": "기념하기",
-      "categoryId": "cognitive",
-      "groupIds": [
-        "mideum",
-        "somang"
-      ],
-      "staff": [
-        "김은비"
-      ],
-      "staffRole": "준비",
-      "location": "강당",
-      "tags": [
-        "어버이날",
-        "mideum",
+        "제목 없음",
         "somang",
-        "cognitive"
+        "physical"
       ]
     },
     {
-      "id": "2026-05-08-1130-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1130-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "11:30",
       "end": "12:30",
@@ -4458,8 +4398,8 @@
       ]
     },
     {
-      "id": "2026-05-08-1230-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1230-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "12:30",
       "end": "13:30",
@@ -4482,12 +4422,12 @@
       ]
     },
     {
-      "id": "2026-05-08-1340-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1330-1",
+      "date": "2026-07-31",
       "weekday": "금",
-      "start": "13:40",
+      "start": "13:30",
       "end": "14:00",
-      "startMin": 820,
+      "startMin": 810,
       "endMin": 840,
       "section": "오후",
       "title": "오후간식 및 (건강체조2) 담당-강선진",
@@ -4506,8 +4446,8 @@
       ]
     },
     {
-      "id": "2026-05-08-1400-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1400-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "14:00",
       "end": "15:00",
@@ -4530,41 +4470,41 @@
       ]
     },
     {
-      "id": "2026-05-08-1400-2",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1400-2",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "14:00",
       "end": "15:00",
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "숫자공부",
+      "title": "8월 달력 만들기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
         "sarang"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "숫자공부",
+        "8월 달력 만들기",
         "sarang",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-08-1400-3",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1400-3",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "14:00",
       "end": "15:00",
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "너프건쏘기",
+      "title": "접시 제기",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4574,21 +4514,21 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "너프건쏘기",
+        "접시 제기",
         "mideum",
         "physical"
       ]
     },
     {
-      "id": "2026-05-08-1500-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1500-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "15:00",
       "end": "16:00",
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "농구",
+      "title": "제목 없음",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4598,42 +4538,42 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "농구",
+        "제목 없음",
         "sarang",
         "physical"
       ]
     },
     {
-      "id": "2026-05-08-1500-2",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1500-2",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "15:00",
       "end": "16:00",
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "숫자공부",
+      "title": "8월 달력 만들기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
-        "mideum",
-        "somang"
+        "somang",
+        "mideum"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "숫자공부",
-        "mideum",
+        "8월 달력 만들기",
         "somang",
+        "mideum",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-08-1600-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1600-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "16:00",
       "end": "17:00",
@@ -4656,8 +4596,8 @@
       ]
     },
     {
-      "id": "2026-05-08-1700-1",
-      "date": "2026-05-08",
+      "id": "2026-07-31-1700-1",
+      "date": "2026-07-31",
       "weekday": "금",
       "start": "17:00",
       "end": "18:00",
@@ -4680,12 +4620,12 @@
       ]
     },
     {
-      "id": "2026-05-09-0830-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-0800-1",
+      "date": "2026-08-01",
       "weekday": "토",
-      "start": "08:30",
+      "start": "08:00",
       "end": "09:30",
-      "startMin": 510,
+      "startMin": 480,
       "endMin": 570,
       "section": "오전",
       "title": "오전 등영서비스/건강관리",
@@ -4704,8 +4644,8 @@
       ]
     },
     {
-      "id": "2026-05-09-0930-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-0930-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "09:30",
       "end": "10:00",
@@ -4728,8 +4668,8 @@
       ]
     },
     {
-      "id": "2026-05-09-1000-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1000-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "10:00",
       "end": "10:10",
@@ -4752,15 +4692,15 @@
       ]
     },
     {
-      "id": "2026-05-09-1010-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1010-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "10:10",
       "end": "10:30",
       "startMin": 610,
       "endMin": 630,
       "section": "오전",
-      "title": "(건강체조1) 담당-변해미",
+      "title": "(건강체조1) 담당-정성진",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4770,40 +4710,62 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "(건강체조1) 담당-변해미",
+        "(건강체조1) 담당-정성진",
         "all",
         "physical"
       ]
     },
     {
-      "id": "2026-05-09-1030-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1030-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "10:30",
       "end": "11:30",
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "울릉도트위스트",
-      "subtitle": "맞춤형-소리담",
-      "categoryId": "custom",
+      "title": "재활",
+      "subtitle": "",
+      "categoryId": "rehab",
       "groupIds": [
         "all"
       ],
-      "staff": [
-        "김소정"
-      ],
-      "staffRole": "강사",
+      "staff": [],
+      "staffRole": "",
       "location": "강당",
       "tags": [
-        "울릉도트위스트",
+        "재활",
         "all",
-        "custom"
+        "rehab"
       ]
     },
     {
-      "id": "2026-05-09-1130-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1030-2",
+      "date": "2026-08-01",
+      "weekday": "토",
+      "start": "10:30",
+      "end": "11:30",
+      "startMin": 630,
+      "endMin": 690,
+      "section": "오전",
+      "title": "제목 없음",
+      "subtitle": "",
+      "categoryId": "physical",
+      "groupIds": [
+        "all"
+      ],
+      "staff": [],
+      "staffRole": "",
+      "location": "강당",
+      "tags": [
+        "제목 없음",
+        "all",
+        "physical"
+      ]
+    },
+    {
+      "id": "2026-08-01-1130-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "11:30",
       "end": "12:30",
@@ -4826,8 +4788,8 @@
       ]
     },
     {
-      "id": "2026-05-09-1230-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1230-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "12:30",
       "end": "13:30",
@@ -4850,12 +4812,12 @@
       ]
     },
     {
-      "id": "2026-05-09-1340-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1330-1",
+      "date": "2026-08-01",
       "weekday": "토",
-      "start": "13:40",
+      "start": "13:30",
       "end": "14:00",
-      "startMin": 820,
+      "startMin": 810,
       "endMin": 840,
       "section": "오후",
       "title": "오후간식 및 (건강체조2) 담당-강선진",
@@ -4874,8 +4836,8 @@
       ]
     },
     {
-      "id": "2026-05-09-1400-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1400-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "14:00",
       "end": "15:00",
@@ -4898,34 +4860,58 @@
       ]
     },
     {
-      "id": "2026-05-09-1500-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1400-2",
+      "date": "2026-08-01",
+      "weekday": "토",
+      "start": "14:00",
+      "end": "15:00",
+      "startMin": 840,
+      "endMin": 900,
+      "section": "오후",
+      "title": "제목 없음",
+      "subtitle": "",
+      "categoryId": "physical",
+      "groupIds": [
+        "all"
+      ],
+      "staff": [],
+      "staffRole": "",
+      "location": "강당",
+      "tags": [
+        "제목 없음",
+        "all",
+        "physical"
+      ]
+    },
+    {
+      "id": "2026-08-01-1500-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "15:00",
       "end": "16:00",
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "에드가 드가",
-      "subtitle": "'발레수업'",
+      "title": "제목 없음",
+      "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
         "all"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "에드가 드가",
+        "제목 없음",
         "all",
         "cognitive"
       ]
     },
     {
-      "id": "2026-05-09-1600-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1600-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "16:00",
       "end": "17:00",
@@ -4948,8 +4934,8 @@
       ]
     },
     {
-      "id": "2026-05-09-1700-1",
-      "date": "2026-05-09",
+      "id": "2026-08-01-1700-1",
+      "date": "2026-08-01",
       "weekday": "토",
       "start": "17:00",
       "end": "18:00",
