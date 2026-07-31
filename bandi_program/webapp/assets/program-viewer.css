@@ -76,6 +76,8 @@ body::before {
   }
 
   body[data-page="now"] #app.pv-shell {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
   }
 
@@ -83,6 +85,15 @@ body::before {
     height: 100%;
     min-height: 0;
     padding-bottom: 0;
+    overflow: hidden;
+    flex: 1 1 auto;
+  }
+
+  body[data-page="now"] .pv-now-stage {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
   }
 }
 
