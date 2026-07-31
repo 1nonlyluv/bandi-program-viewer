@@ -84,6 +84,21 @@ body::before {
     max-width: none;
     margin: 0;
     overflow: hidden;
+    scrollbar-width: none;
+  }
+
+  body[data-page="now"] #app.pv-shell::-webkit-scrollbar,
+  body[data-page="now"]::-webkit-scrollbar,
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  body[data-page="now"] {
+    scrollbar-width: none;
+  }
+
+  html {
+    scrollbar-width: none;
   }
 
   body[data-page="now"] .pv-now-shell {
