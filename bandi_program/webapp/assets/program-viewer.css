@@ -34,6 +34,11 @@ body {
     linear-gradient(180deg, var(--pv-bg-top) 0%, var(--pv-bg-mid) 46%, var(--pv-bg-bottom) 100%);
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -51,6 +56,24 @@ body::before {
   padding: 28px 18px 46px;
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 761px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  #app.pv-shell {
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .pv-card,
