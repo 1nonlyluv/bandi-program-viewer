@@ -74,6 +74,16 @@ body::before {
     overscroll-behavior-y: contain;
     -webkit-overflow-scrolling: touch;
   }
+
+  body[data-page="now"] #app.pv-shell {
+    overflow: hidden;
+  }
+
+  body[data-page="now"] .pv-now-shell {
+    height: 100%;
+    min-height: 0;
+    padding-bottom: 0;
+  }
 }
 
 .pv-card,
