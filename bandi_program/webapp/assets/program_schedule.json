@@ -62007,23 +62007,23 @@
             },
             {
               "id": "2026-08-05-1400-2",
-              "title": "실버체조",
-              "subtitle": "",
-              "categoryId": "physical",
+              "title": "숫자 연결하여",
+              "subtitle": "그림 완성하기",
+              "categoryId": "cognitive",
               "groupIds": [
                 "somang",
                 "sarang"
               ],
               "staff": [
-                "용인시체육회"
+                "강선진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "실버체조",
+                "숫자 연결하여",
                 "somang",
                 "sarang",
-                "physical"
+                "cognitive"
               ]
             }
           ]
@@ -62038,11 +62038,45 @@
           "entries": [
             {
               "id": "2026-08-05-1500-1",
+              "title": "나는야 강태공",
+              "subtitle": "",
+              "categoryId": "physical",
+              "groupIds": [
+                "somang"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "나는야 강태공",
+                "somang",
+                "physical"
+              ]
+            },
+            {
+              "id": "2026-08-05-1500-2",
+              "title": "너프건 쏘기",
+              "subtitle": "",
+              "categoryId": "physical",
+              "groupIds": [
+                "sarang"
+              ],
+              "staff": [],
+              "staffRole": "",
+              "location": "강당",
+              "tags": [
+                "너프건 쏘기",
+                "sarang",
+                "physical"
+              ]
+            },
+            {
+              "id": "2026-08-05-1500-3",
               "title": "숫자 연결하여",
               "subtitle": "그림 완성하기",
               "categoryId": "cognitive",
               "groupIds": [
-                "all"
+                "mideum"
               ],
               "staff": [
                 "강선진"
@@ -62051,7 +62085,7 @@
               "location": "강당",
               "tags": [
                 "숫자 연결하여",
-                "all",
+                "mideum",
                 "cognitive"
               ]
             }
@@ -127404,23 +127438,23 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "실버체조",
-      "subtitle": "",
-      "categoryId": "physical",
+      "title": "숫자 연결하여",
+      "subtitle": "그림 완성하기",
+      "categoryId": "cognitive",
       "groupIds": [
         "somang",
         "sarang"
       ],
       "staff": [
-        "용인시체육회"
+        "강선진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "실버체조",
+        "숫자 연결하여",
         "somang",
         "sarang",
-        "physical"
+        "cognitive"
       ]
     },
     {
@@ -127434,11 +127468,63 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
+      "title": "나는야 강태공",
+      "subtitle": "",
+      "categoryId": "physical",
+      "groupIds": [
+        "somang"
+      ],
+      "staff": [],
+      "staffRole": "",
+      "location": "강당",
+      "tags": [
+        "나는야 강태공",
+        "somang",
+        "physical"
+      ]
+    },
+    {
+      "id": "2026-08-05-1500-2",
+      "date": "2026-08-05",
+      "weekday": "수",
+      "weekKey": "2026-08-03",
+      "weekLabel": "8월 1주차",
+      "start": "15:00",
+      "end": "16:00",
+      "startMin": 900,
+      "endMin": 960,
+      "section": "오후",
+      "title": "너프건 쏘기",
+      "subtitle": "",
+      "categoryId": "physical",
+      "groupIds": [
+        "sarang"
+      ],
+      "staff": [],
+      "staffRole": "",
+      "location": "강당",
+      "tags": [
+        "너프건 쏘기",
+        "sarang",
+        "physical"
+      ]
+    },
+    {
+      "id": "2026-08-05-1500-3",
+      "date": "2026-08-05",
+      "weekday": "수",
+      "weekKey": "2026-08-03",
+      "weekLabel": "8월 1주차",
+      "start": "15:00",
+      "end": "16:00",
+      "startMin": 900,
+      "endMin": 960,
+      "section": "오후",
       "title": "숫자 연결하여",
       "subtitle": "그림 완성하기",
       "categoryId": "cognitive",
       "groupIds": [
-        "all"
+        "mideum"
       ],
       "staff": [
         "강선진"
@@ -127447,7 +127533,7 @@
       "location": "강당",
       "tags": [
         "숫자 연결하여",
-        "all",
+        "mideum",
         "cognitive"
       ]
     },
