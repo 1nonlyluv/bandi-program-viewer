@@ -477,8 +477,11 @@
     return value;
   }
 
-  function renderProgramCopyHtml(mainText, metaText) {
+  function renderProgramCopyHtml(mainText, metaText, secondaryMainText) {
     var html = '<span class="pv-now-program-copy-main">' + escapeHtml(mainText) + "</span>";
+    if (secondaryMainText) {
+      html += '<span class="pv-now-program-copy-main is-secondary">' + escapeHtml(secondaryMainText) + "</span>";
+    }
     if (metaText) {
       html += '<span class="pv-now-program-meta">' + escapeHtml(metaText) + "</span>";
     }
@@ -491,18 +494,21 @@
     if (match) {
       return {
         title: normalizeDisplayText(match[1]),
-        meta: normalizeDisplayText(match[2] + " " + match[3] + ": " + match[4])
+        titleSecondary: normalizeDisplayText(match[2]),
+        meta: normalizeDisplayText(match[3] + ": " + match[4])
       };
     }
     match = text.match(/^(.+?)\s*및\s*\(([^)]+)\)$/);
     if (match) {
       return {
         title: normalizeDisplayText(match[1]),
-        meta: normalizeDisplayText(match[2])
+        titleSecondary: normalizeDisplayText(match[2]),
+        meta: ""
       };
     }
     return {
       title: text,
+      titleSecondary: "",
       meta: ""
     };
   }
@@ -532,6 +538,7 @@
   function formatEntryContentHtml(entry) {
     var titleParts = extractDisplayTitleMeta(stripEmbeddedStaffMarker(entry.title || "", entry));
     var title = titleParts.title;
+    var secondaryTitle = titleParts.titleSecondary;
     var subtitle = normalizeDisplayText(entry.subtitle || "");
     var staffSuffix = formatEntryStaffSuffix(entry);
     var iconHtml = renderEntryIcon(entry);
@@ -548,7 +555,7 @@
           ? metaText + " " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "")
           : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
       }
-      return iconHtml + renderProgramCopyHtml(bodyText, metaText);
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle);
     }
 
     if (entry.categoryId === "physical" || entry.categoryId === "cognitive") {
@@ -561,7 +568,7 @@
           ? metaText + " " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "")
           : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
       }
-      return iconHtml + renderProgramCopyHtml(bodyText, metaText);
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle);
     }
 
     bodyText = title;
@@ -571,7 +578,7 @@
     if (staffSuffix) {
       metaText = metaText ? metaText + " / " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "") : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
     }
-    return renderProgramCopyHtml(bodyText, metaText);
+    return renderProgramCopyHtml(bodyText, metaText, secondaryTitle);
   }
 
   function getEntryGroupLabel(entry, groupMap) {

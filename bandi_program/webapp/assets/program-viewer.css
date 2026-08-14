@@ -1288,6 +1288,10 @@ a.pv-day-card {
   display: block;
 }
 
+.pv-now-program-copy-main.is-secondary {
+  margin-top: -0.08em;
+}
+
 .pv-now-program-meta {
   display: block;
   margin-left: 0;
