@@ -354,8 +354,10 @@
       .replace(/송영준비/g, "송영 준비")
       .replace(/송영서비스/g, "송영 서비스")
       .replace(/(담당|준비|진행)-\s*/g, "$1: ")
+      .replace(/:\s*([가-힣A-Za-z0-9])/g, ": $1")
       .replace(/점심식사/g, "점심 식사")
       .replace(/저녁식사/g, "저녁 식사")
+      .replace(/자율시간/g, "자율 시간")
       .replace(/오전간식/g, "오전 간식")
       .replace(/오후간식/g, "오후 간식")
       .replace(/건강관리/g, "건강 관리")
@@ -363,6 +365,11 @@
       .replace(/실버체조/g, "실버 체조")
       .replace(/요가교실/g, "요가 교실")
       .replace(/다트게임/g, "다트 게임")
+      .replace(/테이블하키/g, "테이블 하키")
+      .replace(/탁구공홀인원/g, "탁구공 홀인원")
+      .replace(/주사위색칠하기/g, "주사위 색칠하기")
+      .replace(/행운의네잎클로버/g, "행운의 네잎 클로버")
+      .replace(/파리를잡자!/g, "파리를 잡자!")
       .replace(/점선따라/g, "점선 따라")
       .replace(/달력만들기/g, "달력 만들기")
       .replace(/블록개수/g, "블록 개수")
@@ -379,6 +386,10 @@
       .replace(/\s*\/\s*/g, "/")
       .replace(/\s+/g, " ")
       .trim();
+  }
+
+  function escapeHtmlWithBreaks(value) {
+    return escapeHtml(value || "").replace(/\n/g, "<br />");
   }
 
   function getWeekOfMonthLabel(dateText) {
@@ -488,12 +499,12 @@
   }
 
   function renderProgramCopyHtml(mainText, metaText, secondaryMainText) {
-    var html = '<span class="pv-now-program-copy-main">' + escapeHtml(mainText) + "</span>";
+    var html = '<span class="pv-now-program-copy-main">' + escapeHtmlWithBreaks(mainText) + "</span>";
     if (secondaryMainText) {
-      html += '<span class="pv-now-program-copy-main is-secondary">' + escapeHtml(secondaryMainText) + "</span>";
+      html += '<span class="pv-now-program-copy-main is-secondary">' + escapeHtmlWithBreaks(secondaryMainText) + "</span>";
     }
     if (metaText) {
-      html += '<span class="pv-now-program-meta">' + escapeHtml(metaText) + "</span>";
+      html += '<span class="pv-now-program-meta">' + escapeHtmlWithBreaks(metaText) + "</span>";
     }
     return '<span class="pv-now-program-copy">' + html + "</span>";
   }
@@ -545,6 +556,14 @@
     return text.indexOf("맞춤형-") === 0 ? text.slice("맞춤형-".length) : text;
   }
 
+  function shouldUseHyphenBetweenTitleAndSubtitle(title) {
+    var text = normalizeDisplayText(title || "");
+    if (!text) {
+      return false;
+    }
+    return /(활동|교실|접기|그리기|만들기|게임|놀이|체조|하키|골프|농구|미술)$/u.test(text);
+  }
+
   function formatEntryContentHtml(entry) {
     var titleParts = extractDisplayTitleMeta(stripEmbeddedStaffMarker(entry.title || "", entry));
     var title = titleParts.title;
@@ -571,7 +590,13 @@
     if (entry.categoryId === "physical" || entry.categoryId === "cognitive") {
       bodyText = title;
       if (subtitle) {
-        metaText = metaText ? metaText + " " + subtitle : subtitle;
+        if (!bodyText) {
+          bodyText = subtitle;
+        } else if (shouldUseHyphenBetweenTitleAndSubtitle(bodyText)) {
+          bodyText += " - " + subtitle;
+        } else {
+          bodyText += " " + subtitle;
+        }
       }
       if (staffSuffix) {
         metaText = metaText
@@ -583,7 +608,15 @@
 
     bodyText = title;
     if (subtitle) {
-      metaText = metaText ? metaText + " / " + subtitle : subtitle;
+      if (entry.categoryId === "routine") {
+        metaText = normalizeDisplayText(subtitle)
+          .split("/")
+          .map(function (part) { return part.trim(); })
+          .filter(Boolean)
+          .join("\n");
+      } else {
+        metaText = metaText ? metaText + " / " + subtitle : subtitle;
+      }
     }
     if (staffSuffix) {
       metaText = metaText ? metaText + " / " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "") : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
