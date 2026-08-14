@@ -358,6 +358,7 @@
       .replace(/저녁식사/g, "저녁 식사")
       .replace(/오전간식/g, "오전 간식")
       .replace(/오후간식/g, "오후 간식")
+      .replace(/건강관리/g, "건강 관리")
       .replace(/건강체조/g, "건강 체조")
       .replace(/실버체조/g, "실버 체조")
       .replace(/요가교실/g, "요가 교실")
