@@ -485,6 +485,28 @@
     return '<span class="pv-now-program-copy">' + html + "</span>";
   }
 
+  function extractDisplayTitleMeta(rawTitle) {
+    var text = normalizeDisplayText(rawTitle || "");
+    var match = text.match(/^(.+?)\s*및\s*\(([^)]+)\)\s*(담당|준비|진행):\s*(.+)$/);
+    if (match) {
+      return {
+        title: normalizeDisplayText(match[1]),
+        meta: normalizeDisplayText(match[2] + " " + match[3] + ": " + match[4])
+      };
+    }
+    match = text.match(/^(.+?)\s*및\s*\(([^)]+)\)$/);
+    if (match) {
+      return {
+        title: normalizeDisplayText(match[1]),
+        meta: normalizeDisplayText(match[2])
+      };
+    }
+    return {
+      title: text,
+      meta: ""
+    };
+  }
+
   function renderEntryIcon(entry) {
     var title = normalizeDisplayText(entry && entry.title ? entry.title : "");
     if (title === "건강체조1" || title === "건강체조2") {
@@ -508,26 +530,31 @@
   }
 
   function formatEntryContentHtml(entry) {
-    var title = stripEmbeddedStaffMarker(entry.title || "", entry);
+    var titleParts = extractDisplayTitleMeta(stripEmbeddedStaffMarker(entry.title || "", entry));
+    var title = titleParts.title;
     var subtitle = normalizeDisplayText(entry.subtitle || "");
     var staffSuffix = formatEntryStaffSuffix(entry);
     var iconHtml = renderEntryIcon(entry);
     var bodyText = "";
-    var metaText = "";
+    var metaText = titleParts.meta;
 
     if (entry.categoryId === "custom") {
       bodyText = formatCustomTrack(subtitle);
       if (title) {
         bodyText += (bodyText ? " - " : "") + title;
       }
-      metaText = staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
+      if (staffSuffix) {
+        metaText = metaText
+          ? metaText + " " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "")
+          : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
+      }
       return iconHtml + renderProgramCopyHtml(bodyText, metaText);
     }
 
     if (entry.categoryId === "physical" || entry.categoryId === "cognitive") {
       bodyText = title;
       if (subtitle) {
-        metaText = subtitle;
+        metaText = metaText ? metaText + " " + subtitle : subtitle;
       }
       if (staffSuffix) {
         metaText = metaText
@@ -539,7 +566,7 @@
 
     bodyText = title;
     if (subtitle) {
-      metaText = subtitle;
+      metaText = metaText ? metaText + " / " + subtitle : subtitle;
     }
     if (staffSuffix) {
       metaText = metaText ? metaText + " / " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "") : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
