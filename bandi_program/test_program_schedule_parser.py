@@ -49,11 +49,29 @@ class ProgramScheduleParserHelpersTests(unittest.TestCase):
         self.assertEqual(parsed["staffRole"], "강사")
         self.assertEqual(parsed["staff"], ["고현선"])
 
+    def test_parse_inline_custom_program_cell(self) -> None:
+        parsed = parse_program_cell("맞춤형- 소리담   무너진 사랑탑\n(믿음반)\n김소정강사")
+        self.assertEqual(parsed["title"], "무너진 사랑탑")
+        self.assertEqual(parsed["subtitle"], "맞춤형-소리담")
+        self.assertEqual(parsed["categoryId"], "custom")
+        self.assertEqual(parsed["groupIds"], ["mideum"])
+        self.assertEqual(parsed["staffRole"], "강사")
+        self.assertEqual(parsed["staff"], ["김소정"])
+
     def test_parse_category_first_program_cell(self) -> None:
         parsed = parse_program_cell("(인지)\n몇시일까요?\n(소망,사랑반)\n준비:강선진")
         self.assertEqual(parsed["title"], "몇시일까요?")
         self.assertEqual(parsed["categoryId"], "cognitive")
         self.assertEqual(parsed["groupIds"], ["somang", "sarang"])
+
+    def test_parse_inline_category_title_program_cell(self) -> None:
+        parsed = parse_program_cell("(인지)         색과 모양 맞추기                           (사랑반)\n준비:정성진")
+        self.assertEqual(parsed["title"], "색과 모양 맞추기")
+        self.assertEqual(parsed["subtitle"], "")
+        self.assertEqual(parsed["categoryId"], "cognitive")
+        self.assertEqual(parsed["groupIds"], ["sarang"])
+        self.assertEqual(parsed["staffRole"], "준비")
+        self.assertEqual(parsed["staff"], ["정성진"])
 
     def test_parse_common_entry_does_not_extract_staff(self) -> None:
         parsed = parse_common_entry("오전 등원서비스/건강관리(혈압,체온체크) 담당-변해미")

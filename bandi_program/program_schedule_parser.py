@@ -268,6 +268,16 @@ def strip_known_tokens(line: str) -> str:
     return collapse_spaces(clean)
 
 
+def split_custom_header(line: str) -> tuple[str, str]:
+    clean = normalize_line(line)
+    match = re.match(r"^맞춤형-\s*(\S*담)\s*(.*)$", clean)
+    if not match:
+        return clean, ""
+    track = f"맞춤형-{match.group(1)}"
+    inline_title = collapse_spaces(match.group(2))
+    return track, inline_title
+
+
 def parse_program_cell(text: str) -> dict[str, Any]:
     raw_lines = [normalize_line(line) for line in text.splitlines() if normalize_line(line)]
     staff_role = ""
@@ -292,14 +302,28 @@ def parse_program_cell(text: str) -> dict[str, Any]:
     if not content_lines:
         title = normalize_line(text)
     elif content_lines[0].startswith("맞춤형-"):
-        subtitle = content_lines[0]
+        subtitle, inline_title = split_custom_header(content_lines[0])
         custom_lines = [strip_known_tokens(line) for line in content_lines[1:]]
         custom_lines = [line for line in custom_lines if line]
-        title = " ".join(custom_lines) if custom_lines else content_lines[0].split("-", 1)[-1]
+        custom_title_parts: list[str] = []
+        if inline_title:
+            custom_title_parts.append(inline_title)
+        for line in custom_lines:
+            if custom_title_parts and custom_title_parts[-1] == line:
+                continue
+            custom_title_parts.append(line)
+        title = " ".join(custom_title_parts) if custom_title_parts else subtitle.split("-", 1)[-1]
     elif content_lines[0].startswith("("):
         category_hint_line = content_lines[0]
-        title = strip_known_tokens(content_lines[1] if len(content_lines) > 1 else "")
-        subtitle = strip_known_tokens(content_lines[2] if len(content_lines) > 2 else "")
+        inline_title = strip_known_tokens(content_lines[0])
+        remaining_lines = [strip_known_tokens(line) for line in content_lines[1:]]
+        remaining_lines = [line for line in remaining_lines if line]
+        if inline_title:
+            title = inline_title
+            subtitle = remaining_lines[0] if remaining_lines else ""
+        else:
+            title = remaining_lines[0] if remaining_lines else ""
+            subtitle = remaining_lines[1] if len(remaining_lines) > 1 else ""
     else:
         title = strip_known_tokens(content_lines[0])
         if len(content_lines) > 1:

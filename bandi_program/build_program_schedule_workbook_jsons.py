@@ -3,6 +3,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import unicodedata
+import zipfile
 from pathlib import Path
 
 from program_schedule_normalizer import normalize_payload
@@ -12,10 +14,20 @@ from program_schedule_parser import parse_program_workbook
 WEEK_LABEL_PATTERN = re.compile(r"(\d+)\s*월\s*(\d+)\s*주차")
 
 
+def normalized_name(path: str | Path) -> str:
+    return unicodedata.normalize("NFC", Path(path).name)
+
+
 def autodetect_workbook_path(base_dir: str | Path = ".") -> Path:
     root = Path(base_dir)
-    candidates = sorted(root.glob("*2026*.xlsx"))
-    preferred = [path for path in candidates if "(2026)" in path.name]
+    candidates = sorted(
+        path
+        for path in root.glob("*.xlsx")
+        if not normalized_name(path).startswith("~$")
+        and "2026" in normalized_name(path)
+        and zipfile.is_zipfile(path)
+    )
+    preferred = [path for path in candidates if "(2026)" in normalized_name(path)]
     picked = preferred[0] if preferred else (candidates[0] if candidates else None)
     if picked is None:
         raise FileNotFoundError("No 2026 workbook .xlsx file found.")
@@ -27,9 +39,10 @@ def autodetect_workbook_paths(base_dir: str | Path = ".") -> list[Path]:
     return sorted(
         path
         for path in root.glob("*.xlsx")
-        if not path.name.startswith("~$")
-        and "주간프로그램" in path.name
-        and "계획" in path.name
+        if not normalized_name(path).startswith("~$")
+        and "주간프로그램" in normalized_name(path)
+        and "계획" in normalized_name(path)
+        and zipfile.is_zipfile(path)
     )
 
 
