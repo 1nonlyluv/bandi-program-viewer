@@ -4,7 +4,7 @@
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-08-18T14:29:00+09:00",
+    "generatedAt": "2026-08-20T11:10:46+09:00",
     "defaultView": "now",
     "sourceLabel": "7월 1주차"
   },
@@ -228,8 +228,8 @@
             },
             {
               "id": "2026-07-06-1030-3",
-              "title": "활기담 다함께 링 배달",
-              "subtitle": "맞춤형-활기담 다함께 링 배달",
+              "title": "다함께 링 배달",
+              "subtitle": "맞춤형-활기담",
               "categoryId": "custom",
               "groupIds": [
                 "somang"
@@ -240,7 +240,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "활기담 다함께 링 배달",
+                "다함께 링 배달",
                 "somang",
                 "custom"
               ]
@@ -374,7 +374,7 @@
             },
             {
               "id": "2026-07-06-1400-3",
-              "title": "제목 없음",
+              "title": "세가족 콩놀이",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -384,7 +384,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "세가족 콩놀이",
                 "mideum",
                 "physical"
               ]
@@ -401,7 +401,7 @@
           "entries": [
             {
               "id": "2026-07-06-1500-1",
-              "title": "제목 없음",
+              "title": "발로하는 오자미",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -411,14 +411,14 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "발로하는 오자미",
                 "sarang",
                 "physical"
               ]
             },
             {
               "id": "2026-07-06-1500-2",
-              "title": "제목 없음",
+              "title": "제헌절 알아보기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -431,7 +431,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "제헌절 알아보기",
                 "somang",
                 "mideum",
                 "cognitive"
@@ -637,7 +637,7 @@
             },
             {
               "id": "2026-07-07-1030-2",
-              "title": "제목 없음",
+              "title": "접시제기",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -647,15 +647,15 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "접시제기",
                 "somang",
                 "physical"
               ]
             },
             {
               "id": "2026-07-07-1030-3",
-              "title": "소리담 울고 넘는 박달재",
-              "subtitle": "맞춤형- 소리담 울고 넘는 박달재",
+              "title": "울고 넘는 박달재",
+              "subtitle": "맞춤형-소리담",
               "categoryId": "custom",
               "groupIds": [
                 "mideum"
@@ -666,7 +666,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "소리담 울고 넘는 박달재",
+                "울고 넘는 박달재",
                 "mideum",
                 "custom"
               ]
@@ -781,7 +781,7 @@
             },
             {
               "id": "2026-07-07-1400-2",
-              "title": "제목 없음",
+              "title": "바닷가 모자이크",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -793,14 +793,14 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "바닷가 모자이크",
                 "sarang",
                 "cognitive"
               ]
             },
             {
               "id": "2026-07-07-1400-3",
-              "title": "제목 없음",
+              "title": "핸드골프",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -810,7 +810,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "핸드골프",
                 "mideum",
                 "physical"
               ]
@@ -1065,8 +1065,8 @@
             },
             {
               "id": "2026-07-08-1030-2",
-              "title": "오감담 여름을 담은 슬리퍼",
-              "subtitle": "맞춤형-오감담 여름을 담은 슬리퍼",
+              "title": "여름을 담은 슬리퍼",
+              "subtitle": "맞춤형-오감담",
               "categoryId": "custom",
               "groupIds": [
                 "somang"
@@ -1077,7 +1077,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "오감담 여름을 담은 슬리퍼",
+                "여름을 담은 슬리퍼",
                 "somang",
                 "custom"
               ]
@@ -1459,8 +1459,8 @@
             },
             {
               "id": "2026-07-09-1030-2",
-              "title": "인지담 알록달록 자석놀이",
-              "subtitle": "맞춤형-인지담 알록달록 자석놀이",
+              "title": "알록달록 자석놀이",
+              "subtitle": "맞춤형-인지담",
               "categoryId": "custom",
               "groupIds": [
                 "mideum"
@@ -1471,7 +1471,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "인지담 알록달록 자석놀이",
+                "알록달록 자석놀이",
                 "mideum",
                 "custom"
               ]
@@ -1649,7 +1649,7 @@
           "entries": [
             {
               "id": "2026-07-09-1500-1",
-              "title": "제목 없음",
+              "title": "농구",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1659,7 +1659,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "농구",
                 "sarang",
                 "physical"
               ]
@@ -1904,7 +1904,7 @@
             },
             {
               "id": "2026-07-10-1030-3",
-              "title": "제목 없음",
+              "title": "윷놀이",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1914,7 +1914,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "윷놀이",
                 "mideum",
                 "physical"
               ]
@@ -2077,7 +2077,7 @@
           "entries": [
             {
               "id": "2026-07-10-1500-1",
-              "title": "제목 없음",
+              "title": "투호",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2087,7 +2087,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "투호",
                 "sarang",
                 "physical"
               ]
@@ -2663,8 +2663,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "활기담 다함께 링 배달",
-      "subtitle": "맞춤형-활기담 다함께 링 배달",
+      "title": "다함께 링 배달",
+      "subtitle": "맞춤형-활기담",
       "categoryId": "custom",
       "groupIds": [
         "somang"
@@ -2675,7 +2675,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "활기담 다함께 링 배달",
+        "다함께 링 배달",
         "somang",
         "custom"
       ]
@@ -2811,7 +2811,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "세가족 콩놀이",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2821,7 +2821,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "세가족 콩놀이",
         "mideum",
         "physical"
       ]
@@ -2835,7 +2835,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "발로하는 오자미",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2845,7 +2845,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "발로하는 오자미",
         "sarang",
         "physical"
       ]
@@ -2859,7 +2859,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "제헌절 알아보기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -2872,7 +2872,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "제헌절 알아보기",
         "somang",
         "mideum",
         "cognitive"
@@ -3055,7 +3055,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "접시제기",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3065,7 +3065,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "접시제기",
         "somang",
         "physical"
       ]
@@ -3079,8 +3079,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "소리담 울고 넘는 박달재",
-      "subtitle": "맞춤형- 소리담 울고 넘는 박달재",
+      "title": "울고 넘는 박달재",
+      "subtitle": "맞춤형-소리담",
       "categoryId": "custom",
       "groupIds": [
         "mideum"
@@ -3091,7 +3091,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "소리담 울고 넘는 박달재",
+        "울고 넘는 박달재",
         "mideum",
         "custom"
       ]
@@ -3201,7 +3201,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "바닷가 모자이크",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -3213,7 +3213,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "바닷가 모자이크",
         "sarang",
         "cognitive"
       ]
@@ -3227,7 +3227,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "핸드골프",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3237,7 +3237,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "핸드골프",
         "mideum",
         "physical"
       ]
@@ -3473,8 +3473,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "오감담 여름을 담은 슬리퍼",
-      "subtitle": "맞춤형-오감담 여름을 담은 슬리퍼",
+      "title": "여름을 담은 슬리퍼",
+      "subtitle": "맞춤형-오감담",
       "categoryId": "custom",
       "groupIds": [
         "somang"
@@ -3485,7 +3485,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "오감담 여름을 담은 슬리퍼",
+        "여름을 담은 슬리퍼",
         "somang",
         "custom"
       ]
@@ -3843,8 +3843,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "인지담 알록달록 자석놀이",
-      "subtitle": "맞춤형-인지담 알록달록 자석놀이",
+      "title": "알록달록 자석놀이",
+      "subtitle": "맞춤형-인지담",
       "categoryId": "custom",
       "groupIds": [
         "mideum"
@@ -3855,7 +3855,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "인지담 알록달록 자석놀이",
+        "알록달록 자석놀이",
         "mideum",
         "custom"
       ]
@@ -4039,7 +4039,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "농구",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4049,7 +4049,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "농구",
         "sarang",
         "physical"
       ]
@@ -4285,7 +4285,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "윷놀이",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4295,7 +4295,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "윷놀이",
         "mideum",
         "physical"
       ]
@@ -4457,7 +4457,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "투호",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4467,7 +4467,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "투호",
         "sarang",
         "physical"
       ]

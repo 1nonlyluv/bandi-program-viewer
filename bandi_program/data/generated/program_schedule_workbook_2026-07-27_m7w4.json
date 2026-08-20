@@ -4,7 +4,7 @@
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-08-18T14:29:00+09:00",
+    "generatedAt": "2026-08-20T11:10:47+09:00",
     "defaultView": "now",
     "sourceLabel": "7월 4주차"
   },
@@ -228,8 +228,8 @@
             },
             {
               "id": "2026-07-27-1030-3",
-              "title": "활기담 다함께 통통통",
-              "subtitle": "맞춤형-활기담 다함께 통통통",
+              "title": "다함께 통통통",
+              "subtitle": "맞춤형-활기담",
               "categoryId": "custom",
               "groupIds": [
                 "somang"
@@ -240,7 +240,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "활기담 다함께 통통통",
+                "다함께 통통통",
                 "somang",
                 "custom"
               ]
@@ -391,7 +391,7 @@
             },
             {
               "id": "2026-07-27-1400-4",
-              "title": "제목 없음",
+              "title": "고리 던지기",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -401,7 +401,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "고리 던지기",
                 "mideum",
                 "physical"
               ]
@@ -418,7 +418,7 @@
           "entries": [
             {
               "id": "2026-07-27-1500-1",
-              "title": "제목 없음",
+              "title": "농구",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -428,14 +428,14 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "농구",
                 "sarang",
                 "physical"
               ]
             },
             {
               "id": "2026-07-27-1500-2",
-              "title": "제목 없음",
+              "title": "숨은 그림 찾기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -448,7 +448,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "숨은 그림 찾기",
                 "somang",
                 "mideum",
                 "cognitive"
@@ -654,7 +654,7 @@
             },
             {
               "id": "2026-07-28-1030-2",
-              "title": "제목 없음",
+              "title": "협력 컵쌓기",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -664,15 +664,15 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "협력 컵쌓기",
                 "somang",
                 "physical"
               ]
             },
             {
               "id": "2026-07-28-1030-3",
-              "title": "소리담 뱃노래",
-              "subtitle": "맞춤형- 소리담 뱃노래",
+              "title": "뱃노래",
+              "subtitle": "맞춤형-소리담",
               "categoryId": "custom",
               "groupIds": [
                 "mideum"
@@ -683,7 +683,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "소리담 뱃노래",
+                "뱃노래",
                 "mideum",
                 "custom"
               ]
@@ -798,7 +798,7 @@
             },
             {
               "id": "2026-07-28-1400-2",
-              "title": "제목 없음",
+              "title": "과일채소 짝 맞추기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -810,14 +810,14 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "과일채소 짝 맞추기",
                 "sarang",
                 "cognitive"
               ]
             },
             {
               "id": "2026-07-28-1400-3",
-              "title": "제목 없음",
+              "title": "다트 게임",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -827,7 +827,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "다트 게임",
                 "mideum",
                 "physical"
               ]
@@ -863,7 +863,7 @@
             },
             {
               "id": "2026-07-28-1500-2",
-              "title": "제목 없음",
+              "title": "과일채소 짝 맞추기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -876,7 +876,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "과일채소 짝 맞추기",
                 "somang",
                 "mideum",
                 "cognitive"
@@ -1082,8 +1082,8 @@
             },
             {
               "id": "2026-07-29-1030-2",
-              "title": "오감담 유리병 속 여름 바다",
-              "subtitle": "맞춤형-오감담 유리병 속 여름 바다",
+              "title": "유리병 속 여름 바다",
+              "subtitle": "맞춤형-오감담",
               "categoryId": "custom",
               "groupIds": [
                 "somang"
@@ -1094,14 +1094,14 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "오감담 유리병 속 여름 바다",
+                "유리병 속 여름 바다",
                 "somang",
                 "custom"
               ]
             },
             {
               "id": "2026-07-29-1030-3",
-              "title": "제목 없음",
+              "title": "몰펀",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -1113,7 +1113,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "몰펀",
                 "mideum",
                 "cognitive"
               ]
@@ -1476,8 +1476,8 @@
             },
             {
               "id": "2026-07-30-1030-2",
-              "title": "인지담 개구리의 곤충사냥",
-              "subtitle": "맞춤형-인지담 개구리의 곤충사냥",
+              "title": "개구리의 곤충사냥",
+              "subtitle": "맞춤형-인지담",
               "categoryId": "custom",
               "groupIds": [
                 "mideum"
@@ -1488,7 +1488,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "인지담 개구리의 곤충사냥",
+                "개구리의 곤충사냥",
                 "mideum",
                 "custom"
               ]
@@ -1666,7 +1666,7 @@
           "entries": [
             {
               "id": "2026-07-30-1500-1",
-              "title": "제목 없음",
+              "title": "핸드 골프",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1676,7 +1676,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "핸드 골프",
                 "sarang",
                 "physical"
               ]
@@ -1921,7 +1921,7 @@
             },
             {
               "id": "2026-07-31-1030-3",
-              "title": "제목 없음",
+              "title": "도미노 게임",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1931,7 +1931,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "도미노 게임",
                 "somang",
                 "physical"
               ]
@@ -2092,7 +2092,7 @@
           "entries": [
             {
               "id": "2026-07-31-1500-1",
-              "title": "제목 없음",
+              "title": "파리를 잡자",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2102,7 +2102,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "파리를 잡자",
                 "sarang",
                 "physical"
               ]
@@ -2328,7 +2328,7 @@
             },
             {
               "id": "2026-08-01-1030-2",
-              "title": "제목 없음",
+              "title": "윷놀이",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2338,7 +2338,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "윷놀이",
                 "all",
                 "physical"
               ]
@@ -2453,7 +2453,7 @@
             },
             {
               "id": "2026-08-01-1400-2",
-              "title": "제목 없음",
+              "title": "윷놀이",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2463,7 +2463,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "윷놀이",
                 "all",
                 "physical"
               ]
@@ -2480,7 +2480,7 @@
           "entries": [
             {
               "id": "2026-08-01-1500-1",
-              "title": "제목 없음",
+              "title": "한국화 색칠하기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -2492,7 +2492,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "한국화 색칠하기",
                 "all",
                 "cognitive"
               ]
@@ -2712,8 +2712,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "활기담 다함께 통통통",
-      "subtitle": "맞춤형-활기담 다함께 통통통",
+      "title": "다함께 통통통",
+      "subtitle": "맞춤형-활기담",
       "categoryId": "custom",
       "groupIds": [
         "somang"
@@ -2724,7 +2724,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "활기담 다함께 통통통",
+        "다함께 통통통",
         "somang",
         "custom"
       ]
@@ -2884,7 +2884,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "고리 던지기",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2894,7 +2894,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "고리 던지기",
         "mideum",
         "physical"
       ]
@@ -2908,7 +2908,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "농구",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2918,7 +2918,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "농구",
         "sarang",
         "physical"
       ]
@@ -2932,7 +2932,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "숨은 그림 찾기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -2945,7 +2945,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "숨은 그림 찾기",
         "somang",
         "mideum",
         "cognitive"
@@ -3128,7 +3128,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "협력 컵쌓기",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3138,7 +3138,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "협력 컵쌓기",
         "somang",
         "physical"
       ]
@@ -3152,8 +3152,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "소리담 뱃노래",
-      "subtitle": "맞춤형- 소리담 뱃노래",
+      "title": "뱃노래",
+      "subtitle": "맞춤형-소리담",
       "categoryId": "custom",
       "groupIds": [
         "mideum"
@@ -3164,7 +3164,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "소리담 뱃노래",
+        "뱃노래",
         "mideum",
         "custom"
       ]
@@ -3274,7 +3274,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "과일채소 짝 맞추기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -3286,7 +3286,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "과일채소 짝 맞추기",
         "sarang",
         "cognitive"
       ]
@@ -3300,7 +3300,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "다트 게임",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3310,7 +3310,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "다트 게임",
         "mideum",
         "physical"
       ]
@@ -3350,7 +3350,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "과일채소 짝 맞추기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -3363,7 +3363,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "과일채소 짝 맞추기",
         "somang",
         "mideum",
         "cognitive"
@@ -3546,8 +3546,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "오감담 유리병 속 여름 바다",
-      "subtitle": "맞춤형-오감담 유리병 속 여름 바다",
+      "title": "유리병 속 여름 바다",
+      "subtitle": "맞춤형-오감담",
       "categoryId": "custom",
       "groupIds": [
         "somang"
@@ -3558,7 +3558,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "오감담 유리병 속 여름 바다",
+        "유리병 속 여름 바다",
         "somang",
         "custom"
       ]
@@ -3572,7 +3572,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "몰펀",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -3584,7 +3584,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "몰펀",
         "mideum",
         "cognitive"
       ]
@@ -3916,8 +3916,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "인지담 개구리의 곤충사냥",
-      "subtitle": "맞춤형-인지담 개구리의 곤충사냥",
+      "title": "개구리의 곤충사냥",
+      "subtitle": "맞춤형-인지담",
       "categoryId": "custom",
       "groupIds": [
         "mideum"
@@ -3928,7 +3928,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "인지담 개구리의 곤충사냥",
+        "개구리의 곤충사냥",
         "mideum",
         "custom"
       ]
@@ -4112,7 +4112,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "핸드 골프",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4122,7 +4122,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "핸드 골프",
         "sarang",
         "physical"
       ]
@@ -4358,7 +4358,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "도미노 게임",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4368,7 +4368,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "도미노 게임",
         "somang",
         "physical"
       ]
@@ -4528,7 +4528,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "파리를 잡자",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4538,7 +4538,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "파리를 잡자",
         "sarang",
         "physical"
       ]
@@ -4748,7 +4748,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "윷놀이",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4758,7 +4758,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "윷놀이",
         "all",
         "physical"
       ]
@@ -4868,7 +4868,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "윷놀이",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4878,7 +4878,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "윷놀이",
         "all",
         "physical"
       ]
@@ -4892,7 +4892,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "한국화 색칠하기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -4904,7 +4904,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "한국화 색칠하기",
         "all",
         "cognitive"
       ]

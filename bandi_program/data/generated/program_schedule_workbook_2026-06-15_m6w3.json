@@ -4,7 +4,7 @@
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-08-18T14:29:00+09:00",
+    "generatedAt": "2026-08-20T11:10:46+09:00",
     "defaultView": "now",
     "sourceLabel": "6월 3주차"
   },
@@ -228,8 +228,8 @@
             },
             {
               "id": "2026-06-15-1030-3",
-              "title": "활기담 축구공 톡톡 놀이",
-              "subtitle": "맞춤형-활기담 축구공 톡톡 놀이",
+              "title": "축구공 톡톡 놀이",
+              "subtitle": "맞춤형-활기담",
               "categoryId": "custom",
               "groupIds": [
                 "somang"
@@ -240,7 +240,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "활기담 축구공 톡톡 놀이",
+                "축구공 톡톡 놀이",
                 "somang",
                 "custom"
               ]
@@ -420,7 +420,7 @@
             },
             {
               "id": "2026-06-15-1500-3",
-              "title": "제목 없음",
+              "title": "구불구불 길을 찾아요",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -432,7 +432,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "구불구불 길을 찾아요",
                 "somang",
                 "cognitive"
               ]
@@ -654,8 +654,8 @@
             },
             {
               "id": "2026-06-16-1030-3",
-              "title": "소리담 처녀 뱃사공",
-              "subtitle": "맞춤형- 소리담 처녀 뱃사공",
+              "title": "처녀 뱃사공",
+              "subtitle": "맞춤형-소리담",
               "categoryId": "custom",
               "groupIds": [
                 "mideum"
@@ -666,7 +666,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "소리담 처녀 뱃사공",
+                "처녀 뱃사공",
                 "mideum",
                 "custom"
               ]
@@ -2661,8 +2661,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "활기담 축구공 톡톡 놀이",
-      "subtitle": "맞춤형-활기담 축구공 톡톡 놀이",
+      "title": "축구공 톡톡 놀이",
+      "subtitle": "맞춤형-활기담",
       "categoryId": "custom",
       "groupIds": [
         "somang"
@@ -2673,7 +2673,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "활기담 축구공 톡톡 놀이",
+        "축구공 톡톡 놀이",
         "somang",
         "custom"
       ]
@@ -2859,7 +2859,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "구불구불 길을 찾아요",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -2871,7 +2871,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "구불구불 길을 찾아요",
         "somang",
         "cognitive"
       ]
@@ -3077,8 +3077,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "소리담 처녀 뱃사공",
-      "subtitle": "맞춤형- 소리담 처녀 뱃사공",
+      "title": "처녀 뱃사공",
+      "subtitle": "맞춤형-소리담",
       "categoryId": "custom",
       "groupIds": [
         "mideum"
@@ -3089,7 +3089,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "소리담 처녀 뱃사공",
+        "처녀 뱃사공",
         "mideum",
         "custom"
       ]

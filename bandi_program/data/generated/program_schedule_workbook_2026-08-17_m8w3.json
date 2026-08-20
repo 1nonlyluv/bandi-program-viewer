@@ -4,7 +4,7 @@
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-08-18T14:29:00+09:00",
+    "generatedAt": "2026-08-20T11:10:47+09:00",
     "defaultView": "now",
     "sourceLabel": "8월 3주차"
   },
@@ -209,7 +209,7 @@
             },
             {
               "id": "2026-08-17-1030-2",
-              "title": "제목 없음",
+              "title": "몰펀",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -221,14 +221,14 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "몰펀",
                 "mideum",
                 "cognitive"
               ]
             },
             {
               "id": "2026-08-17-1030-3",
-              "title": "제목 없음",
+              "title": "핸드 골프",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -238,7 +238,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "핸드 골프",
                 "somang",
                 "physical"
               ]
@@ -353,7 +353,7 @@
             },
             {
               "id": "2026-08-17-1400-2",
-              "title": "제목 없음",
+              "title": "다람쥐 색칠하기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -365,14 +365,14 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "다람쥐 색칠하기",
                 "sarang",
                 "cognitive"
               ]
             },
             {
               "id": "2026-08-17-1400-3",
-              "title": "제목 없음",
+              "title": "테이블 하키",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -382,7 +382,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "테이블 하키",
                 "mideum",
                 "physical"
               ]
@@ -399,7 +399,7 @@
           "entries": [
             {
               "id": "2026-08-17-1500-1",
-              "title": "제목 없음",
+              "title": "고리 던지기",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -409,14 +409,14 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "고리 던지기",
                 "sarang",
                 "physical"
               ]
             },
             {
               "id": "2026-08-17-1500-2",
-              "title": "제목 없음",
+              "title": "다람쥐 색칠하기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -429,7 +429,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "다람쥐 색칠하기",
                 "somang",
                 "mideum",
                 "cognitive"
@@ -654,8 +654,8 @@
             },
             {
               "id": "2026-08-18-1030-3",
-              "title": "소리담 무너진 사랑탑",
-              "subtitle": "맞춤형- 소리담 무너진 사랑탑",
+              "title": "무너진 사랑탑",
+              "subtitle": "맞춤형-소리담",
               "categoryId": "custom",
               "groupIds": [
                 "mideum"
@@ -666,7 +666,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "소리담 무너진 사랑탑",
+                "무너진 사랑탑",
                 "mideum",
                 "custom"
               ]
@@ -781,7 +781,7 @@
             },
             {
               "id": "2026-08-18-1400-2",
-              "title": "제목 없음",
+              "title": "색과 모양 맞추기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -793,14 +793,14 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "색과 모양 맞추기",
                 "sarang",
                 "cognitive"
               ]
             },
             {
               "id": "2026-08-18-1400-3",
-              "title": "제목 없음",
+              "title": "투호",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -810,7 +810,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "투호",
                 "mideum",
                 "physical"
               ]
@@ -846,7 +846,7 @@
             },
             {
               "id": "2026-08-18-1500-2",
-              "title": "제목 없음",
+              "title": "색과 모양 맞추기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -859,7 +859,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "색과 모양 맞추기",
                 "somang",
                 "mideum",
                 "cognitive"
@@ -1065,8 +1065,8 @@
             },
             {
               "id": "2026-08-19-1030-2",
-              "title": "오감담 행복이 피어나는 접시꽃",
-              "subtitle": "맞춤형-오감담 행복이 피어나는 접시꽃",
+              "title": "행복이 피어나는 접시꽃",
+              "subtitle": "맞춤형-오감담",
               "categoryId": "custom",
               "groupIds": [
                 "somang"
@@ -1077,7 +1077,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "오감담 행복이 피어나는 접시꽃",
+                "행복이 피어나는 접시꽃",
                 "somang",
                 "custom"
               ]
@@ -1459,8 +1459,8 @@
             },
             {
               "id": "2026-08-20-1030-2",
-              "title": "인지담 색깔 따라 팔찌 끼우기",
-              "subtitle": "맞춤형-인지담 색깔 따라 팔찌 끼우기",
+              "title": "색깔 따라 팔찌 끼우기",
+              "subtitle": "맞춤형-인지담",
               "categoryId": "custom",
               "groupIds": [
                 "mideum"
@@ -1471,7 +1471,7 @@
               "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "인지담 색깔 따라 팔찌 끼우기",
+                "색깔 따라 팔찌 끼우기",
                 "mideum",
                 "custom"
               ]
@@ -1649,7 +1649,7 @@
           "entries": [
             {
               "id": "2026-08-20-1500-1",
-              "title": "제목 없음",
+              "title": "탁구공 홀인원",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1659,7 +1659,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "탁구공 홀인원",
                 "sarang",
                 "physical"
               ]
@@ -1904,7 +1904,7 @@
             },
             {
               "id": "2026-08-21-1030-3",
-              "title": "제목 없음",
+              "title": "볼링",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -1914,7 +1914,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "볼링",
                 "somang",
                 "physical"
               ]
@@ -2075,7 +2075,7 @@
           "entries": [
             {
               "id": "2026-08-21-1500-1",
-              "title": "제목 없음",
+              "title": "접시 제기",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2085,7 +2085,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "접시 제기",
                 "sarang",
                 "physical"
               ]
@@ -2311,7 +2311,7 @@
             },
             {
               "id": "2026-08-22-1030-2",
-              "title": "제목 없음",
+              "title": "뱀주사위 놀이",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2321,7 +2321,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "뱀주사위 놀이",
                 "all",
                 "physical"
               ]
@@ -2436,7 +2436,7 @@
             },
             {
               "id": "2026-08-22-1400-2",
-              "title": "제목 없음",
+              "title": "뱀주사위 놀이",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
@@ -2446,7 +2446,7 @@
               "staffRole": "",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "뱀주사위 놀이",
                 "all",
                 "physical"
               ]
@@ -2463,7 +2463,7 @@
           "entries": [
             {
               "id": "2026-08-22-1500-1",
-              "title": "제목 없음",
+              "title": "\"화조도\" 색칠하기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
@@ -2475,7 +2475,7 @@
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "제목 없음",
+                "\"화조도\" 색칠하기",
                 "all",
                 "cognitive"
               ]
@@ -2669,7 +2669,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "몰펀",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -2681,7 +2681,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "몰펀",
         "mideum",
         "cognitive"
       ]
@@ -2695,7 +2695,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "핸드 골프",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2705,7 +2705,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "핸드 골프",
         "somang",
         "physical"
       ]
@@ -2815,7 +2815,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "다람쥐 색칠하기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -2827,7 +2827,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "다람쥐 색칠하기",
         "sarang",
         "cognitive"
       ]
@@ -2841,7 +2841,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "테이블 하키",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2851,7 +2851,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "테이블 하키",
         "mideum",
         "physical"
       ]
@@ -2865,7 +2865,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "고리 던지기",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -2875,7 +2875,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "고리 던지기",
         "sarang",
         "physical"
       ]
@@ -2889,7 +2889,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "다람쥐 색칠하기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -2902,7 +2902,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "다람쥐 색칠하기",
         "somang",
         "mideum",
         "cognitive"
@@ -3111,8 +3111,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "소리담 무너진 사랑탑",
-      "subtitle": "맞춤형- 소리담 무너진 사랑탑",
+      "title": "무너진 사랑탑",
+      "subtitle": "맞춤형-소리담",
       "categoryId": "custom",
       "groupIds": [
         "mideum"
@@ -3123,7 +3123,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "소리담 무너진 사랑탑",
+        "무너진 사랑탑",
         "mideum",
         "custom"
       ]
@@ -3233,7 +3233,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "색과 모양 맞추기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -3245,7 +3245,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "색과 모양 맞추기",
         "sarang",
         "cognitive"
       ]
@@ -3259,7 +3259,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "투호",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -3269,7 +3269,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "투호",
         "mideum",
         "physical"
       ]
@@ -3309,7 +3309,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "색과 모양 맞추기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -3322,7 +3322,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "색과 모양 맞추기",
         "somang",
         "mideum",
         "cognitive"
@@ -3505,8 +3505,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "오감담 행복이 피어나는 접시꽃",
-      "subtitle": "맞춤형-오감담 행복이 피어나는 접시꽃",
+      "title": "행복이 피어나는 접시꽃",
+      "subtitle": "맞춤형-오감담",
       "categoryId": "custom",
       "groupIds": [
         "somang"
@@ -3517,7 +3517,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "오감담 행복이 피어나는 접시꽃",
+        "행복이 피어나는 접시꽃",
         "somang",
         "custom"
       ]
@@ -3875,8 +3875,8 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "인지담 색깔 따라 팔찌 끼우기",
-      "subtitle": "맞춤형-인지담 색깔 따라 팔찌 끼우기",
+      "title": "색깔 따라 팔찌 끼우기",
+      "subtitle": "맞춤형-인지담",
       "categoryId": "custom",
       "groupIds": [
         "mideum"
@@ -3887,7 +3887,7 @@
       "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "인지담 색깔 따라 팔찌 끼우기",
+        "색깔 따라 팔찌 끼우기",
         "mideum",
         "custom"
       ]
@@ -4071,7 +4071,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "탁구공 홀인원",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4081,7 +4081,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "탁구공 홀인원",
         "sarang",
         "physical"
       ]
@@ -4317,7 +4317,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "볼링",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4327,7 +4327,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "볼링",
         "somang",
         "physical"
       ]
@@ -4487,7 +4487,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "접시 제기",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4497,7 +4497,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "접시 제기",
         "sarang",
         "physical"
       ]
@@ -4707,7 +4707,7 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "제목 없음",
+      "title": "뱀주사위 놀이",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4717,7 +4717,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "뱀주사위 놀이",
         "all",
         "physical"
       ]
@@ -4827,7 +4827,7 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "뱀주사위 놀이",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
@@ -4837,7 +4837,7 @@
       "staffRole": "",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "뱀주사위 놀이",
         "all",
         "physical"
       ]
@@ -4851,7 +4851,7 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
-      "title": "제목 없음",
+      "title": "\"화조도\" 색칠하기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
@@ -4863,7 +4863,7 @@
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "제목 없음",
+        "\"화조도\" 색칠하기",
         "all",
         "cognitive"
       ]
