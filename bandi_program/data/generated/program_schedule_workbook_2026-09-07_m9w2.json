@@ -4,7 +4,7 @@
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-09-02T11:35:09+09:00",
+    "generatedAt": "2026-09-11T12:49:48+09:00",
     "defaultView": "now",
     "sourceLabel": "9월 2주차"
   },
@@ -1084,7 +1084,7 @@
               "subtitle": "맞춤형-오감담",
               "categoryId": "custom",
               "groupIds": [
-                "somang"
+                "mideum"
               ],
               "staff": [
                 "고현선"
@@ -1093,27 +1093,25 @@
               "location": "강당",
               "tags": [
                 "가을 멋쟁이 넥타이",
-                "somang",
+                "mideum",
                 "custom"
               ]
             },
             {
               "id": "2026-09-09-1030-3",
-              "title": "몰펀",
+              "title": "투호",
               "subtitle": "",
-              "categoryId": "cognitive",
+              "categoryId": "physical",
               "groupIds": [
-                "mideum"
+                "somang"
               ],
-              "staff": [
-                "정성진"
-              ],
-              "staffRole": "준비",
+              "staff": [],
+              "staffRole": "",
               "location": "강당",
               "tags": [
-                "몰펀",
-                "mideum",
-                "cognitive"
+                "투호",
+                "somang",
+                "physical"
               ]
             }
           ]
@@ -1478,7 +1476,7 @@
               "subtitle": "맞춤형-인지담",
               "categoryId": "custom",
               "groupIds": [
-                "mideum"
+                "somang"
               ],
               "staff": [
                 "김소정"
@@ -1487,25 +1485,27 @@
               "location": "강당",
               "tags": [
                 "무지개 도미노 여행",
-                "mideum",
+                "somang",
                 "custom"
               ]
             },
             {
               "id": "2026-09-10-1030-3",
-              "title": "투호",
+              "title": "몰펀",
               "subtitle": "",
-              "categoryId": "physical",
+              "categoryId": "cognitive",
               "groupIds": [
-                "somang"
+                "mideum"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "정성진"
+              ],
+              "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "투호",
-                "somang",
-                "physical"
+                "몰펀",
+                "mideum",
+                "cognitive"
               ]
             }
           ]
@@ -1618,23 +1618,23 @@
             },
             {
               "id": "2026-09-10-1400-2",
-              "title": "소방안전훈련",
+              "title": "알파벳 따라쓰기",
               "subtitle": "",
-              "categoryId": "social",
+              "categoryId": "cognitive",
               "groupIds": [
                 "sarang",
                 "mideum"
               ],
               "staff": [
-                "김은비"
+                "정성진"
               ],
               "staffRole": "준비",
               "location": "강당",
               "tags": [
-                "소방안전훈련",
+                "알파벳 따라쓰기",
                 "sarang",
                 "mideum",
-                "social"
+                "cognitive"
               ]
             }
           ]
@@ -1649,11 +1649,32 @@
           "entries": [
             {
               "id": "2026-09-10-1500-1",
+              "title": "소방안전훈련",
+              "subtitle": "",
+              "categoryId": "social",
+              "groupIds": [
+                "sarang",
+                "mideum"
+              ],
+              "staff": [
+                "정성진"
+              ],
+              "staffRole": "준비",
+              "location": "강당",
+              "tags": [
+                "소방안전훈련",
+                "sarang",
+                "mideum",
+                "social"
+              ]
+            },
+            {
+              "id": "2026-09-10-1500-2",
               "title": "알파벳 따라쓰기",
               "subtitle": "",
               "categoryId": "cognitive",
               "groupIds": [
-                "all"
+                "somang"
               ],
               "staff": [
                 "정성진"
@@ -1662,7 +1683,7 @@
               "location": "강당",
               "tags": [
                 "알파벳 따라쓰기",
-                "all",
+                "somang",
                 "cognitive"
               ]
             }
@@ -3512,7 +3533,7 @@
       "subtitle": "맞춤형-오감담",
       "categoryId": "custom",
       "groupIds": [
-        "somang"
+        "mideum"
       ],
       "staff": [
         "고현선"
@@ -3521,7 +3542,7 @@
       "location": "강당",
       "tags": [
         "가을 멋쟁이 넥타이",
-        "somang",
+        "mideum",
         "custom"
       ]
     },
@@ -3534,21 +3555,19 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "몰펀",
+      "title": "투호",
       "subtitle": "",
-      "categoryId": "cognitive",
+      "categoryId": "physical",
       "groupIds": [
-        "mideum"
+        "somang"
       ],
-      "staff": [
-        "정성진"
-      ],
-      "staffRole": "준비",
+      "staff": [],
+      "staffRole": "",
       "location": "강당",
       "tags": [
-        "몰펀",
-        "mideum",
-        "cognitive"
+        "투호",
+        "somang",
+        "physical"
       ]
     },
     {
@@ -3882,7 +3901,7 @@
       "subtitle": "맞춤형-인지담",
       "categoryId": "custom",
       "groupIds": [
-        "mideum"
+        "somang"
       ],
       "staff": [
         "김소정"
@@ -3891,7 +3910,7 @@
       "location": "강당",
       "tags": [
         "무지개 도미노 여행",
-        "mideum",
+        "somang",
         "custom"
       ]
     },
@@ -3904,19 +3923,21 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "투호",
+      "title": "몰펀",
       "subtitle": "",
-      "categoryId": "physical",
+      "categoryId": "cognitive",
       "groupIds": [
-        "somang"
+        "mideum"
       ],
-      "staff": [],
-      "staffRole": "",
+      "staff": [
+        "정성진"
+      ],
+      "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "투호",
-        "somang",
-        "physical"
+        "몰펀",
+        "mideum",
+        "cognitive"
       ]
     },
     {
@@ -4024,23 +4045,23 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "소방안전훈련",
+      "title": "알파벳 따라쓰기",
       "subtitle": "",
-      "categoryId": "social",
+      "categoryId": "cognitive",
       "groupIds": [
         "sarang",
         "mideum"
       ],
       "staff": [
-        "김은비"
+        "정성진"
       ],
       "staffRole": "준비",
       "location": "강당",
       "tags": [
-        "소방안전훈련",
+        "알파벳 따라쓰기",
         "sarang",
         "mideum",
-        "social"
+        "cognitive"
       ]
     },
     {
@@ -4052,11 +4073,39 @@
       "startMin": 900,
       "endMin": 960,
       "section": "오후",
+      "title": "소방안전훈련",
+      "subtitle": "",
+      "categoryId": "social",
+      "groupIds": [
+        "sarang",
+        "mideum"
+      ],
+      "staff": [
+        "정성진"
+      ],
+      "staffRole": "준비",
+      "location": "강당",
+      "tags": [
+        "소방안전훈련",
+        "sarang",
+        "mideum",
+        "social"
+      ]
+    },
+    {
+      "id": "2026-09-10-1500-2",
+      "date": "2026-09-10",
+      "weekday": "목",
+      "start": "15:00",
+      "end": "16:00",
+      "startMin": 900,
+      "endMin": 960,
+      "section": "오후",
       "title": "알파벳 따라쓰기",
       "subtitle": "",
       "categoryId": "cognitive",
       "groupIds": [
-        "all"
+        "somang"
       ],
       "staff": [
         "정성진"
@@ -4065,7 +4114,7 @@
       "location": "강당",
       "tags": [
         "알파벳 따라쓰기",
-        "all",
+        "somang",
         "cognitive"
       ]
     },
