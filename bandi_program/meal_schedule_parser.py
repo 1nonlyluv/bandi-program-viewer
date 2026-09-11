@@ -34,9 +34,15 @@ def parse_date_header(value: Any, default_year: int) -> str:
 
 def normalize_menu_item(value: Any) -> str:
     text = normalize_text(value)
-    if not text or re.fullmatch(r"\d+\s*kcal", text, re.IGNORECASE):
+    if not text or parse_calories(text):
         return ""
     return text.strip().strip("<>")
+
+
+def parse_calories(value: Any) -> str:
+    text = normalize_text(value)
+    match = re.fullmatch(r"(\d[\d,]*)\s*kcal", text, re.IGNORECASE)
+    return f"{match.group(1)} kcal" if match else ""
 
 
 def find_date_columns(sheet: XlsxSheet, year: int) -> dict[int, str]:
@@ -55,7 +61,7 @@ def parse_meal_sheet(path: str | Path, *, sheet_name: str = "", sheet_path: str 
     workbook_path = Path(path)
     sheet = XlsxSheet(workbook_path, sheet_name=sheet_name or None, sheet_path=sheet_path or None)
     date_columns = find_date_columns(sheet, infer_year(workbook_path))
-    days: dict[str, dict[str, list[str]]] = {date: {} for date in date_columns.values()}
+    days: dict[str, dict[str, dict[str, Any]]] = {date: {} for date in date_columns.values()}
     meal_starts: list[tuple[int, str]] = []
 
     for row in range(1, sheet.max_row + 1):
@@ -68,12 +74,15 @@ def parse_meal_sheet(path: str | Path, *, sheet_name: str = "", sheet_path: str 
         for column_number, date in date_columns.items():
             column = column_name(column_number)
             items: list[str] = []
+            calories = ""
             for row in range(start_row, end_row + 1):
-                item = normalize_menu_item(sheet.value(f"{column}{row}", merged=False))
+                value = sheet.value(f"{column}{row}", merged=False)
+                calories = calories or parse_calories(value)
+                item = normalize_menu_item(value)
                 if item and item not in items:
                     items.append(item)
             if items:
-                days[date][meal_type] = items
+                days[date][meal_type] = {"items": items, "calories": calories}
 
     return {
         "meta": {"sourceFile": workbook_path.name, "sheetName": sheet.sheet_name},

@@ -504,7 +504,7 @@
     return value;
   }
 
-  function renderProgramCopyHtml(mainText, metaText, secondaryMainText, mealMenu) {
+  function renderProgramCopyHtml(mainText, metaText, secondaryMainText, mealMenu, mealCalories) {
     var html = '<span class="pv-now-program-copy-main">' + escapeHtmlWithBreaks(mainText) + "</span>";
     if (secondaryMainText) {
       html += '<span class="pv-now-program-copy-main is-secondary">' + escapeHtmlWithBreaks(secondaryMainText) + "</span>";
@@ -515,6 +515,7 @@
     if (mealMenu && mealMenu.length) {
       html += '<span class="pv-now-meal-menu"><span class="pv-now-meal-menu-label">오늘의 메뉴</span>'
         + mealMenu.map(function (item) { return '<span class="pv-now-meal-menu-item">' + escapeHtml(item) + "</span>"; }).join("")
+        + (mealCalories ? '<span class="pv-now-meal-calories">' + escapeHtml(mealCalories) + "</span>" : "")
         + "</span>";
     }
     return '<span class="pv-now-program-copy">' + html + "</span>";
@@ -599,6 +600,7 @@
     var bodyText = "";
     var metaText = titleParts.meta;
     var mealMenu = Array.isArray(entry.mealMenu) ? entry.mealMenu : [];
+    var mealCalories = entry.mealCalories || "";
 
     if (entry.categoryId === "custom") {
       bodyText = formatCustomTrack(subtitle);
@@ -610,7 +612,7 @@
           ? metaText + " " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "")
           : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
       }
-      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu);
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu, mealCalories);
     }
 
     if (entry.categoryId === "physical" || entry.categoryId === "cognitive") {
@@ -629,7 +631,7 @@
           ? metaText + " " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "")
           : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
       }
-      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu);
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu, mealCalories);
     }
 
     bodyText = title;
@@ -647,7 +649,7 @@
     if (staffSuffix) {
       metaText = metaText ? metaText + " / " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "") : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
     }
-    return renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu);
+    return renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu, mealCalories);
   }
 
   function attachMealMenus(data, mealSchedule) {
@@ -663,8 +665,11 @@
           } else if (title.indexOf("저녁 식사") !== -1) {
             mealType = "dinner";
           }
-          if (mealType && Array.isArray(meals[mealType]) && meals[mealType].length) {
-            entry.mealMenu = meals[mealType].slice();
+          var meal = meals[mealType];
+          var items = Array.isArray(meal) ? meal : meal && meal.items;
+          if (mealType && Array.isArray(items) && items.length) {
+            entry.mealMenu = items.slice();
+            entry.mealCalories = Array.isArray(meal) ? "" : String(meal.calories || "");
           }
         });
       });
