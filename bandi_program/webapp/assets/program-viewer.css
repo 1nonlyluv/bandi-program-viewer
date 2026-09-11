@@ -1309,6 +1309,31 @@ a.pv-day-card {
   color: var(--pv-accent-strong);
 }
 
+.pv-now-meal-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28em 0.52em;
+  margin-top: 0.6em;
+  color: var(--pv-ink-soft);
+  font-size: 0.76rem;
+  font-weight: 650;
+  line-height: 1.38;
+}
+
+.pv-now-meal-menu-label {
+  flex: 0 0 100%;
+  color: var(--pv-accent-strong);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.pv-now-meal-menu-item::before {
+  content: "·";
+  margin-right: 0.2em;
+  color: var(--pv-accent);
+}
+
 .pv-entry-token {
   flex: 0 0 auto;
   display: inline-flex;

@@ -11,6 +11,8 @@ name: Deploy Bandi Program Webapp
       - "bandi_program/data/generated/program_schedule_workbook_*.json"
       - "bandi_program/build_program_schedule_workbook_jsons.py"
       - "bandi_program/build_program_schedule_bundle.py"
+      - "bandi_program/build_meal_schedule_json.py"
+      - "bandi_program/meal_schedule_parser.py"
       - "bandi_program/program_schedule_parser.py"
       - "bandi_program/shuttle_schedule_parser.py"
       - "bandi_program/program_schedule_normalizer.py"
@@ -55,6 +57,12 @@ jobs:
             "data/generated/program_schedule_week[0-9]*.json" \
             "data/generated/program_schedule_workbook_*.json" \
             --output webapp/assets/program_schedule.json
+
+      - name: Build meal menu JSON
+        working-directory: bandi_program
+        run: |
+          python3 build_meal_schedule_json.py \
+            --output webapp/assets/meal_schedule.json
 
       - name: Write webapp version
         working-directory: bandi_program

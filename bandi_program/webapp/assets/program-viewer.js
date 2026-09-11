@@ -39,6 +39,12 @@
     return "./assets/program_schedule.json" + (version ? "?v=" + encodeURIComponent(version) : "");
   }
 
+  function getMealDataUrl() {
+    var params = new URLSearchParams(window.location.search);
+    var version = params.get("v");
+    return "./assets/meal_schedule.json" + (version ? "?v=" + encodeURIComponent(version) : "");
+  }
+
   function fetchJson(url) {
     return fetch(url, { cache: "no-store" }).then(function (response) {
       if (!response.ok) {
@@ -498,13 +504,18 @@
     return value;
   }
 
-  function renderProgramCopyHtml(mainText, metaText, secondaryMainText) {
+  function renderProgramCopyHtml(mainText, metaText, secondaryMainText, mealMenu) {
     var html = '<span class="pv-now-program-copy-main">' + escapeHtmlWithBreaks(mainText) + "</span>";
     if (secondaryMainText) {
       html += '<span class="pv-now-program-copy-main is-secondary">' + escapeHtmlWithBreaks(secondaryMainText) + "</span>";
     }
     if (metaText) {
       html += '<span class="pv-now-program-meta">' + renderProgramMetaHtml(metaText) + "</span>";
+    }
+    if (mealMenu && mealMenu.length) {
+      html += '<span class="pv-now-meal-menu"><span class="pv-now-meal-menu-label">오늘의 메뉴</span>'
+        + mealMenu.map(function (item) { return '<span class="pv-now-meal-menu-item">' + escapeHtml(item) + "</span>"; }).join("")
+        + "</span>";
     }
     return '<span class="pv-now-program-copy">' + html + "</span>";
   }
@@ -587,6 +598,7 @@
     var iconHtml = renderEntryIcon(entry);
     var bodyText = "";
     var metaText = titleParts.meta;
+    var mealMenu = Array.isArray(entry.mealMenu) ? entry.mealMenu : [];
 
     if (entry.categoryId === "custom") {
       bodyText = formatCustomTrack(subtitle);
@@ -598,7 +610,7 @@
           ? metaText + " " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "")
           : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
       }
-      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle);
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu);
     }
 
     if (entry.categoryId === "physical" || entry.categoryId === "cognitive") {
@@ -617,7 +629,7 @@
           ? metaText + " " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "")
           : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
       }
-      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle);
+      return iconHtml + renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu);
     }
 
     bodyText = title;
@@ -635,7 +647,29 @@
     if (staffSuffix) {
       metaText = metaText ? metaText + " / " + staffSuffix.replace(/^\s*\(|\)\s*$/g, "") : staffSuffix.replace(/^\s*\(|\)\s*$/g, "");
     }
-    return renderProgramCopyHtml(bodyText, metaText, secondaryTitle);
+    return renderProgramCopyHtml(bodyText, metaText, secondaryTitle, mealMenu);
+  }
+
+  function attachMealMenus(data, mealSchedule) {
+    var menusByDate = mealSchedule && mealSchedule.days ? mealSchedule.days : {};
+    (data.days || []).forEach(function (day) {
+      var meals = menusByDate[day.date] || {};
+      (day.blocks || []).forEach(function (block) {
+        (block.entries || []).forEach(function (entry) {
+          var title = normalizeDisplayText(entry.title || "");
+          var mealType = "";
+          if (title.indexOf("점심 식사") !== -1) {
+            mealType = "lunch";
+          } else if (title.indexOf("저녁 식사") !== -1) {
+            mealType = "dinner";
+          }
+          if (mealType && Array.isArray(meals[mealType]) && meals[mealType].length) {
+            entry.mealMenu = meals[mealType].slice();
+          }
+        });
+      });
+    });
+    return data;
   }
 
   function getEntryGroupLabel(entry, groupMap) {
@@ -1690,8 +1724,12 @@
     var page = document.body.getAttribute("data-page");
     var paramsObj = makeParamsObject(new URLSearchParams(window.location.search));
 
-    fetchJson(getDataUrl())
-      .then(function (data) {
+    Promise.all([
+      fetchJson(getDataUrl()),
+      fetchJson(getMealDataUrl()).catch(function () { return { days: {} }; })
+    ])
+      .then(function (result) {
+        var data = attachMealMenus(result[0], result[1]);
         if (page === "now") {
           renderNowPage(data, paramsObj, root);
           return;
