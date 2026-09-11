@@ -1303,6 +1303,12 @@ a.pv-day-card {
   word-break: keep-all;
 }
 
+.pv-now-program-meta-venue {
+  display: inline-block;
+  margin-top: 0.32em;
+  color: var(--pv-accent-strong);
+}
+
 .pv-entry-token {
   flex: 0 0 auto;
   display: inline-flex;

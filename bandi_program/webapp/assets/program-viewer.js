@@ -504,9 +504,23 @@
       html += '<span class="pv-now-program-copy-main is-secondary">' + escapeHtmlWithBreaks(secondaryMainText) + "</span>";
     }
     if (metaText) {
-      html += '<span class="pv-now-program-meta">' + escapeHtmlWithBreaks(metaText) + "</span>";
+      html += '<span class="pv-now-program-meta">' + renderProgramMetaHtml(metaText) + "</span>";
     }
     return '<span class="pv-now-program-copy">' + html + "</span>";
+  }
+
+  function renderProgramMetaHtml(metaText) {
+    return String(metaText || "")
+      .split("\n")
+      .filter(Boolean)
+      .map(function (line) {
+        var text = normalizeDisplayText(line);
+        if (/^강당 담당\s*:/u.test(text)) {
+          return '<span class="pv-now-program-meta-venue">' + escapeHtml(text) + "</span>";
+        }
+        return escapeHtml(text);
+      })
+      .join("<br />");
   }
 
   function extractDisplayTitleMeta(rawTitle) {
