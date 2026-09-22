@@ -4,7 +4,7 @@
   "meta": {
     "title": "주간프로그램 계획표",
     "timezone": "Asia/Seoul",
-    "generatedAt": "2026-09-17T15:00:24+09:00",
+    "generatedAt": "2026-09-22T11:32:28+09:00",
     "defaultView": "now",
     "sourceLabel": "9월 4주차"
   },
@@ -673,21 +673,19 @@
             },
             {
               "id": "2026-09-22-1030-3",
-              "title": "강원도 아리랑",
-              "subtitle": "맞춤형-소리담",
-              "categoryId": "custom",
+              "title": "나는야강태공",
+              "subtitle": "",
+              "categoryId": "physical",
               "groupIds": [
                 "somang"
               ],
-              "staff": [
-                "김소정"
-              ],
-              "staffRole": "강사",
+              "staff": [],
+              "staffRole": "",
               "location": "강당",
               "tags": [
-                "강원도 아리랑",
+                "나는야강태공",
                 "somang",
-                "custom"
+                "physical"
               ]
             }
           ]
@@ -1476,19 +1474,21 @@
             },
             {
               "id": "2026-09-24-1030-2",
-              "title": "뱀주사위놀이",
-              "subtitle": "",
-              "categoryId": "physical",
+              "title": "강원도 아리랑",
+              "subtitle": "맞춤형-소리담",
+              "categoryId": "custom",
               "groupIds": [
                 "all"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "강수진"
+              ],
+              "staffRole": "강사",
               "location": "강당",
               "tags": [
-                "뱀주사위놀이",
+                "강원도 아리랑",
                 "all",
-                "physical"
+                "custom"
               ]
             }
           ]
@@ -3097,21 +3097,19 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "강원도 아리랑",
-      "subtitle": "맞춤형-소리담",
-      "categoryId": "custom",
+      "title": "나는야강태공",
+      "subtitle": "",
+      "categoryId": "physical",
       "groupIds": [
         "somang"
       ],
-      "staff": [
-        "김소정"
-      ],
-      "staffRole": "강사",
+      "staff": [],
+      "staffRole": "",
       "location": "강당",
       "tags": [
-        "강원도 아리랑",
+        "나는야강태공",
         "somang",
-        "custom"
+        "physical"
       ]
     },
     {
@@ -3859,19 +3857,21 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "뱀주사위놀이",
-      "subtitle": "",
-      "categoryId": "physical",
+      "title": "강원도 아리랑",
+      "subtitle": "맞춤형-소리담",
+      "categoryId": "custom",
       "groupIds": [
         "all"
       ],
-      "staff": [],
-      "staffRole": "",
+      "staff": [
+        "강수진"
+      ],
+      "staffRole": "강사",
       "location": "강당",
       "tags": [
-        "뱀주사위놀이",
+        "강원도 아리랑",
         "all",
-        "physical"
+        "custom"
       ]
     },
     {
