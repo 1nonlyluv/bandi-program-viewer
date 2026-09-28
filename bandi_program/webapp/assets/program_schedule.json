@@ -80973,6 +80973,25 @@
             },
             {
               "id": "2026-09-28-1030-2",
+              "title": "쿵쿵 쏙쏙 놀이",
+              "subtitle": "맞춤형-활기담",
+              "categoryId": "custom",
+              "groupIds": [
+                "somang"
+              ],
+              "staff": [
+                "이현주"
+              ],
+              "staffRole": "강사",
+              "location": "강당",
+              "tags": [
+                "쿵쿵 쏙쏙 놀이",
+                "somang",
+                "custom"
+              ]
+            },
+            {
+              "id": "2026-09-28-1030-3",
               "title": "미술활동",
               "subtitle": "우리 전통 족두리 꾸미기",
               "categoryId": "cognitive",
@@ -80988,23 +81007,6 @@
                 "미술활동",
                 "mideum",
                 "cognitive"
-              ]
-            },
-            {
-              "id": "2026-09-28-1030-3",
-              "title": "투호",
-              "subtitle": "",
-              "categoryId": "physical",
-              "groupIds": [
-                "somang"
-              ],
-              "staff": [],
-              "staffRole": "",
-              "location": "강당",
-              "tags": [
-                "투호",
-                "somang",
-                "physical"
               ]
             }
           ]
@@ -81848,21 +81850,19 @@
             },
             {
               "id": "2026-09-30-1030-3",
-              "title": "미술활동",
-              "subtitle": "우리 전통 족두리 꾸미기",
-              "categoryId": "cognitive",
+              "title": "투호",
+              "subtitle": "",
+              "categoryId": "physical",
               "groupIds": [
                 "somang"
               ],
-              "staff": [
-                "정성진"
-              ],
-              "staffRole": "준비",
+              "staff": [],
+              "staffRole": "",
               "location": "강당",
               "tags": [
-                "미술활동",
+                "투호",
                 "somang",
-                "cognitive"
+                "physical"
               ]
             }
           ]
@@ -82424,19 +82424,17 @@
             },
             {
               "id": "2026-10-01-1400-4",
-              "title": "요가교실 (신체) (믿음반) 준비:정성진",
+              "title": "도미노게임",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "mideum"
               ],
-              "staff": [
-                "정성진"
-              ],
-              "staffRole": "요가교실 (신체) (믿음반) 준비",
+              "staff": [],
+              "staffRole": "",
               "location": "강당",
               "tags": [
-                "요가교실 (신체) (믿음반) 준비:정성진",
+                "도미노게임",
                 "mideum",
                 "physical"
               ]
@@ -82856,17 +82854,19 @@
             },
             {
               "id": "2026-10-02-1400-3",
-              "title": "도미노게임",
+              "title": "요가교실 (신체) (믿음반) 준비:정성진",
               "subtitle": "",
               "categoryId": "physical",
               "groupIds": [
                 "mideum"
               ],
-              "staff": [],
-              "staffRole": "",
+              "staff": [
+                "정성진"
+              ],
+              "staffRole": "요가교실 (신체) (믿음반) 준비",
               "location": "강당",
               "tags": [
-                "도미노게임",
+                "요가교실 (신체) (믿음반) 준비:정성진",
                 "mideum",
                 "physical"
               ]
@@ -167160,6 +167160,34 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
+      "title": "쿵쿵 쏙쏙 놀이",
+      "subtitle": "맞춤형-활기담",
+      "categoryId": "custom",
+      "groupIds": [
+        "somang"
+      ],
+      "staff": [
+        "이현주"
+      ],
+      "staffRole": "강사",
+      "location": "강당",
+      "tags": [
+        "쿵쿵 쏙쏙 놀이",
+        "somang",
+        "custom"
+      ]
+    },
+    {
+      "id": "2026-09-28-1030-3",
+      "date": "2026-09-28",
+      "weekday": "월",
+      "weekKey": "2026-09-28",
+      "weekLabel": "9월 5주차",
+      "start": "10:30",
+      "end": "11:30",
+      "startMin": 630,
+      "endMin": 690,
+      "section": "오전",
       "title": "미술활동",
       "subtitle": "우리 전통 족두리 꾸미기",
       "categoryId": "cognitive",
@@ -167175,32 +167203,6 @@
         "미술활동",
         "mideum",
         "cognitive"
-      ]
-    },
-    {
-      "id": "2026-09-28-1030-3",
-      "date": "2026-09-28",
-      "weekday": "월",
-      "weekKey": "2026-09-28",
-      "weekLabel": "9월 5주차",
-      "start": "10:30",
-      "end": "11:30",
-      "startMin": 630,
-      "endMin": 690,
-      "section": "오전",
-      "title": "투호",
-      "subtitle": "",
-      "categoryId": "physical",
-      "groupIds": [
-        "somang"
-      ],
-      "staff": [],
-      "staffRole": "",
-      "location": "강당",
-      "tags": [
-        "투호",
-        "somang",
-        "physical"
       ]
     },
     {
@@ -168092,21 +168094,19 @@
       "startMin": 630,
       "endMin": 690,
       "section": "오전",
-      "title": "미술활동",
-      "subtitle": "우리 전통 족두리 꾸미기",
-      "categoryId": "cognitive",
+      "title": "투호",
+      "subtitle": "",
+      "categoryId": "physical",
       "groupIds": [
         "somang"
       ],
-      "staff": [
-        "정성진"
-      ],
-      "staffRole": "준비",
+      "staff": [],
+      "staffRole": "",
       "location": "강당",
       "tags": [
-        "미술활동",
+        "투호",
         "somang",
-        "cognitive"
+        "physical"
       ]
     },
     {
@@ -168706,19 +168706,17 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "요가교실 (신체) (믿음반) 준비:정성진",
+      "title": "도미노게임",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
         "mideum"
       ],
-      "staff": [
-        "정성진"
-      ],
-      "staffRole": "요가교실 (신체) (믿음반) 준비",
+      "staff": [],
+      "staffRole": "",
       "location": "강당",
       "tags": [
-        "요가교실 (신체) (믿음반) 준비:정성진",
+        "도미노게임",
         "mideum",
         "physical"
       ]
@@ -169162,17 +169160,19 @@
       "startMin": 840,
       "endMin": 900,
       "section": "오후",
-      "title": "도미노게임",
+      "title": "요가교실 (신체) (믿음반) 준비:정성진",
       "subtitle": "",
       "categoryId": "physical",
       "groupIds": [
         "mideum"
       ],
-      "staff": [],
-      "staffRole": "",
+      "staff": [
+        "정성진"
+      ],
+      "staffRole": "요가교실 (신체) (믿음반) 준비",
       "location": "강당",
       "tags": [
-        "도미노게임",
+        "요가교실 (신체) (믿음반) 준비:정성진",
         "mideum",
         "physical"
       ]
